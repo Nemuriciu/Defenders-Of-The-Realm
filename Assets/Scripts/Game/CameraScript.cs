@@ -10,7 +10,7 @@ public class CameraScript : MonoBehaviour
 
 	private Vector3 targetPos;
 
-	void LateUpdate() {
+	void FixedUpdate() {
 		targetPos = player.position + player.up * distanceUp - player.forward * distanceAway;
 
 		Debug.DrawRay (player.position, Vector3.up * distanceUp, Color.red);
