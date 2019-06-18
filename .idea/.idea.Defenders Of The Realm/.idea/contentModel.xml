@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Vlad\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Vlad\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Defenders Of The Realm.-1480814426.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Vlad\Desktop\Defenders Of The Realm" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Character" t="Include">
+          <e p="Shader" t="Include">
+            <e p="PolyArtMaskTint.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Game" t="Include">
+            <e p="Animator" t="Include">
+              <e p="PlayerAttack.cs" t="Include" />
+            </e>
+            <e p="Camera" t="Include">
+              <e p="CameraController.cs" t="Include" />
+              <e p="CameraScript.cs" t="Include" />
+            </e>
+            <e p="Character" t="Include">
+              <e p="BuildingScript.cs" t="Include" />
+              <e p="PlayerController.cs" t="Include" />
+            </e>
+            <e p="Creatures" t="Include">
+              <e p="Navigation.cs" t="Include" />
+            </e>
+            <e p="Towers" t="Include">
+              <e p="Bullet.cs" t="Include" />
+              <e p="Tower.cs" t="Include" />
+              <e p="TowerBuild.cs" t="Include" />
+              <e p="TowerTrigger.cs" t="Include" />
+            </e>
+            <e p="WaveSpawn.cs" t="Include" />
+          </e>
+          <e p="StartMenu" t="Include">
+            <e p="ExitButton.cs" t="Include" />
+            <e p="OptionsButton.cs" t="Include" />
+            <e p="StartButton.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Defenders Of The Realm.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
