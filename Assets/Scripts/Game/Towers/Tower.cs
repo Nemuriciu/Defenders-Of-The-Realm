@@ -6,7 +6,7 @@ public class Tower : MonoBehaviour {
 	public Transform shootElement;
 	public Transform lookAtObj;
 	public GameObject bullet;
-	public Transform target;
+	public GameObject target;
 	
 	
 	private bool _shooting;
@@ -19,7 +19,7 @@ public class Tower : MonoBehaviour {
 	private void Update () {
 		if (!target) return;
 		
-		lookAtObj.transform.LookAt(target);
+		lookAtObj.transform.LookAt(target.transform);
 
 		if (_shooting) return;
 		
@@ -29,8 +29,8 @@ public class Tower : MonoBehaviour {
 
 	private IEnumerator Shoot() {
 		while (target) {
-			var newBullet = Instantiate(bullet, shootElement.position, Quaternion.identity);
-			var bt = newBullet.GetComponent<Bullet>();
+			GameObject newBullet = Instantiate(bullet, shootElement.position, Quaternion.identity);
+			Bullet bt = newBullet.GetComponent<Bullet>();
 			
 			bt.SetTarget(target);
 			_audioSource.Play();

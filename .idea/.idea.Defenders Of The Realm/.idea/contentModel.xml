@@ -25,7 +25,21 @@
               <e p="PlayerController.cs" t="Include" />
             </e>
             <e p="Creatures" t="Include">
+              <e p="Damager.cs" t="Include" />
+              <e p="HealthBar.cs" t="Include" />
+              <e p="HealthbarRoot.cs" t="Include" />
               <e p="Navigation.cs" t="Include" />
+            </e>
+            <e p="Dropables" t="Include">
+              <e p="SoulScript.cs" t="Include" />
+            </e>
+            <e p="GUI" t="Include">
+              <e p="FloatingText" t="Include">
+                <e p="FloatingText.cs" t="Include" />
+                <e p="FloatingTextComponent.cs" t="Include" />
+                <e p="TextTypeList.cs" t="Include" />
+              </e>
+              <e p="ProgressBar.cs" t="Include" />
             </e>
             <e p="Towers" t="Include">
               <e p="Bullet.cs" t="Include" />

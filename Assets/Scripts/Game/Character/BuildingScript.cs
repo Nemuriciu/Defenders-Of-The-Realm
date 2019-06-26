@@ -9,7 +9,6 @@ public class BuildingScript : MonoBehaviour {
     private Vector3 _instancePos;
     private bool _isBuilding;
     
-
     private void Start() {
         _twrGroup = GameObject.Find("Towers").transform;
     }
@@ -41,7 +40,6 @@ public class BuildingScript : MonoBehaviour {
                     _isBuilding = false;
                     Destroy(_instance);
                 }
-
                 //TODO: Else Print Error Message on Screen 
             }
         } else if (Input.GetKeyDown(KeyCode.Alpha1)) {
@@ -50,6 +48,5 @@ public class BuildingScript : MonoBehaviour {
             _instance = Instantiate(crossbowBuild, _instancePos, Quaternion.identity, _twrGroup);
             _towerBuild = _instance.GetComponent<TowerBuild>();
         }
-
     }
 }
