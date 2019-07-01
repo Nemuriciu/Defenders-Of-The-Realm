@@ -1404,9 +1404,10 @@ GameObject:
   - component: {fileID: 6719931485608870195}
   - component: {fileID: 6720938407210514557}
   - component: {fileID: 1509606626717485893}
+  - component: {fileID: 452169241}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1497,6 +1498,20 @@ MonoBehaviour:
     type: 3}
   crossbowBuild: {fileID: 2659052538054528421, guid: f453c3079064e304a91990fb38e5805d,
     type: 3}
+--- !u!114 &452169241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6719931485608870194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf741fdaa502024990aa05299c0c641, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeText: {fileID: 0}
+  sellText: {fileID: 0}
 --- !u!1 &6720093685911046160
 GameObject:
   m_ObjectHideFlags: 0

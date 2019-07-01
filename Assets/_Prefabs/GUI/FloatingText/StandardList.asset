@@ -73,8 +73,8 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
-    font: {fileID: 12800000, guid: 5136a12234b7b4f48b0902d42227182f, type: 3}
-    fontSize: 25
+    font: {fileID: 12800000, guid: 8cbf432849fb5a144b6167263950f89c, type: 3}
+    fontSize: 27
     increaseAmount: 0
     fontSizeAnimation:
       serializedVersion: 2

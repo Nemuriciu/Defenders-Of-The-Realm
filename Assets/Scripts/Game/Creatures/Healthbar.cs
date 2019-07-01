@@ -95,7 +95,6 @@ public class Healthbar : MonoBehaviour {
             backGround.fillAmount = healthVolume.fillAmount;
 	}
 	
-	
 	private void Update() {
 		if(!HealthbarPrefab)
 			return;

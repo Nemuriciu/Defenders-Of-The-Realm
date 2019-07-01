@@ -13,6 +13,10 @@ public class Tower : MonoBehaviour {
 	private AudioSource _audioSource;
 
 	private void Start() {
+		Collider playerCol = GameObject.FindWithTag("Player").GetComponent<Collider>();
+		Collider myCol = GetComponent<Collider>();
+		Physics.IgnoreCollision(playerCol, myCol);
+		
 		_audioSource = GetComponent<AudioSource>();
 	}
 

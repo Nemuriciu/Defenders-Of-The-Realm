@@ -653,8 +653,8 @@ MonoBehaviour:
   DrawOFFDistance: 1
   drawDistance: 50
   showHealthInfo: 0
-  healthInfoAlignment: 0
-  healthInfoSize: 20
+  healthInfoAlignment: 1
+  healthInfoSize: 15
   alphaSettings:
     defaultAlpha: 0.7
     defaultFadeSpeed: 0.1

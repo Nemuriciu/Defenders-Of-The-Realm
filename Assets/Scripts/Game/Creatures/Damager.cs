@@ -5,11 +5,13 @@ public class Damager : MonoBehaviour {
 	public bool isDead;
 	public GameObject soulPrefab;
 
+	private Camera _cam;
 	private Animator _anim;
 	private const float FallSpeed = 0.5f;
 
 	private void Start() {
 		_anim = GetComponent<Animator>();
+		_cam = Camera.main;
 	}
 
 	private void Update () {
@@ -31,7 +33,11 @@ public class Damager : MonoBehaviour {
 	
 	public void Hit(int damage) {
 		health -= damage;
-		FloatingText.Instance.InitializeScriptableText(0, 
-			transform.position + new Vector3(Random.Range(-0.5f, 0.5f), 2, 0), damage.ToString());
+
+		float dist = Vector3.Distance(transform.position, _cam.transform.position);
+		
+		if (dist < 50)
+			FloatingText.Instance.InitializeScriptableText(0, 
+				transform.position + new Vector3(Random.Range(-0.5f, 0.5f), 2, 0), damage.ToString());
 	}
 }

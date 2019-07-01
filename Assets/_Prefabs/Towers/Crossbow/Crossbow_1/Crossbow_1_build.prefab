@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 6531332806705934432}
   m_Layer: 0
   m_Name: Crossbow_1_build
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -414,7 +414,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 4, z: 2}
+  m_Size: {x: 3, y: 4, z: 3}
   m_Center: {x: 0, y: 2, z: 0}
 --- !u!114 &6531332806705934432
 MonoBehaviour:

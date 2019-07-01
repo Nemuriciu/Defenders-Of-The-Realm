@@ -51,6 +51,7 @@ public class FloatingTextComponent : MonoBehaviour {
         _cam = targetCam;
         //Font from ScriptableText
         text.font = sct.Font;
+        
         if (sct.UseIcon) {
             icon.enabled = true;
             RectTransform rect = icon.rectTransform;
@@ -59,6 +60,7 @@ public class FloatingTextComponent : MonoBehaviour {
 
             icon.sprite = sct.Icon;
         }
+        
         //Font Size from ScriptableText as ref / start point for Lerp
         _fontSize = sct.FontSize;
         //Amount to increase the Text Size
@@ -88,7 +90,6 @@ public class FloatingTextComponent : MonoBehaviour {
         gameObject.SetActive(true);
 
         StartCoroutine(AnimateTextComponent());
-
     }
 
     private IEnumerator AnimateTextComponent() {
@@ -96,7 +97,7 @@ public class FloatingTextComponent : MonoBehaviour {
         float timer = 0;
         //Animation Length
         float animationTime = _animDuration;
-        //change Icon Alpha with Text Alpahe
+        //change Icon Alpha with Text Alpha
         Color tempColor = icon.color;
         //as long as timer is not bigger than the Animation Length
         while (timer < animationTime) {
@@ -104,7 +105,7 @@ public class FloatingTextComponent : MonoBehaviour {
             var curveTimerX = _animCurveX.Evaluate(timer);
             var curveTimerY = _animCurveY.Evaluate(timer);
 
-            //if amount == 0 no Size Animation
+            // if amount == 0 no Size Animation
             if (_amount != 0) {
                 var fontSizeCurveAnim = _fontSizeAnimCurve.Evaluate(timer);
                 text.fontSize = (int)Mathf.Lerp(_fontSize, _amount, fontSizeCurveAnim);
@@ -130,7 +131,6 @@ public class FloatingTextComponent : MonoBehaviour {
             timer += Time.deltaTime;
 
             yield return null;
-
         }
         //disable Text Component to avoid weird jump behaviour
         text.enabled = false;

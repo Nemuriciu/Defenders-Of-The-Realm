@@ -15,7 +15,7 @@ public class SoulScript : MonoBehaviour {
 
     private void Start() {
         _player = GameObject.FindGameObjectWithTag("Player");
-        _buildBar = GameObject.Find("BuildBar").GetComponent<ProgressBar>();
+        _buildBar = GameObject.Find("BuildBar").GetComponentInChildren<ProgressBar>();
     }
 
     private void Update () {

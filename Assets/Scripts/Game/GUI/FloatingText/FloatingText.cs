@@ -4,11 +4,10 @@ using UnityEngine;
 public class FloatingText : MonoBehaviour {
     public static FloatingText Instance;                                    //current Instance
     
-    [SerializeField]private Camera targetCamera;                                    //need main Camera to use World to screen 
-    [SerializeField]private int poolSize;                                           //starting poolSize, great pools at Start
-    [SerializeField]private GameObject objectToPool;                                //FloatingTextComponent
-    [SerializeField]private TextTypeList textTypeList;
-
+    [SerializeField] public Camera targetCamera;                                    //need main Camera to use World to screen 
+    [SerializeField] public int poolSize;                                           //starting poolSize, great pools at Start
+    [SerializeField] public GameObject objectToPool;                                //FloatingTextComponent
+    [SerializeField] public TextTypeList textTypeList;
     
     // For each pool one specific parent and List
     [System.Serializable]
@@ -32,8 +31,7 @@ public class FloatingText : MonoBehaviour {
         //Initialize Array with Length of TextTypeList
         _objectPool = new ObjectPool[textTypeList.ListSize];
 
-        for (int i = 0;i < textTypeList.ListSize; i++)
-        {
+        for (int i = 0;i < textTypeList.ListSize; i++) {
             ObjectPool newOp = new ObjectPool {
                 poolHolder = new GameObject(textTypeList.GetName(i) + "Parent",
                     typeof(RectTransform)).transform
@@ -48,10 +46,8 @@ public class FloatingText : MonoBehaviour {
         //Create x Amount of Objects
         //store each Object in the right pool and list
         //set Pool Parent
-        for (int t = 0; t < textTypeList.scriptableText.Count; t++)
-        {
-            for (int i = 0; i < poolSize; i++)
-            {
+        for (int t = 0; t < textTypeList.scriptableText.Count; t++) {
+            for (int i = 0; i < poolSize; i++) {
                 GameObject gbj = Instantiate(objectToPool, _objectPool[t].poolHolder, false);
                 gbj.SetActive(false);
                 _objectPool[t].gameObject.Add(gbj);
@@ -86,7 +82,7 @@ public class FloatingText : MonoBehaviour {
     /// <param name="listPosition">From which CustomType in your List. eg [0]DamageText</param>
     /// <param name="pos">Just paste your Position, handle offset and your SCT</param>
     /// <param name="msg">What you want to output.</param>
-    public void InitializeScriptableText (int listPosition,Vector3 pos,string msg) {
+    public void InitializeScriptableText (int listPosition, Vector3 pos, string msg) {
         //Get the position from an active and ready to use GameObject
         int poolArrayIndex = GetIndex(listPosition);
         //prepare start Positions
