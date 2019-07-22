@@ -3,9 +3,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour {
-    public int maxValue;
-    public bool isFull;
+    public bool percent;
     
+    private int _maxValue;
     private Image _slider;
     private TextMeshProUGUI _displayText;
     private int _currentVal;
@@ -14,15 +14,36 @@ public class ProgressBar : MonoBehaviour {
         _slider = GetComponent<Image>();
         _displayText = transform.parent.GetComponentInChildren<TextMeshProUGUI>();
 
-        if (isFull)
-            _currentVal = maxValue;
-        
-        Display();
+        switch (transform.parent.name) {
+            case "BuildBar":
+                _maxValue = Stats.MaxGold;
+                // TODO: move starting gold in another script
+                Stats.PlayerGold = _currentVal = 500;
+                break;
+            case "EnergyBar":
+                _maxValue = Stats.MaxEnergy;
+                Stats.PlayerEnergy = _currentVal = _maxValue;
+                break;
+            case "ArtefactBar":
+                _maxValue = Stats.MaxArtefact;
+                Stats.ArtefactHealth = _currentVal = _maxValue;
+                break;
+        }
+
+        if (!percent)
+            Display();
+        else
+            DisplayPercent();
     }
     
     private void Display() {
-        _displayText.text = _currentVal + " / " + maxValue;
-        _slider.fillAmount = (float) _currentVal / maxValue; 
+        _displayText.text = _currentVal + " / " + _maxValue;
+        _slider.fillAmount = (float) _currentVal / _maxValue; 
+    }
+    
+    private void DisplayPercent() {
+        _displayText.text = (float) _currentVal / _maxValue * 100.0f + " %";
+        _slider.fillAmount = (float) _currentVal / _maxValue; 
     }
     
     public void ChangeValue(int value) {
@@ -30,9 +51,12 @@ public class ProgressBar : MonoBehaviour {
 
         if (_currentVal <= 0)
             _currentVal = 0;
-        else if (_currentVal >= maxValue)
-            _currentVal = maxValue;
-        
-        Display(); 
+        else if (_currentVal >= _maxValue)
+            _currentVal = _maxValue;
+
+        if (!percent) 
+            Display();
+        else
+            DisplayPercent();
     }
 }

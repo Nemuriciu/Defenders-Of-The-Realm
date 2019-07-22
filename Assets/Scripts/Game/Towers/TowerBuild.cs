@@ -13,12 +13,16 @@ public class TowerBuild : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other) {
+        if (!enabled) return;
+        
         if (other.CompareTag("IgnoreCol") || other.CompareTag("PlayerInteract")) return;
         
         _colliders.Add(other.gameObject);
     }
 
     private void OnTriggerExit(Collider other) {
+        if (!enabled) return;
+        
         if (other.CompareTag("IgnoreCol") || other.CompareTag("PlayerInteract")) return;
         
         _colliders.Remove(other.gameObject);

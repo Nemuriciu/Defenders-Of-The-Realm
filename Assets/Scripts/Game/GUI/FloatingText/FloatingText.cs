@@ -2,7 +2,7 @@
 using UnityEngine;
 
 public class FloatingText : MonoBehaviour {
-    public static FloatingText Instance;                                    //current Instance
+    public static FloatingText instance;                                    //current Instance
     
     [SerializeField] public Camera targetCamera;                                    //need main Camera to use World to screen 
     [SerializeField] public int poolSize;                                           //starting poolSize, great pools at Start
@@ -21,8 +21,8 @@ public class FloatingText : MonoBehaviour {
 
     private void Start() {
 
-        if (Instance == null)
-            Instance = this;
+        if (instance == null)
+            instance = this;
         InitializePools();
 
     }
@@ -37,6 +37,7 @@ public class FloatingText : MonoBehaviour {
                     typeof(RectTransform)).transform
             };
             newOp.poolHolder.SetParent(gameObject.transform);
+            newOp.poolHolder.SetAsFirstSibling();
             _objectPool[i] = newOp;
         }
     }

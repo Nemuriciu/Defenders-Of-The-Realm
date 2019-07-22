@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4137937741455444}
   - component: {fileID: 114426785601216136}
   m_Layer: 0
-  m_Name: HM_crossbow_2
+  m_Name: Crossbow_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,12 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a682e4e961f99c0498ca12fad03ef8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tier: 
+  damage:
+    min: 0
+    max: 0
+  sellValue: 0
+  upgradeValue: 0
   shootElement: {fileID: 4168700509242470}
-  LookAtObj: {fileID: 4685122782874224}
-  dmg: 10
-  bullet: {fileID: 1275940179253460}
+  pivot: {fileID: 0}
+  bullet: {fileID: 4059956695436507893}
+  delay: 0
   target: {fileID: 0}
-  shootDelay: 1
 --- !u!1 &1138057459549398
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,68 +164,6 @@ Transform:
   m_Father: {fileID: 4685122782874224}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1275940179253460
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4127937113206428}
-  - component: {fileID: 65684997759236062}
-  - component: {fileID: 6700083276393218967}
-  m_Layer: 0
-  m_Name: HM_crossbow_bullet2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4127937113206428
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275940179253460}
-  m_LocalRotation: {x: -0.14532305, y: -0, z: -0, w: 0.98938423}
-  m_LocalPosition: {x: 0.009999872, y: 2.44, z: 0.96000016}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4357190051891514}
-  m_Father: {fileID: 4621218886232894}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -16.712, y: 0, z: 0}
---- !u!65 &65684997759236062
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275940179253460}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.1, y: 0.1, z: 0.1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6700083276393218967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275940179253460}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 807a988a1765edd439007be8fbee2c70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 0
-  target: {fileID: 0}
-  LookAtBul: {fileID: 0}
-  twr: {fileID: 114426785601216136}
 --- !u!1 &1327806468520784
 GameObject:
   m_ObjectHideFlags: 0
@@ -5139,7 +5082,7 @@ Transform:
   - {fileID: 4207630795098750}
   - {fileID: 4135212809492846}
   - {fileID: 4692564869682022}
-  m_Father: {fileID: 4127937113206428}
+  m_Father: {fileID: 4061683059816926397}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &96057628760947688
@@ -5266,7 +5209,7 @@ Transform:
   m_Children:
   - {fileID: 4685122782874224}
   - {fileID: 4695808714573748}
-  - {fileID: 4127937113206428}
+  - {fileID: 4061683059816926397}
   - {fileID: 4348086102447204}
   m_Father: {fileID: 4137937741455444}
   m_RootOrder: 0
@@ -5375,9 +5318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c40027982a518f4c877ed8b22c18b9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  twr: {fileID: 114426785601216136}
-  lockE: 0
-  curTarget: {fileID: 0}
+  tower: {fileID: 0}
 --- !u!1 &1612525308873524
 GameObject:
   m_ObjectHideFlags: 0
@@ -5609,3 +5550,62 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &4059956695436507893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4061683059816926397}
+  - component: {fileID: 4087589813100172799}
+  - component: {fileID: 7253099231884452278}
+  m_Layer: 0
+  m_Name: HM_crossbow_bullet2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4061683059816926397
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4059956695436507893}
+  m_LocalRotation: {x: -0.14532305, y: -0, z: -0, w: 0.98938423}
+  m_LocalPosition: {x: 0.009999872, y: 2.44, z: 0.96000016}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4357190051891514}
+  m_Father: {fileID: 4621218886232894}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -16.712, y: 0, z: 0}
+--- !u!65 &4087589813100172799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4059956695436507893}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7253099231884452278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4059956695436507893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 807a988a1765edd439007be8fbee2c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  twr: {fileID: 114426785601216136}

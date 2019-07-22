@@ -1,23 +1,35 @@
 ﻿using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Bullet : MonoBehaviour {
+    [HideInInspector] public Tower twr;
+    
     private GameObject _target;
     private Damager _damager;
+    private bool _alive;
+    private float _speed;
+
+    private void Start() {
+        _speed = Random.Range(17.5f, 20.0f);
+    }
 
     private void Update () {
-        if (!_target) return;
+        if (!_alive) return;
+        if (!_target || !twr)
+            Destroy(gameObject);
         
         Vector3 pos = _target.transform.position;
         pos.y += 1;
         
         transform.LookAt(_target.transform);
-        transform.position = Vector3.MoveTowards(transform.position, pos, Time.deltaTime * 20);
+        transform.position = Vector3.MoveTowards(transform.position,
+            pos, Time.deltaTime * _speed);
     }
     
     private void OnTriggerEnter (Collider other) {
         if (other.gameObject == _target) {
-            if (!_damager.isDead)
-                _damager.Hit(Random.Range(5, 10));
+            if (!_damager.isDead && twr)
+                _damager.Hit(Random.Range(twr.damage.min, twr.damage.max));
             
             Destroy(gameObject);
         }
@@ -26,5 +38,6 @@ public class Bullet : MonoBehaviour {
     public void SetTarget(GameObject t) {
         _target = t;
         _damager = _target.GetComponent<Damager>();
+        _alive = true;
     }
 }

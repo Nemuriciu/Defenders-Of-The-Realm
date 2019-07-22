@@ -14,7 +14,7 @@ public class TowerTrigger : MonoBehaviour {
 
 	private void OnTriggerEnter(Collider other) {
 		if (!other.CompareTag("Enemy")) return;
-
+		
 		_targets.Add(other.gameObject);
 	}
 

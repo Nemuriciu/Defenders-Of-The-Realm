@@ -469,9 +469,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a682e4e961f99c0498ca12fad03ef8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 1
+  tier: Tier 1
+  damage:
+    min: 40
+    max: 70
+  sellValue: 25
+  upgradeValue: 150
+  attackSpeed: 1.25
   shootElement: {fileID: 2354116294884431177}
-  lookAtObj: {fileID: 2354216620973934939}
+  pivot: {fileID: 2354216620973934939}
   bullet: {fileID: 627585675081803522, guid: e2c46097b91b0b04b8e7735403c0183d, type: 3}
   target: {fileID: 0}
 --- !u!114 &8437233009143930257
@@ -547,6 +553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 807a988a1765edd439007be8fbee2c70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  twr: {fileID: 0}
 --- !u!1 &5647751184490593382
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +606,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.75
+  m_Radius: 0.7
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5762035089570459588
 MonoBehaviour:

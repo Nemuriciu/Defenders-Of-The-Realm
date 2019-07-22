@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2792468073011187288}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,9 +42,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2792468073500357825}
   - component: {fileID: 2871659629744107302}
-  m_Layer: 0
+  - component: {fileID: 7349851449743499847}
+  m_Layer: 1
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +103,20 @@ LODGroup:
     renderers:
     - renderer: {fileID: 2779343782193731969}
   m_Enabled: 1
+--- !u!114 &7349851449743499847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792468073500357824}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3789d21e6e65bfe48af2eb0e0ae29fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trailPrefab: {fileID: 7489862811981338888, guid: 7816fe9d91b15c541ad5aca1f5d3950b,
+    type: 3}
 --- !u!1 &2793102121236038953
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,7 +129,7 @@ GameObject:
   - component: {fileID: 2789966728329507823}
   - component: {fileID: 2749519013973958823}
   - component: {fileID: 2779453057935532809}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Cube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +220,7 @@ GameObject:
   - component: {fileID: 2789221892939322931}
   - component: {fileID: 2749508406132761415}
   - component: {fileID: 2779445980960399157}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +311,7 @@ GameObject:
   - component: {fileID: 2789815797285566183}
   - component: {fileID: 2749212754855425869}
   - component: {fileID: 2779856962652834549}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Cube (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +402,7 @@ GameObject:
   - component: {fileID: 2789759819163251995}
   - component: {fileID: 2749921390621594831}
   - component: {fileID: 2779833589734161245}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -477,7 +492,7 @@ GameObject:
   - component: {fileID: 2796297237142447229}
   - component: {fileID: 2789628257087896873}
   - component: {fileID: 2779561395524598619}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Platform_Skull_03_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +570,7 @@ GameObject:
   - component: {fileID: 2789231805680780687}
   - component: {fileID: 2779772915026073283}
   - component: {fileID: 2748137108104023081}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Collider_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -647,7 +662,7 @@ GameObject:
   - component: {fileID: 2789254663703884989}
   - component: {fileID: 2749341265495530787}
   - component: {fileID: 2779753396630435439}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Cube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -738,7 +753,7 @@ GameObject:
   - component: {fileID: 2789500744436539469}
   - component: {fileID: 2750205889119736913}
   - component: {fileID: 2779033988117447999}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -829,7 +844,7 @@ GameObject:
   - component: {fileID: 2789483278321138775}
   - component: {fileID: 2779787993772897891}
   - component: {fileID: 2748635681594111985}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Collider_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -921,7 +936,7 @@ GameObject:
   - component: {fileID: 2790169862566991091}
   - component: {fileID: 2749642303393955645}
   - component: {fileID: 2779327683646120279}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1012,7 +1027,7 @@ GameObject:
   - component: {fileID: 2790101099897894437}
   - component: {fileID: 2748921762812058321}
   - component: {fileID: 2779569073432208435}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1103,7 +1118,7 @@ GameObject:
   - component: {fileID: 2790141815495164483}
   - component: {fileID: 2749220452038821573}
   - component: {fileID: 2780025177155400659}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1194,7 +1209,7 @@ GameObject:
   - component: {fileID: 2789194882958521521}
   - component: {fileID: 2749970209353765109}
   - component: {fileID: 2779920756121962581}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1285,7 +1300,7 @@ GameObject:
   - component: {fileID: 2789258090906588473}
   - component: {fileID: 2779466911055842003}
   - component: {fileID: 2748675385264411183}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Collider_01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1376,7 +1391,7 @@ GameObject:
   - component: {fileID: 2797296222222990661}
   - component: {fileID: 2789903124390992363}
   - component: {fileID: 2779343782193731969}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Platform_Skull_03_LOD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1452,7 +1467,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7808068875742955817}
   - component: {fileID: 7911687491266350177}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1544,7 +1559,7 @@ GameObject:
   - component: {fileID: 7801747596126234537}
   - component: {fileID: 7965330685434592705}
   - component: {fileID: 7964952824441047047}
-  m_Layer: 10
+  m_Layer: 1
   m_Name: PortalParticle
   m_TagString: effect
   m_Icon: {fileID: 0}
@@ -6165,7 +6180,7 @@ GameObject:
   - component: {fileID: 7801784826325757305}
   - component: {fileID: 7995574034280173289}
   - component: {fileID: 7965091994009038897}
-  m_Layer: 10
+  m_Layer: 1
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10800,7 +10815,7 @@ GameObject:
   - component: {fileID: 8041805700461797668}
   - component: {fileID: 7869233515206954120}
   - component: {fileID: 7876535671424360608}
-  m_Layer: 11
+  m_Layer: 1
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15417,7 +15432,7 @@ GameObject:
   - component: {fileID: 8035931224073815774}
   - component: {fileID: 7875312024153903900}
   - component: {fileID: 7874900888384894612}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20078,6 +20093,10 @@ PrefabInstance:
     - target: {fileID: 117300, guid: 8d218001a1e147542bc5a9058259e49f, type: 3}
       propertyPath: m_Name
       value: Dust
+      objectReference: {fileID: 0}
+    - target: {fileID: 117300, guid: 8d218001a1e147542bc5a9058259e49f, type: 3}
+      propertyPath: m_Layer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 497438, guid: 8d218001a1e147542bc5a9058259e49f, type: 3}
       propertyPath: m_LocalPosition.x

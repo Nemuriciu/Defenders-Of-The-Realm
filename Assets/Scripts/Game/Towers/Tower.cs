@@ -1,16 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[System.Serializable]
 public class Tower : MonoBehaviour {
-	public float delay;
+	public string tier;
+	public Damage damage;
+	public int sellValue;
+	public int upgradeValue;
+	public float attackSpeed;
+	
+	[Space(25)]
 	public Transform shootElement;
-	public Transform lookAtObj;
+	public Transform pivot;
 	public GameObject bullet;
-	public GameObject target;
+	[HideInInspector] public GameObject target;
 	
 	
 	private bool _shooting;
 	private AudioSource _audioSource;
+	private Transform _parent;
 
 	private void Start() {
 		Collider playerCol = GameObject.FindWithTag("Player").GetComponent<Collider>();
@@ -18,12 +26,15 @@ public class Tower : MonoBehaviour {
 		Physics.IgnoreCollision(playerCol, myCol);
 		
 		_audioSource = GetComponent<AudioSource>();
+		_parent = GameObject.Find("Bullets").transform;
+
+		attackSpeed -= Random.Range(0, attackSpeed * 0.1f);
 	}
 
 	private void Update () {
 		if (!target) return;
 		
-		lookAtObj.transform.LookAt(target.transform);
+		pivot.transform.LookAt(target.transform);
 
 		if (_shooting) return;
 		
@@ -33,14 +44,21 @@ public class Tower : MonoBehaviour {
 
 	private IEnumerator Shoot() {
 		while (target) {
-			GameObject newBullet = Instantiate(bullet, shootElement.position, Quaternion.identity);
+			GameObject newBullet = Instantiate(bullet, shootElement.position, Quaternion.identity, _parent);
 			Bullet bt = newBullet.GetComponent<Bullet>();
 			
 			bt.SetTarget(target);
-			_audioSource.Play();
-			yield return new WaitForSeconds(delay);
+			bt.twr = this;
+			//_audioSource.Play();
+			yield return new WaitForSeconds(attackSpeed);
 		}
 		
 		_shooting = false;
+	}
+	
+	[System.Serializable]
+	public class Damage {
+		public int min;
+		public int max;
 	}
 }

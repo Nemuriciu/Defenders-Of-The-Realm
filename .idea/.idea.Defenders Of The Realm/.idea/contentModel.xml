@@ -6,6 +6,13 @@
     <e p="C:\Users\Vlad\Desktop\Defenders Of The Realm" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="_Prefabs" t="Include">
+          <e p="Trail" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="ParticlesAdditiveIntensify.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Character" t="Include">
           <e p="Shader" t="Include">
             <e p="PolyArtMaskTint.shader" t="Include" />
@@ -18,8 +25,16 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Game" t="Include">
+            <e p="_Global" t="Include">
+              <e p="PhaseScript.cs" t="Include" />
+              <e p="Stats.cs" t="Include" />
+              <e p="WaveSpawn.cs" t="Include" />
+            </e>
             <e p="Animator" t="Include">
               <e p="PlayerAttack.cs" t="Include" />
+            </e>
+            <e p="Artefact" t="Include">
+              <e p="ArtefactScript.cs" t="Include" />
             </e>
             <e p="Camera" t="Include">
               <e p="CameraController.cs" t="Include" />
@@ -35,26 +50,33 @@
               <e p="SoulScript.cs" t="Include" />
             </e>
             <e p="GUI" t="Include">
+              <e p="ErrorMessage.cs" t="Include" />
+              <e p="EventMessage.cs" t="Include" />
               <e p="FloatingText" t="Include">
                 <e p="FloatingText.cs" t="Include" />
                 <e p="FloatingTextComponent.cs" t="Include" />
                 <e p="TextTypeList.cs" t="Include" />
               </e>
               <e p="ProgressBar.cs" t="Include" />
+              <e p="WaveCount.cs" t="Include" />
             </e>
             <e p="Player" t="Include">
               <e p="BuildingScript.cs" t="Include" />
               <e p="PlayerController.cs" t="Include" />
               <e p="PlayerTwrInteract.cs" t="Include" />
             </e>
+            <e p="Portal" t="Include">
+              <e p="TrailNavigation.cs" t="Include" />
+              <e p="TrailSpawner.cs" t="Include" />
+            </e>
             <e p="Towers" t="Include">
+              <e p="BuildAnimation.cs" t="Include" />
               <e p="Bullet.cs" t="Include" />
               <e p="Highlight.cs" t="Include" />
               <e p="Tower.cs" t="Include" />
               <e p="TowerBuild.cs" t="Include" />
               <e p="TowerTrigger.cs" t="Include" />
             </e>
-            <e p="WaveSpawn.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

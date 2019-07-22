@@ -55,10 +55,14 @@ public class Healthbar : MonoBehaviour {
         else
             healthbarRoot = new GameObject("HealthbarRoot", typeof(RectTransform), typeof(HealthbarRoot));
         healthbarRoot.transform.SetParent(canvas.transform, false);
+        healthbarRoot.transform.SetAsFirstSibling();
 		HealthbarPrefab = Instantiate(HealthbarPrefab, new Vector2 (-1000, -1000), Quaternion.identity);
         HealthbarPrefab.name = "HealthBar";
         HealthbarPrefab.SetParent(healthbarRoot.transform, false);
 		canvasGroup = HealthbarPrefab.GetComponent<CanvasGroup> ();
+		
+		/* Add healthbar link in Damager script */
+		healthLink.SetHealthbar(this);
 		
 		healthVolume = HealthbarPrefab.transform.Find ("Health").GetComponent<Image>();
 		backGround = HealthbarPrefab.transform.Find ("Background").GetComponent<Image>();
@@ -161,6 +165,12 @@ public class Healthbar : MonoBehaviour {
 
         if(healthLink.health > defaultHealth)
             defaultHealth = healthLink.health;
+	}
+
+	public void RemoveHealthbar() {
+		HealthbarRoot hr = healthbarRoot.GetComponent<HealthbarRoot>();
+		hr.healthBars.Remove(HealthbarPrefab.transform);
+		Destroy(HealthbarPrefab.gameObject);
 	}
 
 	private bool IsVisible() {

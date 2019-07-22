@@ -1,19 +1,36 @@
 ﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class PlayerTwrInteract : MonoBehaviour {
     public GameObject upgradeText;
     public GameObject sellText;
+
+    public GameObject[] crossbowUpgrades;
+
+    private TextMeshProUGUI _upgradeValue;
+    private TextMeshProUGUI _sellValue;
     
     private const float Angle = 20.0f;
     private ArrayList _towers;
     private GameObject _target;
     private Highlight _selection;
+    private Transform _twrGroup;
     private bool _isActive;
+
+    private Tower _twr;
+    private ProgressBar _slider;
+    private ErrorMessage _err;
     
 
     private void Start() {
         _towers = new ArrayList();
+        _slider = GameObject.Find("BuildBar").GetComponentInChildren<ProgressBar>();
+
+        _upgradeValue = upgradeText.GetComponentInChildren<TextMeshProUGUI>();
+        _sellValue = sellText.GetComponentInChildren<TextMeshProUGUI>();
+        _err = GameObject.Find("ErrorBox").GetComponent<ErrorMessage>();
+        _twrGroup = GameObject.Find("Towers").transform;
     }
 
     private void Update() {
@@ -32,6 +49,7 @@ public class PlayerTwrInteract : MonoBehaviour {
                     tower.transform.position - transform.position) < Angle) {
                 _target = tower;
                 _selection = _target.GetComponent<Highlight>();
+                _twr = _target.GetComponent<Tower>();
                 break;
             }
         }
@@ -45,16 +63,52 @@ public class PlayerTwrInteract : MonoBehaviour {
         // Looking at tower _target
         else {
             // If tooltip is not active, enable it
-            if (!_isActive)
+            if (!_isActive) {
+                _sellValue.text = _twr.sellValue.ToString();
+                _upgradeValue.text = (_twr.upgradeValue == 0) ? "MAX" : _twr.upgradeValue.ToString();
                 DisplayTooltip(true);
+            }
             
-            // Tooltip is active => Get Keyboard Interactions
-            if (Input.GetKeyDown(KeyCode.E)) {
-                // TODO: Upgrade
-                Debug.Log("Upgrading " + _target.name);
-            } else if (Input.GetKeyDown(KeyCode.Q)) {
-                // TODO: Sell
-                Debug.Log("Selling " + _target.name);
+            if (Input.GetKeyDown(KeyCode.E)) {                    /* Upgrade */
+                if (_twr.upgradeValue == 0) return;                  
+                    
+                if (Stats.PlayerGold < _twr.upgradeValue)
+                    _err.Show("Insufficient gold.");
+                else {
+                    Stats.PlayerGold -= _twr.upgradeValue;
+                    _slider.ChangeValue(-_twr.upgradeValue);
+
+                    Vector3 pos = _twr.gameObject.transform.position;
+                    GameObject instance;
+                    BuildAnimation bA;
+                    
+                    switch (_twr.tier) {
+                        case "Tier 1":
+                            instance = Instantiate(crossbowUpgrades[0], pos, Quaternion.identity, _twrGroup);
+                            bA = instance.GetComponent<BuildAnimation>();
+                            bA.isActive = true;
+                            break;
+                        
+                        case "Tier 2" :
+                            instance = Instantiate(crossbowUpgrades[1], pos, Quaternion.identity, _twrGroup);
+                            bA = instance.GetComponent<BuildAnimation>();
+                            bA.isActive = true;
+                            break;
+                    }
+                    
+                    /* Disable tooltip & Destroy target object */
+                    _towers.Remove(_target);
+                    DisplayTooltip(false);
+                    Destroy(_target);
+                }
+            } else if (Input.GetKeyDown(KeyCode.Q)) {            /* Sell */
+                Stats.PlayerGold += _twr.sellValue;
+                _slider.ChangeValue(_twr.sellValue);
+                
+                /* Disable tooltip & Destroy target object */
+                _towers.Remove(_target);
+                DisplayTooltip(false);
+                Destroy(_target);
             }
         }
     }

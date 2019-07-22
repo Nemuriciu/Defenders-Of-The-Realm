@@ -9,6 +9,7 @@ TagManager:
   - IgnoreCol
   - PlayerInteract
   - Tower
+  - Portal
   layers:
   - Default
   - TransparentFX

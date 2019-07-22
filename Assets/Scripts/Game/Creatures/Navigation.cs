@@ -10,7 +10,7 @@ public class Navigation : MonoBehaviour {
 	private void Start () {
 		_navAgent = GetComponent<NavMeshAgent> ();
 		_damager = GetComponent<Damager>();
-		_checkpoint = GameObject.Find("Checkpoint");
+		_checkpoint = GameObject.Find("Artefact");
 		
 		_navAgent.SetDestination(_checkpoint.transform.position);
 	}

@@ -9,9 +9,11 @@ public class SoulScript : MonoBehaviour {
     private bool _goingUp = true;
     private bool _isTriggered;
     private float _floatTimer, _acc = 1;
+    private int _value;
     private const float MaxSpeed = 20;
     private GameObject _player;
     private ProgressBar _buildBar;
+
 
     private void Start() {
         _player = GameObject.FindGameObjectWithTag("Player");
@@ -29,7 +31,8 @@ public class SoulScript : MonoBehaviour {
                 _acc += 0.5f;
             
             if (transform.position == pos) {
-                _buildBar.ChangeValue(10);
+                Stats.PlayerGold += _value;
+                _buildBar.ChangeValue(_value);
                 Destroy(gameObject);
             }
         }
@@ -54,5 +57,9 @@ public class SoulScript : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player"))
             _isTriggered = true;
+    }
+
+    public void SetValue(int value) {
+        _value = value;
     }
 }
