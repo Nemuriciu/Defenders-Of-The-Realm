@@ -1,15 +1,18 @@
 ﻿using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
 public class MenuButtons : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler {
+	public GameObject panel;
+	
 	private TextMeshProUGUI _text;
 	private RectTransform _rect;
+	private AudioSource _audio;
 
 	private void Start () {
-		_text = gameObject.GetComponent<TextMeshProUGUI> ();
-		_rect = gameObject.GetComponent<RectTransform>();
+		_text = GetComponent<TextMeshProUGUI>();
+		_rect = GetComponent<RectTransform>();
+		_audio = GetComponent<AudioSource>();
 	}
 
 	public void OnPointerEnter(PointerEventData eventData) {
@@ -23,12 +26,17 @@ public class MenuButtons : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 	}
 
 	public void OnPointerClick(PointerEventData eventData) {
+		_audio.Play();
+
+		if (Info.isPanelOpen) return;
+		
 		switch (_text.text) {
-			case "Start":
-				SceneManager.LoadScene ("GameScene");
-				break;
 			case "Exit":
 				Application.Quit();
+				break;
+			default:
+				panel.SetActive(true);
+				Info.isPanelOpen = true;
 				break;
 		}
 	}

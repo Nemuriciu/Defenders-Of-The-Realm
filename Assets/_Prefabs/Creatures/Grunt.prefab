@@ -646,7 +646,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3107138583069419979}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 1.5
@@ -660,8 +660,8 @@ NavMeshAgent:
   m_GameObject: {fileID: 3107138583069419979}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 1.4
+  m_Radius: 0.2
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -698,6 +698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 150
+  maxHealth: 0
   isDead: 0
   soulPrefab: {fileID: 8828191467275496227, guid: c946c805832003143a4e0c548a70c53c,
     type: 3}

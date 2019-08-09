@@ -1497,8 +1497,14 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   sellText: {fileID: 0}
   crossbowUpgrades:
-  - {fileID: 2605724738705930248, guid: 230864366387e72459fa7fff95f6c34e, type: 3}
-  - {fileID: 334294225561729746, guid: 2ed6330fd784a3045b8a6d1e2186458c, type: 3}
+  - {fileID: 5669651132289722551, guid: f00df8f7da614d84f8f7d9d7ffff126d, type: 3}
+  - {fileID: 1579125368071473896, guid: 65a17d25495fa4744a1b4556089dfa6d, type: 3}
+  crystalUpgrades:
+  - {fileID: 4647727648525995938, guid: cb022410c99bd284bb92dc5084d72e59, type: 3}
+  - {fileID: 8872150286201498834, guid: 609f0fed03201e64b9e2cbda3689dfd4, type: 3}
+  hourglassUpgrades:
+  - {fileID: 1679856931197268267, guid: b3ebd499c355b7347a64ea726718475f, type: 3}
+  - {fileID: 6324951711937792354, guid: f34ce2bfeda1c5449af46675b85ad751, type: 3}
 --- !u!114 &1509606626717485893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1511,11 +1517,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e81a53214bfc0b47b79c3d11983abf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crossbowPrefab: {fileID: 2359808384754250231, guid: fd302de23dd866a48a7090606e890dff,
+  crossbowPrefab: {fileID: 955464324550728585, guid: 84402736a0c533f4f97c25791152ec39,
     type: 3}
-  crossbowBuild: {fileID: 2659052538054528421, guid: f453c3079064e304a91990fb38e5805d,
+  crystalPrefab: {fileID: 7664169041232689935, guid: 968303773d1e6f64193b7365b1d99224,
     type: 3}
-  costs: 32000000
+  hourglassPrefab: {fileID: 2807629099135780256, guid: e10f457703de6814793bd3275515ba1a,
+    type: 3}
+  crossbowBuild: {fileID: 6645092733855003965, guid: 19dbd6ef46e3af7439d33278bf1320b1,
+    type: 3}
+  crystalBuild: {fileID: 6043475097988463266, guid: f8ed39e10d96a7443a164c450ba961dd,
+    type: 3}
+  hourglassBuild: {fileID: 4967606045680487138, guid: acba748fbff8ead49a1b544b426cf6fb,
+    type: 3}
+  costs: 32000000640000007d000000
 --- !u!1 &6720093685911046160
 GameObject:
   m_ObjectHideFlags: 0
