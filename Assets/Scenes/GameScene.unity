@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 7285980}
   m_Layer: 1
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 16828267}
   m_Layer: 1
   m_Name: Cube (27)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 25898143}
   m_Layer: 0
   m_Name: Plane (19)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 39534946}
   m_Layer: 1
   m_Name: Cube (42)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -614,7 +614,7 @@ GameObject:
   - component: {fileID: 41112027}
   m_Layer: 1
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 66070474}
   m_Layer: 1
   m_Name: Cube (20)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -1083,7 +1083,7 @@ GameObject:
   - component: {fileID: 115508698}
   m_Layer: 1
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -1161,7 +1161,7 @@ GameObject:
   - component: {fileID: 116940609}
   m_Layer: 0
   m_Name: Plane (6)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1294,7 +1294,7 @@ GameObject:
   - component: {fileID: 141495208}
   m_Layer: 1
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -1371,7 +1371,7 @@ GameObject:
   - component: {fileID: 145355594}
   m_Layer: 1
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -1482,7 +1482,7 @@ GameObject:
   - component: {fileID: 157386648}
   m_Layer: 0
   m_Name: Plane (2)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1605,7 +1605,7 @@ GameObject:
   - component: {fileID: 193694275}
   m_Layer: 0
   m_Name: Plane (11)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1696,7 +1696,7 @@ GameObject:
   - component: {fileID: 199115429}
   m_Layer: 1
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -1773,7 +1773,7 @@ GameObject:
   - component: {fileID: 203785058}
   m_Layer: 1
   m_Name: Cube (16)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -1851,7 +1851,7 @@ GameObject:
   - component: {fileID: 207569411}
   m_Layer: 0
   m_Name: Plane (4)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1942,7 +1942,7 @@ GameObject:
   - component: {fileID: 222567403}
   m_Layer: 1
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -2019,7 +2019,7 @@ GameObject:
   - component: {fileID: 223217250}
   m_Layer: 1
   m_Name: Cube (43)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -2329,7 +2329,7 @@ GameObject:
   - component: {fileID: 238512997}
   m_Layer: 0
   m_Name: Plane (5)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2420,7 +2420,7 @@ GameObject:
   - component: {fileID: 245490904}
   m_Layer: 1
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -2656,7 +2656,7 @@ GameObject:
   - component: {fileID: 247334161}
   m_Layer: 0
   m_Name: Plane (21)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2747,7 +2747,7 @@ GameObject:
   - component: {fileID: 254610182}
   m_Layer: 1
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -2868,7 +2868,7 @@ GameObject:
   - component: {fileID: 285565043}
   m_Layer: 1
   m_Name: Cube (29)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -2946,7 +2946,7 @@ GameObject:
   - component: {fileID: 286754500}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3144,7 +3144,7 @@ GameObject:
   - component: {fileID: 313238513}
   m_Layer: 1
   m_Name: Cube (18)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -3438,7 +3438,7 @@ GameObject:
   - component: {fileID: 330903125}
   m_Layer: 1
   m_Name: Cube (28)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -3515,7 +3515,7 @@ GameObject:
   - component: {fileID: 365686771}
   m_Layer: 1
   m_Name: Cube (16)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -3650,7 +3650,7 @@ GameObject:
   - component: {fileID: 376998465}
   m_Layer: 0
   m_Name: Plane (5)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3776,7 +3776,7 @@ GameObject:
   - component: {fileID: 385427947}
   m_Layer: 1
   m_Name: Cube (15)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -3871,7 +3871,7 @@ RectTransform:
   - {fileID: 2027417021}
   - {fileID: 2046469491}
   m_Father: {fileID: 579458174}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.75, y: 0}
   m_AnchorMax: {x: 0.75, y: 0}
@@ -3891,7 +3891,7 @@ GameObject:
   - component: {fileID: 411805808}
   m_Layer: 1
   m_Name: Cube (22)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -3986,7 +3986,7 @@ RectTransform:
   m_Children:
   - {fileID: 2005324656}
   m_Father: {fileID: 579458174}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -4041,7 +4041,7 @@ GameObject:
   - component: {fileID: 417805255}
   m_Layer: 1
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -4226,7 +4226,7 @@ GameObject:
   - component: {fileID: 444491893}
   m_Layer: 1
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -4338,7 +4338,7 @@ GameObject:
   - component: {fileID: 451503025}
   m_Layer: 1
   m_Name: Cube (30)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -4416,7 +4416,7 @@ GameObject:
   - component: {fileID: 472918379}
   m_Layer: 0
   m_Name: Plane (5)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4541,7 +4541,7 @@ GameObject:
   - component: {fileID: 479265456}
   m_Layer: 0
   m_Name: Plane (3)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4650,7 +4650,7 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 579458174}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4804,7 +4804,7 @@ GameObject:
   - component: {fileID: 488362825}
   m_Layer: 1
   m_Name: Cube (50)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -4881,7 +4881,7 @@ GameObject:
   - component: {fileID: 496307169}
   m_Layer: 1
   m_Name: Cube (22)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -4992,7 +4992,7 @@ GameObject:
   - component: {fileID: 502683440}
   m_Layer: 1
   m_Name: Cube (18)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -5069,7 +5069,7 @@ GameObject:
   - component: {fileID: 503962242}
   m_Layer: 1
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -5147,7 +5147,7 @@ GameObject:
   - component: {fileID: 519203135}
   m_Layer: 0
   m_Name: Plane (3)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5610,7 +5610,7 @@ GameObject:
   - component: {fileID: 536273821}
   m_Layer: 1
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -5688,7 +5688,7 @@ GameObject:
   - component: {fileID: 537767881}
   m_Layer: 0
   m_Name: Plane (23)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5779,7 +5779,7 @@ GameObject:
   - component: {fileID: 543206327}
   m_Layer: 1
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -5856,7 +5856,7 @@ GameObject:
   - component: {fileID: 549471699}
   m_Layer: 1
   m_Name: Cube (51)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -5934,7 +5934,7 @@ GameObject:
   - component: {fileID: 558334910}
   m_Layer: 0
   m_Name: Plane (10)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6026,7 +6026,7 @@ GameObject:
   - component: {fileID: 561800906}
   m_Layer: 0
   m_Name: Plane (3)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6235,7 +6235,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1712828135}
   - {fileID: 412577422}
   - {fileID: 1221764154}
   - {fileID: 635488081}
@@ -6300,7 +6299,7 @@ GameObject:
   - component: {fileID: 581737419}
   m_Layer: 0
   m_Name: Plane (6)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6424,7 +6423,7 @@ GameObject:
   - component: {fileID: 587012362}
   m_Layer: 1
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -6569,7 +6568,7 @@ GameObject:
   - component: {fileID: 605366468}
   m_Layer: 1
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -6646,7 +6645,7 @@ GameObject:
   - component: {fileID: 606805946}
   m_Layer: 1
   m_Name: Cube (15)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -6723,7 +6722,7 @@ GameObject:
   - component: {fileID: 607774756}
   m_Layer: 1
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -6800,7 +6799,7 @@ GameObject:
   - component: {fileID: 618125629}
   m_Layer: 1
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -6911,7 +6910,7 @@ GameObject:
   - component: {fileID: 626337399}
   m_Layer: 0
   m_Name: Plane (1)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7002,7 +7001,7 @@ GameObject:
   - component: {fileID: 628323877}
   m_Layer: 1
   m_Name: Cube (21)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -7079,7 +7078,7 @@ GameObject:
   - component: {fileID: 630224532}
   m_Layer: 1
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -7366,7 +7365,7 @@ GameObject:
   - component: {fileID: 649933279}
   m_Layer: 1
   m_Name: Cube (28)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -7443,7 +7442,7 @@ GameObject:
   - component: {fileID: 662259845}
   m_Layer: 1
   m_Name: Cube (31)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -7521,7 +7520,7 @@ GameObject:
   - component: {fileID: 672346943}
   m_Layer: 0
   m_Name: Plane (6)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7613,7 +7612,7 @@ GameObject:
   - component: {fileID: 684764122}
   m_Layer: 0
   m_Name: Plane (15)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7918,7 +7917,7 @@ GameObject:
   - component: {fileID: 690128107}
   m_Layer: 1
   m_Name: Cube (52)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -8028,7 +8027,7 @@ GameObject:
   - component: {fileID: 710117555}
   m_Layer: 1
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -8111,7 +8110,7 @@ GameObject:
   - component: {fileID: 734205045}
   m_Layer: 1
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -8188,7 +8187,7 @@ GameObject:
   - component: {fileID: 739207518}
   m_Layer: 1
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -8383,7 +8382,7 @@ GameObject:
   - component: {fileID: 745668797}
   m_Layer: 0
   m_Name: Plane (1)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8474,7 +8473,7 @@ GameObject:
   - component: {fileID: 753432611}
   m_Layer: 1
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -8551,7 +8550,7 @@ GameObject:
   - component: {fileID: 754306570}
   m_Layer: 1
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -8628,7 +8627,7 @@ GameObject:
   - component: {fileID: 754346418}
   m_Layer: 1
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -8705,7 +8704,7 @@ GameObject:
   - component: {fileID: 755564031}
   m_Layer: 1
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -8834,7 +8833,7 @@ GameObject:
   - component: {fileID: 782320041}
   m_Layer: 0
   m_Name: Plane (25)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9002,7 +9001,7 @@ GameObject:
   - component: {fileID: 791428522}
   m_Layer: 0
   m_Name: Plane (11)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9093,7 +9092,7 @@ GameObject:
   - component: {fileID: 798631788}
   m_Layer: 1
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -9205,7 +9204,7 @@ GameObject:
   - component: {fileID: 803264509}
   m_Layer: 0
   m_Name: Plane (5)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9296,7 +9295,7 @@ GameObject:
   - component: {fileID: 812795447}
   m_Layer: 1
   m_Name: Cube (22)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -9374,7 +9373,7 @@ GameObject:
   - component: {fileID: 817815713}
   m_Layer: 0
   m_Name: Plane (8)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9465,7 +9464,7 @@ GameObject:
   - component: {fileID: 823269082}
   m_Layer: 1
   m_Name: Cube (25)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -9543,7 +9542,7 @@ GameObject:
   - component: {fileID: 823649347}
   m_Layer: 0
   m_Name: Plane (2)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9810,7 +9809,7 @@ RectTransform:
   - {fileID: 785029479}
   - {fileID: 1623297643}
   m_Father: {fileID: 579458174}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9830,7 +9829,7 @@ GameObject:
   - component: {fileID: 831755585}
   m_Layer: 1
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -9907,7 +9906,7 @@ GameObject:
   - component: {fileID: 836312114}
   m_Layer: 1
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -9984,7 +9983,7 @@ GameObject:
   - component: {fileID: 839943770}
   m_Layer: 1
   m_Name: Cube (41)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -10083,7 +10082,7 @@ RectTransform:
   - {fileID: 1554136848}
   - {fileID: 984149072}
   m_Father: {fileID: 579458174}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10215,7 +10214,7 @@ GameObject:
   - component: {fileID: 871012129}
   m_Layer: 0
   m_Name: Plane (17)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10431,7 +10430,7 @@ GameObject:
   - component: {fileID: 888865897}
   m_Layer: 0
   m_Name: Plane (24)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10523,7 +10522,7 @@ GameObject:
   - component: {fileID: 893963844}
   m_Layer: 0
   m_Name: Plane (2)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10614,7 +10613,7 @@ GameObject:
   - component: {fileID: 894170715}
   m_Layer: 1
   m_Name: Cube (23)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -10691,7 +10690,7 @@ GameObject:
   - component: {fileID: 895251720}
   m_Layer: 1
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -10769,7 +10768,7 @@ GameObject:
   - component: {fileID: 927581817}
   m_Layer: 0
   m_Name: Plane (14)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10860,7 +10859,7 @@ GameObject:
   - component: {fileID: 936489395}
   m_Layer: 1
   m_Name: Cube (20)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -11056,7 +11055,7 @@ GameObject:
   - component: {fileID: 964448528}
   m_Layer: 0
   m_Name: Plane (4)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11147,7 +11146,7 @@ GameObject:
   - component: {fileID: 964486495}
   m_Layer: 1
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -11578,7 +11577,7 @@ GameObject:
   - component: {fileID: 984634401}
   m_Layer: 0
   m_Name: Plane (9)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11701,7 +11700,7 @@ GameObject:
   - component: {fileID: 989647051}
   m_Layer: 1
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -11866,7 +11865,7 @@ GameObject:
   - component: {fileID: 995627762}
   m_Layer: 1
   m_Name: Cube (44)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -11943,7 +11942,7 @@ GameObject:
   - component: {fileID: 998332664}
   m_Layer: 1
   m_Name: Cube (21)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -12021,7 +12020,7 @@ GameObject:
   - component: {fileID: 998398211}
   m_Layer: 0
   m_Name: Plane (26)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12112,7 +12111,7 @@ GameObject:
   - component: {fileID: 1022837481}
   m_Layer: 1
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -12189,7 +12188,7 @@ GameObject:
   - component: {fileID: 1024564860}
   m_Layer: 1
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -12301,7 +12300,7 @@ GameObject:
   - component: {fileID: 1047427774}
   m_Layer: 1
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -12378,7 +12377,7 @@ GameObject:
   - component: {fileID: 1056209119}
   m_Layer: 1
   m_Name: Cube (15)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -12455,7 +12454,7 @@ GameObject:
   - component: {fileID: 1060194900}
   m_Layer: 1
   m_Name: Cube (32)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -12532,7 +12531,7 @@ GameObject:
   - component: {fileID: 1061431609}
   m_Layer: 1
   m_Name: Cube (24)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -12683,7 +12682,7 @@ GameObject:
   - component: {fileID: 1063266494}
   m_Layer: 1
   m_Name: Cube (19)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -12854,7 +12853,7 @@ GameObject:
   - component: {fileID: 1083330337}
   m_Layer: 1
   m_Name: Cube (17)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -12963,7 +12962,7 @@ GameObject:
   - component: {fileID: 1102701309}
   m_Layer: 1
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -13255,7 +13254,7 @@ GameObject:
   - component: {fileID: 1116387436}
   m_Layer: 1
   m_Name: Cube (18)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -13332,7 +13331,7 @@ GameObject:
   - component: {fileID: 1128567425}
   m_Layer: 1
   m_Name: Cube (40)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -13409,7 +13408,7 @@ GameObject:
   - component: {fileID: 1131203701}
   m_Layer: 1
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -13487,7 +13486,7 @@ GameObject:
   - component: {fileID: 1142970295}
   m_Layer: 0
   m_Name: Plane (3)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13687,7 +13686,7 @@ GameObject:
   - component: {fileID: 1170340564}
   m_Layer: 0
   m_Name: Plane (1)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13778,7 +13777,7 @@ GameObject:
   - component: {fileID: 1173954896}
   m_Layer: 1
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -13855,7 +13854,7 @@ GameObject:
   - component: {fileID: 1177738728}
   m_Layer: 1
   m_Name: Cube (34)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -14000,7 +13999,7 @@ GameObject:
   - component: {fileID: 1198782092}
   m_Layer: 1
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -14258,7 +14257,7 @@ GameObject:
   - component: {fileID: 1210712474}
   m_Layer: 0
   m_Name: Plane (4)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14403,7 +14402,7 @@ RectTransform:
   - {fileID: 33898732}
   - {fileID: 1496645493}
   m_Father: {fileID: 579458174}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -14494,7 +14493,7 @@ GameObject:
   - component: {fileID: 1227210702}
   m_Layer: 0
   m_Name: Plane (10)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14585,7 +14584,7 @@ GameObject:
   - component: {fileID: 1241254418}
   m_Layer: 1
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -14662,7 +14661,7 @@ GameObject:
   - component: {fileID: 1252374128}
   m_Layer: 1
   m_Name: Cube (24)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -14739,7 +14738,7 @@ GameObject:
   - component: {fileID: 1264236273}
   m_Layer: 1
   m_Name: Cube (17)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -14817,7 +14816,7 @@ GameObject:
   - component: {fileID: 1274560460}
   m_Layer: 0
   m_Name: Plane (9)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14908,7 +14907,7 @@ GameObject:
   - component: {fileID: 1274802010}
   m_Layer: 1
   m_Name: Cube (5)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -15042,7 +15041,7 @@ GameObject:
   - component: {fileID: 1301397942}
   m_Layer: 0
   m_Name: Plane (9)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15134,7 +15133,7 @@ GameObject:
   - component: {fileID: 1309228106}
   m_Layer: 0
   m_Name: Plane (3)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15226,7 +15225,7 @@ GameObject:
   - component: {fileID: 1311966979}
   m_Layer: 0
   m_Name: Plane (4)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15317,7 +15316,7 @@ GameObject:
   - component: {fileID: 1323993047}
   m_Layer: 1
   m_Name: Cube (38)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -15395,7 +15394,7 @@ GameObject:
   - component: {fileID: 1328372037}
   m_Layer: 0
   m_Name: Plane (13)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15486,7 +15485,7 @@ GameObject:
   - component: {fileID: 1329854175}
   m_Layer: 1
   m_Name: Cube (49)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -15564,7 +15563,7 @@ GameObject:
   - component: {fileID: 1341584459}
   m_Layer: 0
   m_Name: Plane (12)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15763,7 +15762,7 @@ GameObject:
   - component: {fileID: 1347835121}
   m_Layer: 1
   m_Name: Cube (37)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -15950,7 +15949,7 @@ GameObject:
   - component: {fileID: 1382070249}
   m_Layer: 0
   m_Name: Plane (20)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16041,7 +16040,7 @@ GameObject:
   - component: {fileID: 1383182367}
   m_Layer: 1
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -16225,7 +16224,7 @@ GameObject:
   - component: {fileID: 1393758526}
   m_Layer: 1
   m_Name: Cube (12)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -16302,7 +16301,7 @@ GameObject:
   - component: {fileID: 1398912785}
   m_Layer: 1
   m_Name: Cube (21)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -16514,7 +16513,7 @@ GameObject:
   - component: {fileID: 1421486960}
   m_Layer: 1
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -16624,7 +16623,7 @@ GameObject:
   - component: {fileID: 1425316208}
   m_Layer: 1
   m_Name: Cube (26)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -16797,7 +16796,7 @@ GameObject:
   - component: {fileID: 1435553540}
   m_Layer: 1
   m_Name: Cube (36)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -16874,7 +16873,7 @@ GameObject:
   - component: {fileID: 1436285153}
   m_Layer: 1
   m_Name: Cube (27)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -17110,7 +17109,7 @@ GameObject:
   - component: {fileID: 1440861005}
   m_Layer: 1
   m_Name: Cube (47)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -17187,7 +17186,7 @@ GameObject:
   - component: {fileID: 1461897510}
   m_Layer: 1
   m_Name: Cube (48)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -17298,7 +17297,7 @@ GameObject:
   - component: {fileID: 1490342514}
   m_Layer: 1
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -17375,7 +17374,7 @@ GameObject:
   - component: {fileID: 1491306704}
   m_Layer: 1
   m_Name: Cube (16)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -17482,7 +17481,7 @@ GameObject:
   - component: {fileID: 1494317126}
   m_Layer: 1
   m_Name: Cube (20)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -17677,7 +17676,7 @@ GameObject:
   - component: {fileID: 1501680631}
   m_Layer: 1
   m_Name: Cube (25)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -17772,7 +17771,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 579458174}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17943,7 +17942,7 @@ RectTransform:
   - {fileID: 520744589}
   - {fileID: 1111549345}
   m_Father: {fileID: 579458174}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.25, y: 0}
   m_AnchorMax: {x: 0.25, y: 0}
@@ -18054,7 +18053,7 @@ GameObject:
   - component: {fileID: 1515164301}
   m_Layer: 1
   m_Name: Cube (1)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -18131,7 +18130,7 @@ GameObject:
   - component: {fileID: 1517826060}
   m_Layer: 1
   m_Name: Cube (14)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -18209,7 +18208,7 @@ GameObject:
   - component: {fileID: 1533872315}
   m_Layer: 0
   m_Name: Plane (6)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18606,7 +18605,7 @@ GameObject:
   - component: {fileID: 1559008507}
   m_Layer: 1
   m_Name: Cube (14)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -18683,7 +18682,7 @@ GameObject:
   - component: {fileID: 1560970989}
   m_Layer: 1
   m_Name: Cube (19)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -18825,7 +18824,7 @@ GameObject:
   - component: {fileID: 1608083734}
   m_Layer: 1
   m_Name: Cube (9)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -19011,7 +19010,7 @@ GameObject:
   - component: {fileID: 1625886039}
   m_Layer: 1
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -19211,7 +19210,7 @@ GameObject:
   - component: {fileID: 1646284444}
   m_Layer: 1
   m_Name: Cube (33)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -19288,7 +19287,7 @@ GameObject:
   - component: {fileID: 1654297087}
   m_Layer: 1
   m_Name: Cube (4)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -19365,7 +19364,7 @@ GameObject:
   - component: {fileID: 1666450517}
   m_Layer: 1
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -19480,7 +19479,7 @@ GameObject:
   - component: {fileID: 1669102589}
   m_Layer: 1
   m_Name: Cube (45)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -19716,7 +19715,7 @@ GameObject:
   - component: {fileID: 1698265570}
   m_Layer: 1
   m_Name: Cube (23)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -19814,131 +19813,6 @@ Transform:
   m_Father: {fileID: 583476663}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1712828134
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 579458174}
-    m_Modifications:
-    - target: {fileID: 1141901446306241389, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_Name
-      value: Crosshair
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 68ab4f22f06328144bdafce5bf466af1, type: 3}
---- !u!224 &1712828135 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 918784182571024359, guid: 68ab4f22f06328144bdafce5bf466af1,
-    type: 3}
-  m_PrefabInstance: {fileID: 1712828134}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1712948617
 GameObject:
   m_ObjectHideFlags: 0
@@ -19952,7 +19826,7 @@ GameObject:
   - component: {fileID: 1712948619}
   m_Layer: 1
   m_Name: Cube (19)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -20065,7 +19939,7 @@ GameObject:
   - component: {fileID: 1753472833}
   m_Layer: 0
   m_Name: Plane (2)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20265,7 +20139,7 @@ GameObject:
   - component: {fileID: 1764051529}
   m_Layer: 0
   m_Name: Plane (9)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20356,7 +20230,7 @@ GameObject:
   - component: {fileID: 1764936766}
   m_Layer: 1
   m_Name: Cube (39)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -20434,7 +20308,7 @@ GameObject:
   - component: {fileID: 1772409877}
   m_Layer: 0
   m_Name: Plane (12)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20559,7 +20433,7 @@ GameObject:
   - component: {fileID: 1791085627}
   m_Layer: 1
   m_Name: Cube (17)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -20670,7 +20544,7 @@ GameObject:
   - component: {fileID: 1793666208}
   m_Layer: 0
   m_Name: Plane (2)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21019,7 +20893,7 @@ GameObject:
   - component: {fileID: 1799436918}
   m_Layer: 1
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -21097,7 +20971,7 @@ GameObject:
   - component: {fileID: 1799686413}
   m_Layer: 0
   m_Name: Plane (7)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21188,7 +21062,7 @@ GameObject:
   - component: {fileID: 1806549403}
   m_Layer: 1
   m_Name: Cube (29)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -21265,7 +21139,7 @@ GameObject:
   - component: {fileID: 1809416405}
   m_Layer: 1
   m_Name: Cube (26)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -21343,7 +21217,7 @@ GameObject:
   - component: {fileID: 1809532632}
   m_Layer: 0
   m_Name: Plane (8)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21434,7 +21308,7 @@ GameObject:
   - component: {fileID: 1811587888}
   m_Layer: 1
   m_Name: Cube (11)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -21511,7 +21385,7 @@ GameObject:
   - component: {fileID: 1820378116}
   m_Layer: 1
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -21589,7 +21463,7 @@ GameObject:
   - component: {fileID: 1820677319}
   m_Layer: 0
   m_Name: Plane (7)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21680,7 +21554,7 @@ GameObject:
   - component: {fileID: 1831233486}
   m_Layer: 1
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -21758,7 +21632,7 @@ GameObject:
   - component: {fileID: 1836211374}
   m_Layer: 0
   m_Name: Plane (6)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21850,7 +21724,7 @@ GameObject:
   - component: {fileID: 1841718760}
   m_Layer: 0
   m_Name: Plane (7)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21942,7 +21816,7 @@ GameObject:
   - component: {fileID: 1863121762}
   m_Layer: 0
   m_Name: Plane (4)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22033,7 +21907,7 @@ GameObject:
   - component: {fileID: 1863323501}
   m_Layer: 1
   m_Name: Cube (6)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -22111,7 +21985,7 @@ GameObject:
   - component: {fileID: 1865648525}
   m_Layer: 0
   m_Name: Plane (14)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22203,7 +22077,7 @@ GameObject:
   - component: {fileID: 1867992914}
   m_Layer: 0
   m_Name: Plane (11)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22295,7 +22169,7 @@ GameObject:
   - component: {fileID: 1870182880}
   m_Layer: 0
   m_Name: Plane (10)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22703,7 +22577,7 @@ GameObject:
   - component: {fileID: 1896835162}
   m_Layer: 0
   m_Name: Plane (13)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22795,7 +22669,7 @@ GameObject:
   - component: {fileID: 1899424617}
   m_Layer: 0
   m_Name: Plane (8)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22886,7 +22760,7 @@ GameObject:
   - component: {fileID: 1902150702}
   m_Layer: 1
   m_Name: Cube (7)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -22964,7 +22838,7 @@ GameObject:
   - component: {fileID: 1913701242}
   m_Layer: 0
   m_Name: Plane (8)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23056,7 +22930,7 @@ GameObject:
   - component: {fileID: 1923469497}
   m_Layer: 0
   m_Name: Plane (5)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23148,7 +23022,7 @@ GameObject:
   - component: {fileID: 1927705996}
   m_Layer: 0
   m_Name: Plane (7)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23240,7 +23114,7 @@ GameObject:
   - component: {fileID: 1930203724}
   m_Layer: 0
   m_Name: Plane (16)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23332,7 +23206,7 @@ GameObject:
   - component: {fileID: 1938546473}
   m_Layer: 0
   m_Name: Plane (1)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23456,7 +23330,7 @@ GameObject:
   - component: {fileID: 1952619749}
   m_Layer: 1
   m_Name: Cube (8)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -23810,7 +23684,7 @@ GameObject:
   - component: {fileID: 1978081451}
   m_Layer: 1
   m_Name: Cube (14)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -23887,7 +23761,7 @@ GameObject:
   - component: {fileID: 2000950137}
   m_Layer: 1
   m_Name: Cube (14)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -24082,7 +23956,7 @@ GameObject:
   - component: {fileID: 2014981302}
   m_Layer: 1
   m_Name: Cube (35)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -24492,6 +24366,11 @@ PrefabInstance:
       propertyPath: m_Text
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7191103642396599539, guid: 1eed2f9738f2a7345afd9a48bebb2620,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: a6bc66db81aa1754a8c99afdcd86b7f6, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eed2f9738f2a7345afd9a48bebb2620, type: 3}
 --- !u!224 &2027417021 stripped
@@ -24672,7 +24551,7 @@ GameObject:
   - component: {fileID: 2035524220}
   m_Layer: 0
   m_Name: Plane (12)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25042,6 +24921,11 @@ PrefabInstance:
       propertyPath: m_Text
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7191103642396599539, guid: 1eed2f9738f2a7345afd9a48bebb2620,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 8dbe13e74f7bdc54c850b6c50ab67e09, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1eed2f9738f2a7345afd9a48bebb2620, type: 3}
 --- !u!224 &2046469491 stripped
@@ -25064,7 +24948,7 @@ GameObject:
   - component: {fileID: 2047681658}
   m_Layer: 0
   m_Name: Plane (1)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25155,7 +25039,7 @@ GameObject:
   - component: {fileID: 2060929510}
   m_Layer: 1
   m_Name: Cube (46)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -25264,7 +25148,7 @@ GameObject:
   - component: {fileID: 2085773759}
   m_Layer: 1
   m_Name: Cube (13)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40
@@ -25372,7 +25256,7 @@ GameObject:
   - component: {fileID: 2088882639}
   m_Layer: 0
   m_Name: Plane (22)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25464,7 +25348,7 @@ GameObject:
   - component: {fileID: 2097346038}
   m_Layer: 0
   m_Name: Plane (18)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25573,7 +25457,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 579458174}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25885,7 +25769,7 @@ GameObject:
   - component: {fileID: 2140758904}
   m_Layer: 1
   m_Name: Cube (10)
-  m_TagString: Untagged
+  m_TagString: PathCollision
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 40

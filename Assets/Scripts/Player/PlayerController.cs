@@ -7,9 +7,11 @@ public class PlayerController : MonoBehaviour {
     
     private float _rot;
     private CharacterController _controller;
+    private BuildingScript _building;
 
     private void Start() {
         _controller = GetComponent<CharacterController>();
+        _building = GetComponent<BuildingScript>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -18,11 +20,10 @@ public class PlayerController : MonoBehaviour {
 
         /* Character Movement */
         if (!anim.GetBool("Attack")) {
-            /*
-            if (Input.GetMouseButton(0)) {
+            
+            if (Input.GetMouseButton(0) && !_building.IsBuilding) {
                 SetAttack();
-            } else*/
-            if (Input.GetKey(KeyCode.W) && (anim.GetBool("MoveFwd") || anim.GetBool("Idle"))) {
+            } else if (Input.GetKey(KeyCode.W) && (anim.GetBool("MoveFwd") || anim.GetBool("Idle"))) {
                 SetMoveFwd();
                 _controller.Move(speed * Time.deltaTime * transform.forward);
             } else if (Input.GetKey(KeyCode.S) && (anim.GetBool("MoveBack") || anim.GetBool("Idle"))) {
@@ -34,9 +35,7 @@ public class PlayerController : MonoBehaviour {
             } else if (Input.GetKey(KeyCode.D) && (anim.GetBool("MoveRight") || anim.GetBool("Idle"))) {
                 SetMoveRight();
                 _controller.Move(speed * Time.deltaTime * transform.right);
-            }/* else if (Input.GetMouseButton(0)) {
-                SetAttack();
-            }*/ else {
+            } else {
                 SetIdle();
             }
         }
@@ -45,16 +44,6 @@ public class PlayerController : MonoBehaviour {
 		_rot += Input.GetAxis ("Mouse X") * rotSpeed * Time.deltaTime;
 		transform.localRotation = Quaternion.Euler (0, _rot, 0);
 	}
-
-    /*private void SetJumping() {
-        anim.SetBool("Jumping", true);
-
-        anim.SetBool("Idle", false);
-        anim.SetBool("MoveFwd", false);
-        anim.SetBool("MoveLeft", false);
-        anim.SetBool("MoveRight", false);
-        anim.SetBool("MoveBack", false);
-    }*/
     private void SetMoveFwd() {
         anim.SetBool("MoveFwd", true);
 
@@ -97,7 +86,7 @@ public class PlayerController : MonoBehaviour {
         anim.SetBool("MoveBack", false);
 
     }
-    /*private void SetAttack() {
+    private void SetAttack() {
         anim.SetBool("Attack", true);
 
         anim.SetBool("Idle", false);
@@ -105,5 +94,5 @@ public class PlayerController : MonoBehaviour {
         anim.SetBool("MoveLeft", false);
         anim.SetBool("MoveRight", false);
         anim.SetBool("MoveBack", false);
-    }*/
+    }
 }

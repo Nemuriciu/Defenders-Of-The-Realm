@@ -18,8 +18,8 @@ public class BuildingScript : MonoBehaviour {
     private GameObject _instance;
     private Vector3 _instancePos;
     private int _selection;
-    private bool _isBuilding;
-    
+    public bool IsBuilding { get; private set; }
+
     private TowerBuild _towerBuild;
     private PhaseScript _phaseScript;
     private ErrorMessage _err;
@@ -36,13 +36,13 @@ public class BuildingScript : MonoBehaviour {
         /* RMB cancels current construction */
         if (Input.GetMouseButton(1)) {
             if (_instance) {
-                _isBuilding = false;
+                IsBuilding = false;
                 Destroy(_instance);
             }
         }
         
         /* Update tower position each frame */
-        if (_isBuilding) {
+        if (IsBuilding) {
             _instancePos = transform.position + (transform.forward * 5);
 
             Ray ray = new Ray(_instancePos + Vector3.up * 10, Vector3.down);
@@ -112,7 +112,7 @@ public class BuildingScript : MonoBehaviour {
                         }
                     }
                     
-                    _isBuilding = false;
+                    IsBuilding = false;
                     Destroy(_instance);
 
                     int cost = costs[_selection - 1];
@@ -130,7 +130,7 @@ public class BuildingScript : MonoBehaviour {
                     return;
                 }
             
-                _isBuilding = true;
+                IsBuilding = true;
                 _selection = 1;
                 _instancePos = transform.position + (transform.forward * 5);
                 _instance = Instantiate(crossbowBuild, _instancePos, Quaternion.identity, _twrGroup);
@@ -143,7 +143,7 @@ public class BuildingScript : MonoBehaviour {
                     return;
                 }
             
-                _isBuilding = true;
+                IsBuilding = true;
                 _selection = 2;
                 _instancePos = transform.position + (transform.forward * 5);
                 _instance = Instantiate(crystalBuild, _instancePos, Quaternion.identity, _twrGroup);
@@ -156,7 +156,7 @@ public class BuildingScript : MonoBehaviour {
                     return;
                 }
             
-                _isBuilding = true;
+                IsBuilding = true;
                 _selection = 3;
                 _instancePos = transform.position + (transform.forward * 5);
                 _instance = Instantiate(hourglassBuild, _instancePos, Quaternion.identity, _twrGroup);
