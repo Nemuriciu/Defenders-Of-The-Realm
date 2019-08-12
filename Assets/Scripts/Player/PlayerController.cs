@@ -20,7 +20,6 @@ public class PlayerController : MonoBehaviour {
 
         /* Character Movement */
         if (!anim.GetBool("Attack")) {
-            
             if (Input.GetMouseButton(0) && !_building.IsBuilding) {
                 SetAttack();
             } else if (Input.GetKey(KeyCode.W) && (anim.GetBool("MoveFwd") || anim.GetBool("Idle"))) {
@@ -43,7 +42,7 @@ public class PlayerController : MonoBehaviour {
 		/* Character Rotation */
 		_rot += Input.GetAxis ("Mouse X") * rotSpeed * Time.deltaTime;
 		transform.localRotation = Quaternion.Euler (0, _rot, 0);
-	}
+    }
     private void SetMoveFwd() {
         anim.SetBool("MoveFwd", true);
 

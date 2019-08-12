@@ -42,6 +42,7 @@ public class Damager : MonoBehaviour {
 			_healthbar.RemoveHealthbar();
 	        isDead = true;
 	        tag = "Untagged";
+	        Stats.monstersKilled++;
 	        _waveScript.enemyCount--;
 	        _waveScript.Display();
 
@@ -51,8 +52,8 @@ public class Damager : MonoBehaviour {
 	        SoulScript soulScript = soul.GetComponent<SoulScript>();
 	        
 	        int value = Mathf.RoundToInt(maxHealth / 55.0f);
-	        Debug.Log(value);
 	        soulScript.SetValue(value);
+	        Stats.goldReceived += value;
 		}
 	}
 

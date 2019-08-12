@@ -2,6 +2,11 @@
     public const int MaxGold = 1000;
     public const int MaxEnergy = 750;
     public const int MaxArtefact = 2000;
+
+    public static int monstersKilled;
+    public static int playerDamage;
+    public static int towerDamage;
+    public static int goldReceived;
     
     private static int _playerGold;
     public static int PlayerGold {

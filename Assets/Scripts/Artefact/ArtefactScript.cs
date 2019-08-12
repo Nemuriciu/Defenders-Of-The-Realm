@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class ArtefactScript : MonoBehaviour {
@@ -9,6 +10,15 @@ public class ArtefactScript : MonoBehaviour {
     private void Start() {
         _artefactBar = GameObject.Find("ArtefactBar").GetComponentInChildren<ProgressBar>();
         _eventMessage = GameObject.Find("EventBox").GetComponent<EventMessage>();
+    }
+
+    private void Update() {
+        /* Defeat */
+        if (Stats.ArtefactHealth <= 0) {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            SceneManager.LoadScene("DefeatScene");
+        }
     }
 
     private void OnTriggerEnter(Collider other) {

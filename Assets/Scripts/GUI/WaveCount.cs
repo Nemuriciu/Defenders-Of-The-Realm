@@ -2,7 +2,7 @@
 using UnityEngine;
 
 public class WaveCount : MonoBehaviour {
-    [HideInInspector] public int currentWave, maxWave = 10, enemyCount;
+    [HideInInspector] public int currentWave, maxWave = 5, enemyCount;
     
     private TextMeshProUGUI _currentWaveText;
     private TextMeshProUGUI _enemyCountText;

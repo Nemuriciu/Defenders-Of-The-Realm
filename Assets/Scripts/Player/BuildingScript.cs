@@ -60,7 +60,7 @@ public class BuildingScript : MonoBehaviour {
             if (_phaseScript.GetPhase() == PhaseScript.Phase.Loading) return;    
             
             /* Confirm construction */
-            if (Input.GetMouseButton(0)) {
+            if (Input.GetMouseButtonUp(0)) {
                 if (_towerBuild.IsValid()) {
                     /* Build Phase => Construction is instant */
                     if (_phaseScript.GetPhase() == PhaseScript.Phase.Build) {
@@ -112,12 +112,12 @@ public class BuildingScript : MonoBehaviour {
                         }
                     }
                     
-                    IsBuilding = false;
-                    Destroy(_instance);
-
                     int cost = costs[_selection - 1];
                     Stats.PlayerGold -= cost;
                     _slider.ChangeValue(-cost);
+                    
+                    Destroy(_instance);
+                    IsBuilding = false;
                 }
                 else _err.Show("Invalid location.");
             }
@@ -164,4 +164,5 @@ public class BuildingScript : MonoBehaviour {
             }
         }
     }
+
 }

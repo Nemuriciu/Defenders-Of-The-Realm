@@ -3,88 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="e87b2577-677b-4b9e-b08c-a3d7de1a6e8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Attack.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Attack.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Idle.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/Idle.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/JumpAir.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/JumpAir.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/JumpAirAttack.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/JumpAirAttack.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/JumpEnd.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/JumpEnd.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/JumpStart.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/JumpStart.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/JumpUp.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/JumpUp.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/JumpUpAttack.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/JumpUpAttack.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/MoveBack.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/MoveBack.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/MoveFwd.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/MoveFwd.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/MoveLeft.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/MoveLeft.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/MoveRight.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/MoveRight.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/PlayerController.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Animations/PlayerController.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Materials/PolyArtMaskTint 1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Materials/PolyArtMaskTint 1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Materials/PolyArtMaskTint.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Materials/PolyArtMaskTint.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Materials/PolyArtStandardMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Materials/PolyArtStandardMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Materials/Stage.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Materials/Stage.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesh.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesh/PolyArtWizardMesh.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesh/PolyArtWizardMesh.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesh/Staff01PolyArt.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesh/Staff01PolyArt.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesh/Staff02Polyart.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesh/Staff02Polyart.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesh/Staff03PolyArt.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesh/Staff03PolyArt.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesh/Stage.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Mesh/Stage.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Prefabs/PolyArtWizardMaskTintMat.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Prefabs/PolyArtWizardMaskTintMat.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Prefabs/PolyArtWizardStandardMat.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Prefabs/PolyArtWizardStandardMat.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Prefabs/Staff01PolyArt.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Prefabs/Staff01PolyArt.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Prefabs/Staff02Polyart.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Prefabs/Staff02Polyart.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Prefabs/Staff03PolyArt.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Prefabs/Staff03PolyArt.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Shader/PolyArtMaskTint.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Shader/PolyArtMaskTint.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/ForPBRMaskTintShader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/ForPBRMaskTintShader/PolyArtAlbedo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/ForPBRMaskTintShader/PolyArtAlbedo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/ForPBRMaskTintShader/PolyArtMask.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/ForPBRMaskTintShader/PolyArtMask.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/ForStandardShader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/ForStandardShader/polyArtTex.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Textures/ForStandardShader/polyArtTex.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Scripts/StartButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/Scripts/StartButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Animator/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Animator/PlayerAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Artefact/ArtefactScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Artefact/ArtefactScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/WaveCount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/WaveCount.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/BuildingScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/BuildingScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/CrossbowIcon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/CrossbowIcon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Global/WaveSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Global/WaveSpawn.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Materials/FX/GB_splash_FX_blended_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Materials/FX/GB_splash_FX_blended_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/_Global/PlatformSpawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/_Global/PhaseScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerTwrInteract.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/StatsMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/_Global/WaveSpawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Animator/PlayerAttack.cs" root0="FORCE_HIGHLIGHTING" />
@@ -117,16 +53,21 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Creatures/Navigation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Creatures/HealthbarRoot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/ExitToMainMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/TextTypeList.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/WaveCount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/DifficultySelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Creatures/Healthbar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/StartButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/ErrorMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/GameScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/MenuButtons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dropables/SoulScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/ContinueButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/_Global/DefeatScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/TextTypeList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/LoadingScene.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/WaveCount.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/ErrorMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/FloatingTextComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/SimpleRotate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/GameMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/GameMenuButtons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/ProgressBar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -148,13 +89,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Towers/TowerTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Player/BuildingScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Artefact/ArtefactScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Particle Attractor by Moonflower Carnivore/Scripts/rotation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Particle Attractor by Moonflower Carnivore/Scripts/ParticleAttractor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/TrailParticle/ParticleAttractor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/TrailParticle/Rotation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/TrailParticle/TrailNavigation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Portal/TrailNavigation.cs" />
         <option value="$PROJECT_DIR$/Assets/_Prefabs/Trail/Shaders/ParticlesAdditiveIntensify.shader" />
@@ -172,33 +106,40 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Creatures/Healthbar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/FloatingText/FloatingText.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/MenuButtons.cs" />
-        <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/StartButton.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/ExitToMainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GameMenuButtons.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/CloseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/DifficultySelection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GameMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/WaveSpawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/Tower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/TowerTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/_Global/PhaseScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towerssss/BuildAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towerssss/Tower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/CrystalBullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/ImpactScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/_Global/PlatformSpawn.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/HourglassTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/TowerBuild.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ProgressBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTwrInteract.cs" />
+        <option value="$PROJECT_DIR$/Assets/Magic Spell V2/Scripts/SkillSetting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Animator/PlayerAttack.cs" />
+        <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/StartButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/SimpleRotate.cs" />
+        <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/LoadingScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/BuildingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Magic Spell V2/Scripts/SkillSetting.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/WaveCount.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/DefeatScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ContinueButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Artefact/ArtefactScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/StatsMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/WaveSpawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerProjectile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Animator/PlayerAttack.cs" />
       </list>
     </option>
   </component>
@@ -211,6 +152,7 @@
   </component>
   <component name="ProjectId" id="1PCzn5N4KUw1Nptw2ygohbwQALl" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
@@ -284,6 +226,7 @@
       <workItem from="1565223115093" duration="3115000" />
       <workItem from="1565286017472" duration="18903000" />
       <workItem from="1565393057853" duration="15320000" />
+      <workItem from="1565560235058" duration="10749000" />
     </task>
     <servers />
   </component>
@@ -297,7 +240,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

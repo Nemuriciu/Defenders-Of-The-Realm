@@ -22,13 +22,13 @@ public class WaveSpawn : MonoBehaviour {
         _parent = GameObject.Find("Creatures").transform;
         _eventMessage = GameObject.Find("EventBox").GetComponent<EventMessage>();
         _mobPool = new ArrayList();
-        //_spawnPoints = new ArrayList();
     }
 
     private void Update() {
         if (!_flag || _waveBreak) return;
         
         if (waveScript.enemyCount == 0) {
+            
             /* Victory */
             if (waveScript.currentWave == waveScript.maxWave) {
                 // TODO:

@@ -13,6 +13,6 @@ public class StartButton : MonoBehaviour, IPointerClickHandler {
         _audio.Play();
 
         if (Info.selectedDifficulty != null)
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("LoadingScene");
     }
 }

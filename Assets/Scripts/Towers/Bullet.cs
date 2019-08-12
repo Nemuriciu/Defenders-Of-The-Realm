@@ -29,7 +29,9 @@ public class Bullet : MonoBehaviour {
     private void OnTriggerEnter (Collider other) {
         if (other.gameObject == _target) {
             if (!_damager.isDead && twr) {
-                _damager.Hit(Random.Range(twr.damage.min, twr.damage.max));
+                int damage = Random.Range(twr.damage.min, twr.damage.max);
+                _damager.Hit(damage);
+                Stats.towerDamage += damage;
 
                 switch (twr.type) {
                     case "Crossbow":

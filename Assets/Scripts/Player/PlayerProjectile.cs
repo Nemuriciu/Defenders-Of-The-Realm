@@ -41,9 +41,12 @@ public class PlayerProjectile : MonoBehaviour {
 
 		if (other.CompareTag("Enemy")) {
 			Damager damager = other.GetComponent<Damager>();
-			// TODO: Player Damage value
-			if (!damager.isDead) 
-				damager.Hit(Random.Range(1, 2));
+
+			if (!damager.isDead) {
+				int damage = Random.Range(1, 2);
+				damager.Hit(damage);
+				Stats.playerDamage += damage;
+			}
 		}
 		
 		Destroy(gameObject);
