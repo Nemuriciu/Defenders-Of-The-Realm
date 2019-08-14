@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5072858731791387023}
   m_Layer: 0
   m_Name: MeshCollider
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 5099692545573766702}
   - component: {fileID: 5108991392633149442}
   - component: {fileID: 5095294110843725666}
-  - component: {fileID: 5095294110843725669}
+  - component: {fileID: 4419913561741231510}
   - component: {fileID: 5126745714334904986}
   - component: {fileID: 5095294110843725668}
   m_Layer: 0
@@ -311,7 +311,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 3, z: 2}
   m_Center: {x: 0, y: 1.5, z: 0}
---- !u!82 &5095294110843725669
+--- !u!82 &4419913561741231510
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -321,18 +321,18 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 40f9b728d75d68f4ab3692fa40d4938b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4401a029a5310f24a94bfd0f5a795d46, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
-  DopplerLevel: 1
+  DopplerLevel: 0
   MinDistance: 4
-  MaxDistance: 75
+  MaxDistance: 40
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -422,11 +422,11 @@ MonoBehaviour:
   type: Crystal
   tier: Tier 3
   damage:
-    min: 100
-    max: 200
-  sellValue: 200
+    min: 300
+    max: 400
+  sellValue: 250
   upgradeValue: 0
-  attackSpeed: 2.2
+  attackSpeed: 2.25
   shootElement: {fileID: 5089762331206175272}
   pivot: {fileID: 0}
   bullet: {fileID: 1733891647306646, guid: 76b40a1f779132c47b639525d8b00cac, type: 3}

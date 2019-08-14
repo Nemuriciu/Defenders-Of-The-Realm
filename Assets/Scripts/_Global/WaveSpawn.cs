@@ -7,31 +7,35 @@ public class WaveSpawn : MonoBehaviour {
     public GameObject lichPrefab;
     public GameObject gruntPrefab;
 
-    private bool _flag, _waveBreak, _newWave;
+    private bool _flag, _waveBreak, _newWave, _victory;
     private int _mobCount;
     private Transform _parent;
     private ArrayList _mobPool;
     private ArrayList _spawnPoints;
     private EventMessage _eventMessage;
+    private StatsMenu _statsMenu;
 
     private int _footmanHealth = 250;
     private int _lichHealth = 800;
     private int _gruntHealth = 1750;
+    private float _monsterSpeed = 3.0f;
     
     private void Start() {
         _parent = GameObject.Find("Creatures").transform;
         _eventMessage = GameObject.Find("EventBox").GetComponent<EventMessage>();
+        _statsMenu = GameObject.Find("Canvas").GetComponent<StatsMenu>();
         _mobPool = new ArrayList();
     }
 
     private void Update() {
-        if (!_flag || _waveBreak) return;
+        if (!_flag || _waveBreak || _victory) return;
         
         if (waveScript.enemyCount == 0) {
             
             /* Victory */
             if (waveScript.currentWave == waveScript.maxWave) {
-                // TODO:
+                _victory = true;
+                StartCoroutine(Victory());
                 return;
             }
             
@@ -105,6 +109,7 @@ public class WaveSpawn : MonoBehaviour {
                         spawnPoint.rotation, _parent);
                     damager = instance.GetComponent<Damager>();
                     damager.health = damager.maxHealth = _footmanHealth;
+                    damager.speed = _monsterSpeed;
                     break;
                 
                 case "Lich":
@@ -113,6 +118,7 @@ public class WaveSpawn : MonoBehaviour {
                         spawnPoint.rotation, _parent);
                     damager = instance.GetComponent<Damager>();
                     damager.health = damager.maxHealth = _lichHealth;
+                    damager.speed = _monsterSpeed;
                     break;
                 
                 case "Grunt":
@@ -121,11 +127,18 @@ public class WaveSpawn : MonoBehaviour {
                         spawnPoint.rotation, _parent);
                     damager = instance.GetComponent<Damager>();
                     damager.health = damager.maxHealth = _gruntHealth;
+                    damager.speed = _monsterSpeed;
                     break;
             }
             
-            yield return new WaitForSeconds(Random.Range(1.0f, 4.0f));
+            yield return new WaitForSeconds(Random.Range(1.0f, 2.5f));
         }
+    }
+
+    private IEnumerator Victory() {
+        yield return new WaitForSeconds(5);
+        
+        _statsMenu.ActivatePanel(true);
     }
     
     public void Begin() {
@@ -137,7 +150,6 @@ public class WaveSpawn : MonoBehaviour {
         _spawnPoints = spawnPoints;
     }
 
-    /* TODO: Change values based on difficulty (multiple lanes) */
     private void GenerateWave1() {
         _mobCount = 30;
 
@@ -161,7 +173,7 @@ public class WaveSpawn : MonoBehaviour {
         for (int i = 0; i < lichCount; i++)
             _mobPool.Add("Lich");
 
-        _footmanHealth += Mathf.RoundToInt(_footmanHealth * 0.15f);
+        _footmanHealth += Mathf.RoundToInt(_footmanHealth * 0.25f);
     }
     
     private void GenerateWave3() {
@@ -178,8 +190,8 @@ public class WaveSpawn : MonoBehaviour {
         for (int i = 0; i < gruntCount; i++)
             _mobPool.Add("Grunt");
         
-        _footmanHealth += Mathf.RoundToInt(_footmanHealth * 0.15f);
-        _lichHealth += Mathf.RoundToInt(_lichHealth * 0.15f);
+        _footmanHealth += Mathf.RoundToInt(_footmanHealth * 0.25f);
+        _lichHealth += Mathf.RoundToInt(_lichHealth * 0.25f);
     }
     
     private void GenerateWave4() {
@@ -196,6 +208,8 @@ public class WaveSpawn : MonoBehaviour {
         for (int i = 0; i < gruntCount; i++)
             _mobPool.Add("Grunt");
         
+        _footmanHealth += Mathf.RoundToInt(_footmanHealth * 0.5f);
+        _lichHealth += Mathf.RoundToInt(_lichHealth * 0.25f);
         _gruntHealth += Mathf.RoundToInt(_gruntHealth * 0.25f);
     }
     
@@ -213,7 +227,7 @@ public class WaveSpawn : MonoBehaviour {
         for (int i = 0; i < gruntCount; i++)
             _mobPool.Add("Grunt");
         
-        _footmanHealth += Mathf.RoundToInt(_footmanHealth * 0.15f);
+        _footmanHealth += Mathf.RoundToInt(_footmanHealth * 0.25f);
         _lichHealth += Mathf.RoundToInt(_lichHealth * 0.25f);
     }
 }

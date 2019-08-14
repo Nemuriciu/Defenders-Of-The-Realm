@@ -19,16 +19,21 @@ public class PhaseScript : MonoBehaviour {
     private Phase _phase;
     private bool _scaleDir, _startedWave;
     private RectTransform _boxTransform;
-    private AudioSource _audioSource;
+    private AudioScript _audioScript;
+    private AudioSource _audio;
     private WaveSpawn _waveSpawn;
-    
-    
+    private ProgressBar _buildBar;
 
     private void Start() {
-        _audioSource = GetComponent<AudioSource>();
         _boxTransform = phaseBox.rectTransform;
-        _waveSpawn = gameObject.GetComponent<WaveSpawn>();
+        _audioScript = GetComponent<AudioScript>();
+        _audio = GameObject.Find("Canvas").GetComponent<AudioSource>();
+        _waveSpawn = GetComponent<WaveSpawn>();
+        _buildBar = GameObject.Find("BuildBar").GetComponentInChildren<ProgressBar>();
 
+        if (IntroMusic.Instance) 
+            Destroy(IntroMusic.Instance.gameObject);
+        
         _phase = Phase.Begin;
         phaseBox.text = "Press [B] to start build phase";
     }
@@ -51,12 +56,14 @@ public class PhaseScript : MonoBehaviour {
                         if (trailSpawner.gameObject.activeSelf)
                             trailSpawner.enabled = true;
                     }
+                    
+                    _buildBar.ChangeValue(Stats.PlayerGold);
 
                     StartCoroutine(ShowEvent(Phase.Build,
                         "Build defenses and press [B] when ready"));
-                    
-                    _audioSource.clip = sounds[0];
-                    //_audioSource.Play();
+
+                    _audio.clip = sounds[0];
+                    _audio.Play();
                 }
                 break;
             
@@ -74,7 +81,9 @@ public class PhaseScript : MonoBehaviour {
                     
                     StartCoroutine(ShowEvent(Phase.Wave, string.Empty));
                     
-                    // Audio.Play();
+                    _audio.clip = sounds[1];
+                    _audio.Play();
+                    _audioScript.StartCombat();
                 }
                 break;
             

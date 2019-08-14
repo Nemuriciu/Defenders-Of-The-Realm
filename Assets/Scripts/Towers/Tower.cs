@@ -50,7 +50,7 @@ public class Tower : MonoBehaviour {
 			
 			bt.SetTarget(target);
 			bt.twr = this;
-			//_audioSource.Play();
+			_audioSource.Play();
 			yield return new WaitForSeconds(attackSpeed);
 		}
 		

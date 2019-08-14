@@ -3,26 +3,31 @@ using UnityEngine.AI;
 
 public class Damager : MonoBehaviour {
 	public int health, maxHealth;
+	public float speed;
 	public bool isDead;
-	public GameObject soulPrefab;
 
 	private Camera _cam;
+	private AudioSource _audio;
 	private Animator _anim;
 	private Healthbar _healthbar;
+	private BoxCollider _collider;
 	private const float FallSpeed = 0.5f;
 	private WaveCount _waveScript;
-	
+	private ProgressBar _buildBar;
+
 	private NavMeshAgent _nav;
 	private float _initSpeed;
 	private GameObject _slowInstance;
-	public int SlowCount { get; private set; }
+	private int _slowCount;
 
 	private void Start() {
 		_anim = GetComponent<Animator>();
 		_cam = Camera.main;
+		_audio = GetComponent<AudioSource>();
 		_waveScript = GameObject.Find("WaveCount").GetComponent<WaveCount>();
+		_buildBar = GameObject.Find("BuildBar").GetComponentInChildren<ProgressBar>();
+		_collider = GetComponent<BoxCollider>();
 		_nav = GetComponent<NavMeshAgent>();
-		_initSpeed = _nav.speed;
 	}
 
 	private void Update () {
@@ -34,35 +39,38 @@ public class Damager : MonoBehaviour {
 					transform.Translate(Time.deltaTime * FallSpeed * Vector3.down);
 			}
 
-			if (SlowCount > 0)
+			if (_slowCount > 0)
 				Destroy(_slowInstance);
 			
 		} else if (health <= 0) {
 	        _anim.SetTrigger("Dead");
 			_healthbar.RemoveHealthbar();
+			_collider.enabled = false;
 	        isDead = true;
 	        tag = "Untagged";
 	        Stats.monstersKilled++;
 	        _waveScript.enemyCount--;
 	        _waveScript.Display();
-
-	        GameObject soul = Instantiate(soulPrefab, 
-		        transform.position + new Vector3(0, Random.Range(0.25f, 0.4f), 0),
-		        Quaternion.identity, GameObject.Find("Drops").transform);
-	        SoulScript soulScript = soul.GetComponent<SoulScript>();
+	        _audio.Play();
 	        
-	        int value = Mathf.RoundToInt(maxHealth / 55.0f);
-	        soulScript.SetValue(value);
+	        /* Drop Gold */
+	        int value = Mathf.RoundToInt(maxHealth / 30.0f);
+	        Debug.Log(value);
+	        Stats.PlayerGold += value;
 	        Stats.goldReceived += value;
-		}
+	        _buildBar.ChangeValue(value);
+		} else if (speed > 0 && _initSpeed <= 0)
+			_initSpeed = _nav.speed = speed;
 	}
 
 	public void Kill() {
 		_anim.SetTrigger("Dead");
 		_healthbar.RemoveHealthbar();
+		_collider.enabled = false;
 		isDead = true;
 		_waveScript.enemyCount--;
 		_waveScript.Display();
+		_audio.Play();
 	}
 	
 	public void Hit(int damage) {
@@ -76,18 +84,18 @@ public class Damager : MonoBehaviour {
 	}
 
 	public void ActivateSlow(GameObject particle, float slowPercent) {
-		if (SlowCount == 0) {
+		if (_slowCount == 0) {
 			_slowInstance = Instantiate(particle, transform);
 			_nav.speed *= 1 - slowPercent;
 		}
 
-		SlowCount++;
+		_slowCount++;
 	}
 	
 	public void DeactivateSlow() {
-		SlowCount--;
+		_slowCount--;
 		
-		if (SlowCount == 0) {
+		if (_slowCount == 0) {
 			Destroy(_slowInstance);
 			_nav.speed = _initSpeed;
 		}

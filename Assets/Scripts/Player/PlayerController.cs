@@ -7,35 +7,42 @@ public class PlayerController : MonoBehaviour {
     
     private float _rot;
     private CharacterController _controller;
+    private AudioSource _audio;
     private BuildingScript _building;
 
     private void Start() {
         _controller = GetComponent<CharacterController>();
         _building = GetComponent<BuildingScript>();
+        _audio = transform.GetChild(1).GetComponent<AudioSource>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
     private void FixedUpdate () {
-
         /* Character Movement */
         if (!anim.GetBool("Attack")) {
             if (Input.GetMouseButton(0) && !_building.IsBuilding) {
                 SetAttack();
+                _audio.Stop();
             } else if (Input.GetKey(KeyCode.W) && (anim.GetBool("MoveFwd") || anim.GetBool("Idle"))) {
                 SetMoveFwd();
                 _controller.Move(speed * Time.deltaTime * transform.forward);
+                if (!_audio.isPlaying) _audio.Play();
             } else if (Input.GetKey(KeyCode.S) && (anim.GetBool("MoveBack") || anim.GetBool("Idle"))) {
                 SetMoveBack();
                 _controller.Move(speed * Time.deltaTime * -transform.forward);
+                if (!_audio.isPlaying) _audio.Play();
             } else if (Input.GetKey(KeyCode.A) && (anim.GetBool("MoveLeft") || anim.GetBool("Idle"))) {
                 SetMoveLeft();
                 _controller.Move(speed * Time.deltaTime * -transform.right);
+                if (!_audio.isPlaying) _audio.Play();
             } else if (Input.GetKey(KeyCode.D) && (anim.GetBool("MoveRight") || anim.GetBool("Idle"))) {
                 SetMoveRight();
                 _controller.Move(speed * Time.deltaTime * transform.right);
+                if (!_audio.isPlaying) _audio.Play();
             } else {
                 SetIdle();
+                _audio.Stop();
             }
         }
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerTwrInteract : MonoBehaviour {
     public GameObject upgradeText;
     public GameObject sellText;
+    public AudioClip interactSound;
 
     public GameObject[] crossbowUpgrades;
     public GameObject[] crystalUpgrades;
@@ -23,11 +24,13 @@ public class PlayerTwrInteract : MonoBehaviour {
     private Tower _twr;
     private ProgressBar _slider;
     private ErrorMessage _err;
+    private AudioSource _audio;
     
 
     private void Start() {
         _towers = new ArrayList();
         _slider = GameObject.Find("BuildBar").GetComponentInChildren<ProgressBar>();
+        _audio = GetComponent<AudioSource>();
 
         _upgradeValue = upgradeText.GetComponentInChildren<TextMeshProUGUI>();
         _sellValue = sellText.GetComponentInChildren<TextMeshProUGUI>();
@@ -75,7 +78,7 @@ public class PlayerTwrInteract : MonoBehaviour {
                 if (_twr.upgradeValue == 0) return;                  
                     
                 if (Stats.PlayerGold < _twr.upgradeValue)
-                    _err.Show("Insufficient gold.");
+                    _err.Show("Insufficient Gold.");
                 else {
                     Stats.PlayerGold -= _twr.upgradeValue;
                     _slider.ChangeValue(-_twr.upgradeValue);
@@ -139,6 +142,9 @@ public class PlayerTwrInteract : MonoBehaviour {
                 _towers.Remove(_target);
                 DisplayTooltip(false);
                 Destroy(_target);
+
+                _audio.clip = interactSound;
+                _audio.Play();
             }
         }
     }

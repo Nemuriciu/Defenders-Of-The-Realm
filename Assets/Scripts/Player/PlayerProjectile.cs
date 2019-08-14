@@ -35,7 +35,8 @@ public class PlayerProjectile : MonoBehaviour {
 	private void OnTriggerEnter (Collider other) {
 		if (other.CompareTag("PathCollision") ||
 		    other.CompareTag("IgnoreCol") ||
-		    other.CompareTag("PlayerInteract")) return;
+		    other.CompareTag("PlayerInteract") ||
+		    other.CompareTag("Tower")) return;
 		
 		Instantiate (hitPrefab, transform.position, Quaternion.identity, _parent);
 
@@ -43,7 +44,7 @@ public class PlayerProjectile : MonoBehaviour {
 			Damager damager = other.GetComponent<Damager>();
 
 			if (!damager.isDead) {
-				int damage = Random.Range(1, 2);
+				int damage = Random.Range(Stats.playerMinDamage, Stats.playerMaxDamage);
 				damager.Hit(damage);
 				Stats.playerDamage += damage;
 			}

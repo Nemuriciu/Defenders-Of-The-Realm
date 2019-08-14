@@ -8,12 +8,12 @@ public class PlatformSpawn : MonoBehaviour {
     private ArrayList _activePortals;
     private WaveSpawn _waveSpawn;
     private int _portalCount;
-
+    
     private void Start() {
         _platforms = new ArrayList();
         _activePortals = new ArrayList();
         _waveSpawn = GetComponent<WaveSpawn>();
-
+        
         foreach (var t in portals)
             _platforms.Add(t);
 
@@ -32,15 +32,19 @@ public class PlatformSpawn : MonoBehaviour {
         switch (Info.selectedDifficulty) {
             case "Easy":
                 _portalCount = 1;
+                Stats.PlayerGold = 250;
                 break;
             case "Normal":
                 _portalCount = 2;
+                Stats.PlayerGold = 600;
                 break;
             case "Hard":
                 _portalCount = 3;
+                Stats.PlayerGold = 750;
                 break;
             case "Very Hard":
                 _portalCount = 5;
+                Stats.PlayerGold = 1400;
                 break;
         }
     }
@@ -48,7 +52,6 @@ public class PlatformSpawn : MonoBehaviour {
     private void SpawnPlatforms() {
         for (int i = 0; i < _portalCount; i++) {
             int ix = Random.Range(0, _platforms.Count);
-            Debug.Log(ix);
             GameObject platform = _platforms[ix] as GameObject;
             
             _platforms.RemoveAt(ix);

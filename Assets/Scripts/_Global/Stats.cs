@@ -1,12 +1,21 @@
-﻿public static class Stats {
-    public const int MaxGold = 1000;
+﻿using UnityEngine;
+
+public static class Stats {
+    /* Max Values */
+    public const int MaxGold = 5000;
     public const int MaxEnergy = 750;
     public const int MaxArtefact = 2000;
 
+    /* Game Stats Logs */
     public static int monstersKilled;
     public static int playerDamage;
     public static int towerDamage;
     public static int goldReceived;
+    
+    /* Player Values */
+    public static int playerMinDamage = 20;
+    public static int playerMaxDamage = 40;
+    //public static int speed;
     
     private static int _playerGold;
     public static int PlayerGold {
@@ -25,4 +34,6 @@
         get => _artefactHealth;
         set => _artefactHealth = value < 0 ? 0 : value;
     }
+
+    public static float savedTimeScale = Time.timeScale;
 }

@@ -10,7 +10,7 @@ public class LoadingScene : MonoBehaviour {
     }
 
     private static IEnumerator LoadGame() {
-        yield return new WaitForSeconds(Random.Range(3.0f, 6.0f));
+        yield return new WaitForSeconds(Random.Range(4.5f, 6.5f));
         SceneManager.LoadScene("GameScene");
     }
 }

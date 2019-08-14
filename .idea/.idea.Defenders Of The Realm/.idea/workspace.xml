@@ -3,23 +3,167 @@
   <component name="ChangeListManager">
     <list default="true" id="e87b2577-677b-4b9e-b08c-a3d7de1a6e8d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Scripts/StartButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/Scripts/StartButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-01.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-01.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-02.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-02.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-03.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-03.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-04.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-04.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-05.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-05.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-06.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-06.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-07.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-07.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-08.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-08.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-09.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-09.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-11.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-11.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-12.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-12.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-13.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-13.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-14.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-14.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-15.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-15.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-16.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-16.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-17.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-17.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-18.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-18.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-19.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-19.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-20.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-20.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-21.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-21.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-22.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-22.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-23.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-23.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-24.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-24.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-25.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-25.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-26.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-26.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-27.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-27.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-28.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-28.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-29.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-29.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-30.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-30.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-31.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-31.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-32.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-32.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-33.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-33.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-34.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-34.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-35.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-35.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-36.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-36.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-37.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-37.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-38.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-38.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-39.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-39.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-40.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-40.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-41.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-41.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-42.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-42.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-43.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-43.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-44.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-44.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-45.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-45.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-46.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-46.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-47.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-47.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-48.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-48.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-49.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-49.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-50.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CasualGameSounds/DM-CGS-50.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Audio/ClickSound_01.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/Audio/ClickSound_01.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Audio/Intro_01.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Audio/Intro_01.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Scripts/LoadingScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/Scripts/LoadingScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DefeatScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/DefeatScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Artefact/ArtefactScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Artefact/ArtefactScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LoadingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LoadingScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/WaveCount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/WaveCount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/ContinueButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/ContinueButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/ErrorMessage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/ErrorMessage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/ProgressBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/ProgressBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/StatsMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/StatsMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/BuildingScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/BuildingScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTwrInteract.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTwrInteract.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Towers/HourglassTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Towers/HourglassTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Towers/Tower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Towers/Tower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Global/DefeatScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Global/DefeatScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Global/PhaseScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Global/PhaseScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Global/PlatformSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Global/PlatformSpawn.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Global/WaveSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Global/WaveSpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Towers/Crossbow/Audio.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Towers/Crossbow/Audio/Crossbow_Shoot.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Towers/Crossbow/Audio/Crossbow_Shoot.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/BuildPhase_Sound.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/BuildPhase_Sound.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Footman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Footman.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Grunt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Grunt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Lich.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Lich.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/ProgressBar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/ProgressBar.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/MagicHit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/MagicHit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/MagicProjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/MagicProjectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_1/Crossbow_1_build_new.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_1/Crossbow_1_build_new.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_1/Crossbow_1_bullet_new.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_1/Crossbow_1_bullet_new.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_1/Crossbow_1_new.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_1/Crossbow_1_new.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_2/Crossbow_2_build_new.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_2/Crossbow_2_build_new.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_2/Crossbow_2_bullet_new.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_2/Crossbow_2_bullet_new.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_2/Crossbow_2_new.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_2/Crossbow_2_new.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_3/Crossbow_3_build_new.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_3/Crossbow_3_build_new.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_3/Crossbow_3_bullet_new.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_3/Crossbow_3_bullet_new.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_3/Crossbow_3_new.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_3/Crossbow_3_new.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crystal/Crystal_1/Crystal_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crystal/Crystal_1/Crystal_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crystal/Crystal_2/Crystal_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crystal/Crystal_2/Crystal_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crystal/Crystal_3/Crystal_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crystal/Crystal_3/Crystal_3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_1/Hourglass_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_1/Hourglass_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_2/Hourglass_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_2/Hourglass_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_3/Hourglass_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_3/Hourglass_3.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +185,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Towers/TowerTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Towers/Highlight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Towers/TowerBuild.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/_Global/PlatformSpawn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/_Global/PhaseScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,7 +206,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/MenuButtons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dropables/SoulScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/ContinueButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/_Global/AudioScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/_Global/DefeatScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/IntroMusic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/DefeatScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/TextTypeList.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/LoadingScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GUI/WaveCount.cs" root0="FORCE_HIGHLIGHTING" />
@@ -89,10 +237,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/TrailParticle/TrailNavigation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Portal/TrailNavigation.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Prefabs/Trail/Shaders/ParticlesAdditiveIntensify.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Game/Dropables/SoulScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Portal/TrailSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/_Global/PhaseScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Creatures/Damager.cs" />
@@ -111,35 +255,39 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/CloseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/DifficultySelection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GameMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/Tower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/TowerTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/PhaseScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towerssss/BuildAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towerssss/Tower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/CrystalBullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/ImpactScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/PlatformSpawn.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/HourglassTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/TowerBuild.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ProgressBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTwrInteract.cs" />
         <option value="$PROJECT_DIR$/Assets/Magic Spell V2/Scripts/SkillSetting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Animator/PlayerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/StartButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/SimpleRotate.cs" />
-        <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/LoadingScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/BuildingScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/WaveCount.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/DefeatScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ContinueButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Artefact/ArtefactScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Dropables/SoulScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/HourglassTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/IntroMusic.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/Tower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ErrorMessage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/AudioScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTwrInteract.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/BuildingScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/SimpleRotate.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/DefeatScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/StatsMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/_Global/WaveSpawn.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/LoadingScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerProjectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ContinueButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ProgressBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/PhaseScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/PlatformSpawn.cs" />
       </list>
     </option>
   </component>
@@ -227,6 +375,11 @@
       <workItem from="1565286017472" duration="18903000" />
       <workItem from="1565393057853" duration="15320000" />
       <workItem from="1565560235058" duration="10749000" />
+      <workItem from="1565631707590" duration="8812000" />
+      <workItem from="1565652092239" duration="2420000" />
+      <workItem from="1565656513734" duration="6754000" />
+      <workItem from="1565736532275" duration="2385000" />
+      <workItem from="1565742628991" duration="10916000" />
     </task>
     <servers />
   </component>
@@ -250,6 +403,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="575" y="289" width="672" height="678" key="search.everywhere.popup" />
+    <state x="575" y="289" width="672" height="678" key="search.everywhere.popup/1920.1080" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

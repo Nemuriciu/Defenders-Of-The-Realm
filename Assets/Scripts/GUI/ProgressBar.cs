@@ -12,13 +12,11 @@ public class ProgressBar : MonoBehaviour {
 
     private void Start () {
         _slider = GetComponent<Image>();
-        _displayText = transform.parent.GetComponentInChildren<TextMeshProUGUI>();
+        _displayText = transform.parent.GetChild(1).GetComponent<TextMeshProUGUI>();
 
         switch (transform.parent.name) {
             case "BuildBar":
                 _maxValue = Stats.MaxGold;
-                // TODO: move starting gold in another script
-                Stats.PlayerGold = _currentVal = _maxValue;
                 break;
             case "EnergyBar":
                 _maxValue = Stats.MaxEnergy;
@@ -38,7 +36,7 @@ public class ProgressBar : MonoBehaviour {
     
     private void Display() {
         _displayText.text = _currentVal + " / " + _maxValue;
-        _slider.fillAmount = (float) _currentVal / _maxValue; 
+        _slider.fillAmount = (float) _currentVal / _maxValue;
     }
     
     private void DisplayPercent() {

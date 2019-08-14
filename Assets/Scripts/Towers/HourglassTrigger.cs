@@ -7,7 +7,7 @@ public class HourglassTrigger : MonoBehaviour {
 		if (!other.CompareTag("Enemy")) return;
 		
 		Damager damager = other.gameObject.GetComponent<Damager>();
-		damager.ActivateSlow(slowPrefab, 0.33f);
+		damager.ActivateSlow(slowPrefab, 0.4f);
 	}
 	
 	private void OnTriggerExit(Collider other) {

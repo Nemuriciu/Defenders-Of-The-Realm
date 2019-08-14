@@ -14,22 +14,26 @@ public class BuildingScript : MonoBehaviour {
     
     public List<int> costs;
     
+    public AudioClip selectSound;
+    public AudioClip buildSound;
+    
     private Transform _twrGroup;
     private GameObject _instance;
     private Vector3 _instancePos;
     private int _selection;
-    public bool IsBuilding { get; private set; }
-
     private TowerBuild _towerBuild;
     private PhaseScript _phaseScript;
     private ErrorMessage _err;
     private ProgressBar _slider;
+    private AudioSource _audio;
+    public bool IsBuilding { get; private set; }
     
     private void Start() {
         _twrGroup = GameObject.Find("Towers").transform;
         _err = GameObject.Find("ErrorBox").GetComponent<ErrorMessage>();
         _slider = GameObject.Find("BuildBar").GetComponentInChildren<ProgressBar>();
         _phaseScript = GameObject.Find("EventSystem").GetComponent<PhaseScript>();
+        _audio = GetComponent<AudioSource>();
     }
 
     private void Update() {
@@ -75,6 +79,9 @@ public class BuildingScript : MonoBehaviour {
                                 Instantiate(hourglassPrefab, _instancePos, Quaternion.identity, _twrGroup);
                                 break;
                         }
+
+                        _audio.clip = buildSound; 
+                        _audio.Play();
                     } /* Wave Phase => Construction takes time */
                     else if (_phaseScript.GetPhase() == PhaseScript.Phase.Wave) {
                         GameObject instance;
@@ -110,6 +117,9 @@ public class BuildingScript : MonoBehaviour {
                                 bAnim.isActive = true;
                                 break;
                         }
+                        
+                        _audio.clip = buildSound;
+                        _audio.Play();
                     }
                     
                     int cost = costs[_selection - 1];
@@ -119,14 +129,14 @@ public class BuildingScript : MonoBehaviour {
                     Destroy(_instance);
                     IsBuilding = false;
                 }
-                else _err.Show("Invalid location.");
+                else _err.Show("Invalid Location.");
             }
         } else if (_phaseScript.GetPhase() == PhaseScript.Phase.Build ||
                  _phaseScript.GetPhase() == PhaseScript.Phase.Wave) {
             if (Input.GetKeyDown(KeyCode.Alpha1)) {
                 if (_instance) Destroy(_instance);
                 if (costs[0] > Stats.PlayerGold) {
-                    _err.Show("Insufficient gold.");
+                    _err.Show("Insufficient Gold.");
                     return;
                 }
             
@@ -135,11 +145,14 @@ public class BuildingScript : MonoBehaviour {
                 _instancePos = transform.position + (transform.forward * 5);
                 _instance = Instantiate(crossbowBuild, _instancePos, Quaternion.identity, _twrGroup);
                 _towerBuild = _instance.GetComponent<TowerBuild>();
+
+                _audio.clip = selectSound;
+                _audio.Play();
             } 
             else if (Input.GetKeyDown(KeyCode.Alpha2)) {
                 if (_instance) Destroy(_instance);
                 if (costs[1] > Stats.PlayerGold) {
-                    _err.Show("Insufficient gold.");
+                    _err.Show("Insufficient Gold.");
                     return;
                 }
             
@@ -148,11 +161,14 @@ public class BuildingScript : MonoBehaviour {
                 _instancePos = transform.position + (transform.forward * 5);
                 _instance = Instantiate(crystalBuild, _instancePos, Quaternion.identity, _twrGroup);
                 _towerBuild = _instance.GetComponent<TowerBuild>();
+                
+                _audio.clip = selectSound;
+                _audio.Play();
             } 
             else if (Input.GetKeyDown(KeyCode.Alpha3)) {
                 if (_instance) Destroy(_instance);
                 if (costs[2] > Stats.PlayerGold) {
-                    _err.Show("Insufficient gold.");
+                    _err.Show("Insufficient Gold.");
                     return;
                 }
             
@@ -161,6 +177,9 @@ public class BuildingScript : MonoBehaviour {
                 _instancePos = transform.position + (transform.forward * 5);
                 _instance = Instantiate(hourglassBuild, _instancePos, Quaternion.identity, _twrGroup);
                 _towerBuild = _instance.GetComponent<TowerBuild>();
+                
+                _audio.clip = selectSound;
+                _audio.Play();
             }
         }
     }

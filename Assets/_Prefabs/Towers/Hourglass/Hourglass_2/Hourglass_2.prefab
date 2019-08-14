@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 1824779081987021447}
   m_Layer: 0
   m_Name: GB_sandglass_main2
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
     min: 0
     max: 0
   sellValue: 150
-  upgradeValue: 350
+  upgradeValue: 250
   attackSpeed: 0
   shootElement: {fileID: 1821186025124698492}
   pivot: {fileID: 0}

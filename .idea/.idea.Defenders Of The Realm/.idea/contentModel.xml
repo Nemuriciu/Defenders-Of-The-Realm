@@ -36,6 +36,7 @@
           <e p="Scripts" t="Include">
             <e p="DifficultySelection.cs" t="Include" />
             <e p="ExitToMainMenu.cs" t="Include" />
+            <e p="IntroMusic.cs" t="Include" />
             <e p="LoadingScene.cs" t="Include" />
             <e p="MenuButtons.cs" t="Include" />
             <e p="simplerotate.cs" t="Include" />
@@ -44,6 +45,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="_Global" t="Include">
+            <e p="AudioScript.cs" t="Include" />
             <e p="DefeatScript.cs" t="Include" />
             <e p="PhaseScript.cs" t="Include" />
             <e p="PlatformSpawn.cs" t="Include" />
