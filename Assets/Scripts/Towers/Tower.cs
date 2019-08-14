@@ -28,13 +28,13 @@ public class Tower : MonoBehaviour {
 		_audioSource = GetComponent<AudioSource>();
 		_parent = GameObject.Find("Bullets").transform;
 
-		attackSpeed -= Random.Range(0, attackSpeed * 0.1f);
+		//attackSpeed -= Random.Range(0, attackSpeed * 0.1f);
 	}
 
 	private void Update () {
-		if (!target) return;
+		if (!target || !bullet) return;
 		
-		if (pivot != null)
+		if (pivot)
 			pivot.transform.LookAt(target.transform);
 
 		if (_shooting) return;

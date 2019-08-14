@@ -55,7 +55,6 @@ public class Damager : MonoBehaviour {
 	        
 	        /* Drop Gold */
 	        int value = Mathf.RoundToInt(maxHealth / 30.0f);
-	        Debug.Log(value);
 	        Stats.PlayerGold += value;
 	        Stats.goldReceived += value;
 	        _buildBar.ChangeValue(value);
@@ -100,8 +99,6 @@ public class Damager : MonoBehaviour {
 			_nav.speed = _initSpeed;
 		}
 	}
-
-	
 
 	public void SetHealthbar(Healthbar hb) {
 		_healthbar = hb;

@@ -132,6 +132,14 @@ public class PlayerTwrInteract : MonoBehaviour {
                     /* Disable tooltip & Destroy target object */
                     _towers.Remove(_target);
                     DisplayTooltip(false);
+
+                    if (_twr.type == "Hourglass") {
+                        HourglassTrigger hT = _target.transform.
+                            GetChild(0).GetChild(3).GetComponent<HourglassTrigger>();
+                        
+                        hT.DeactivateAll();
+                    }
+                    
                     Destroy(_target);
                 }
             } else if (Input.GetKeyDown(KeyCode.Q)) {            /* Sell */
@@ -141,6 +149,14 @@ public class PlayerTwrInteract : MonoBehaviour {
                 /* Disable tooltip & Destroy target object */
                 _towers.Remove(_target);
                 DisplayTooltip(false);
+                
+                if (_twr.type == "Hourglass") {
+                    HourglassTrigger hT = _target.transform.
+                        GetChild(0).GetChild(3).GetComponent<HourglassTrigger>();
+                        
+                    hT.DeactivateAll();
+                }
+                
                 Destroy(_target);
 
                 _audio.clip = interactSound;

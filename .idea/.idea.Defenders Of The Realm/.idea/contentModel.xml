@@ -16,6 +16,16 @@
               </e>
             </e>
           </e>
+          <e p="GUI" t="Include">
+            <e p="Outline" t="Include">
+              <e p="Resources" t="Include">
+                <e p="Shaders" t="Include">
+                  <e p="OutlineFill.shader" t="Include" />
+                  <e p="OutlineMask.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
           <e p="Player" t="Include">
             <e p="Shader" t="Include">
               <e p="PolyArtMaskTint.shader" t="Include" />
@@ -39,6 +49,7 @@
             <e p="IntroMusic.cs" t="Include" />
             <e p="LoadingScene.cs" t="Include" />
             <e p="MenuButtons.cs" t="Include" />
+            <e p="SceneVideo.cs" t="Include" />
             <e p="simplerotate.cs" t="Include" />
             <e p="StartButton.cs" t="Include" />
           </e>
@@ -132,20 +143,6 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
-          </e>
-        </e>
-        <e p="Textures" t="Include">
-          <e p="GUI" t="Include">
-            <e p="Game" t="Include">
-              <e p="Outline" t="Include">
-                <e p="Resources" t="Include">
-                  <e p="Shaders" t="Include">
-                    <e p="OutlineFill.shader" t="Include" />
-                    <e p="OutlineMask.shader" t="Include" />
-                  </e>
-                </e>
-              </e>
-            </e>
           </e>
         </e>
       </e>

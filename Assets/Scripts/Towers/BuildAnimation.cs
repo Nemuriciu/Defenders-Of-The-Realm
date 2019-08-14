@@ -34,15 +34,14 @@ public class BuildAnimation : MonoBehaviour {
                 _inst = _inRange = true;
             }
             
-            if (_timer < 0) {
-                Instantiate(towerPrefab, gameObject.transform.position, Quaternion.identity, _twrGroup);
+            if (_timer <= 0) {
                 Destroy(_loadingBar);
+                Instantiate(towerPrefab, gameObject.transform.position, Quaternion.identity, _twrGroup);
                 Destroy(gameObject);
             }
             
             _timer -= Time.deltaTime;
             
-            //float camDistance = Vector3.Distance(transform.position, _player.position);
             float camDistance = Vector3.Dot(transform.position - _cam.transform.position, _cam.transform.forward);
             
             if (_inRange && (camDistance >= 50 || camDistance < 1.5f)) {
@@ -61,8 +60,6 @@ public class BuildAnimation : MonoBehaviour {
                 1 - camDistance / 75, 1 - camDistance / 75);
             _loadingBarRect.position = _cam.WorldToScreenPoint(pos);
             _loadingBarFill.fillAmount = (fillAmount > 1) ? 1 : fillAmount;
-            
-            
         }    
     }
 }

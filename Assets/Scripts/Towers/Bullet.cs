@@ -24,8 +24,7 @@ public class Bullet : MonoBehaviour {
             pos = _target.transform.position;
             pos.y += 1;
         }
-            
-        
+
         if (!_target || !twr)
             Destroy(gameObject);
         else
