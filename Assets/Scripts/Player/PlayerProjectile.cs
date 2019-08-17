@@ -44,7 +44,7 @@ public class PlayerProjectile : MonoBehaviour {
 			Damager damager = other.GetComponent<Damager>();
 
 			if (!damager.isDead) {
-				int damage = Random.Range(Stats.playerMinDamage, Stats.playerMaxDamage);
+				int damage = Random.Range(Stats.PlayerMinDamage, Stats.PlayerMaxDamage);
 				damager.Hit(damage);
 				Stats.playerDamage += damage;
 			}

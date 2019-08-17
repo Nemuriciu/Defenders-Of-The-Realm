@@ -54,7 +54,7 @@ public class Damager : MonoBehaviour {
 	        _audio.Play();
 	        
 	        /* Drop Gold */
-	        int value = Mathf.RoundToInt(maxHealth / 30.0f);
+	        int value = Mathf.RoundToInt(maxHealth / Random.Range(40.0f, 50.0f));
 	        Stats.PlayerGold += value;
 	        Stats.goldReceived += value;
 	        _buildBar.ChangeValue(value);

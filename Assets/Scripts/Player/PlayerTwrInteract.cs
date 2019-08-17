@@ -22,14 +22,16 @@ public class PlayerTwrInteract : MonoBehaviour {
     private bool _isActive;
 
     private Tower _twr;
-    private ProgressBar _slider;
+    private ProgressBar _buildBar;
+    private ProgressBar _towerLimit;
     private ErrorMessage _err;
     private AudioSource _audio;
     
 
     private void Start() {
         _towers = new ArrayList();
-        _slider = GameObject.Find("BuildBar").GetComponentInChildren<ProgressBar>();
+        _buildBar = GameObject.Find("BuildBar").GetComponentInChildren<ProgressBar>();
+        _towerLimit = GameObject.Find("TowerLimit").GetComponentInChildren<ProgressBar>();
         _audio = GetComponent<AudioSource>();
 
         _upgradeValue = upgradeText.GetComponentInChildren<TextMeshProUGUI>();
@@ -81,7 +83,7 @@ public class PlayerTwrInteract : MonoBehaviour {
                     _err.Show("Insufficient Gold.");
                 else {
                     Stats.PlayerGold -= _twr.upgradeValue;
-                    _slider.ChangeValue(-_twr.upgradeValue);
+                    _buildBar.ChangeValue(-_twr.upgradeValue);
 
                     Vector3 pos = _twr.gameObject.transform.position;
                     GameObject instance = null;
@@ -142,9 +144,22 @@ public class PlayerTwrInteract : MonoBehaviour {
                     
                     Destroy(_target);
                 }
-            } else if (Input.GetKeyDown(KeyCode.Q)) {            /* Sell */
+            } 
+            else if (Input.GetKeyDown(KeyCode.Q)) {            /* Sell */
                 Stats.PlayerGold += _twr.sellValue;
-                _slider.ChangeValue(_twr.sellValue);
+                _buildBar.ChangeValue(_twr.sellValue);
+
+                switch (_twr.type) {
+                    case "Crossbow":
+                        _towerLimit.ChangeValue(-1);
+                        Stats.activeTowers--;
+                        break;
+                    case "Crystal":
+                    case "Hourglass":
+                        _towerLimit.ChangeValue(-2);
+                        Stats.activeTowers -= 2;
+                        break;
+                }
                 
                 /* Disable tooltip & Destroy target object */
                 _towers.Remove(_target);

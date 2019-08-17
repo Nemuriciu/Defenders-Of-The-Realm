@@ -6,6 +6,8 @@ public class WaveSpawn : MonoBehaviour {
     public GameObject footmanPrefab;
     public GameObject lichPrefab;
     public GameObject gruntPrefab;
+    public AudioClip victoryAudio;
+    public AudioClip waveSwitchAudio;
 
     private bool _flag, _waveBreak, _newWave, _victory;
     private int _mobCount;
@@ -14,6 +16,8 @@ public class WaveSpawn : MonoBehaviour {
     private ArrayList _spawnPoints;
     private EventMessage _eventMessage;
     private StatsMenu _statsMenu;
+    private AudioSource _music;
+    private AudioSource _audio;
 
     private int _footmanHealth = 250;
     private int _lichHealth = 800;
@@ -24,6 +28,8 @@ public class WaveSpawn : MonoBehaviour {
         _parent = GameObject.Find("Creatures").transform;
         _eventMessage = GameObject.Find("EventBox").GetComponent<EventMessage>();
         _statsMenu = GameObject.Find("Canvas").GetComponent<StatsMenu>();
+        _music = GetComponent<AudioSource>();
+        _audio = GameObject.Find("Canvas").GetComponent<AudioSource>();
         _mobPool = new ArrayList();
     }
 
@@ -31,7 +37,6 @@ public class WaveSpawn : MonoBehaviour {
         if (!_flag || _waveBreak || _victory) return;
         
         if (waveScript.enemyCount == 0) {
-            
             /* Victory */
             if (waveScript.currentWave == waveScript.maxWave) {
                 _victory = true;
@@ -84,7 +89,10 @@ public class WaveSpawn : MonoBehaviour {
         yield return new WaitForSeconds(3);
         
         _eventMessage.Show("Wave " + (waveScript.currentWave + 1));
-        
+
+        _audio.clip = waveSwitchAudio;
+        _audio.Play();
+
         yield return new WaitUntil(() => !_eventMessage.isActive);
 
         _waveBreak = false;
@@ -137,7 +145,10 @@ public class WaveSpawn : MonoBehaviour {
 
     private IEnumerator Victory() {
         yield return new WaitForSeconds(5);
-        
+
+        _music.clip = victoryAudio;
+        _music.loop = true;
+        _music.Play();
         _statsMenu.ActivatePanel(true);
     }
     

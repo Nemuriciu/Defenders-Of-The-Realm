@@ -549,9 +549,9 @@ GameObject:
   m_Component:
   - component: {fileID: 441815625}
   - component: {fileID: 441815627}
+  - component: {fileID: 441815629}
   - component: {fileID: 441815626}
   - component: {fileID: 441815628}
-  - component: {fileID: 441815629}
   m_Layer: 5
   m_Name: Hard
   m_TagString: Untagged
@@ -640,7 +640,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dc5a659a793d5431b82cbc8a4c9d5f14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -892,10 +892,10 @@ GameObject:
   m_Component:
   - component: {fileID: 679453121}
   - component: {fileID: 679453124}
+  - component: {fileID: 679453126}
   - component: {fileID: 679453123}
   - component: {fileID: 679453122}
   - component: {fileID: 679453125}
-  - component: {fileID: 679453126}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -1030,7 +1030,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dc5a659a793d5431b82cbc8a4c9d5f14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1205,9 +1205,9 @@ GameObject:
   m_Component:
   - component: {fileID: 733490380}
   - component: {fileID: 733490382}
+  - component: {fileID: 733490383}
   - component: {fileID: 733490381}
   - component: {fileID: 733490384}
-  - component: {fileID: 733490383}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -1367,7 +1367,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dc5a659a793d5431b82cbc8a4c9d5f14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1474,9 +1474,9 @@ GameObject:
   m_Component:
   - component: {fileID: 805490798}
   - component: {fileID: 805490801}
+  - component: {fileID: 805490802}
   - component: {fileID: 805490800}
   - component: {fileID: 805490799}
-  - component: {fileID: 805490802}
   m_Layer: 5
   m_Name: Options
   m_TagString: Untagged
@@ -1515,7 +1515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cedd6591781921498cf946b607ee060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 1839907027}
+  panel: {fileID: 0}
 --- !u!114 &805490800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1649,7 +1649,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dc5a659a793d5431b82cbc8a4c9d5f14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1901,9 +1901,9 @@ GameObject:
   m_Component:
   - component: {fileID: 914157128}
   - component: {fileID: 914157130}
+  - component: {fileID: 914157132}
   - component: {fileID: 914157129}
   - component: {fileID: 914157131}
-  - component: {fileID: 914157132}
   m_Layer: 5
   m_Name: Exit
   m_TagString: Untagged
@@ -2063,7 +2063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cedd6591781921498cf946b607ee060, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panel: {fileID: 0}
+  panel: {fileID: 403083647}
 --- !u!82 &914157132
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2076,7 +2076,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dc5a659a793d5431b82cbc8a4c9d5f14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2170,9 +2170,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1070492868}
   - component: {fileID: 1070492870}
+  - component: {fileID: 1070492872}
   - component: {fileID: 1070492869}
   - component: {fileID: 1070492871}
-  - component: {fileID: 1070492872}
   m_Layer: 5
   m_Name: Normal
   m_TagString: Untagged
@@ -2261,7 +2261,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dc5a659a793d5431b82cbc8a4c9d5f14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2673,9 +2673,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1291276952}
   - component: {fileID: 1291276954}
+  - component: {fileID: 1291276956}
   - component: {fileID: 1291276953}
   - component: {fileID: 1291276955}
-  - component: {fileID: 1291276956}
   m_Layer: 5
   m_Name: VeryHard
   m_TagString: Untagged
@@ -2764,7 +2764,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dc5a659a793d5431b82cbc8a4c9d5f14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2924,9 +2924,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1354744762}
   - component: {fileID: 1354744764}
+  - component: {fileID: 1354744766}
   - component: {fileID: 1354744763}
   - component: {fileID: 1354744765}
-  - component: {fileID: 1354744766}
   m_Layer: 5
   m_Name: Easy
   m_TagString: Untagged
@@ -3015,7 +3015,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dc5a659a793d5431b82cbc8a4c9d5f14, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.2
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0

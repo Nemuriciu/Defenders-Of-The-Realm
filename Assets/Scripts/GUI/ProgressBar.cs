@@ -57,4 +57,13 @@ public class ProgressBar : MonoBehaviour {
         else
             DisplayPercent();
     }
+
+    public void SetMaxValue(int value) {
+        _maxValue = value;
+        
+        if (!percent) 
+            Display();
+        else
+            DisplayPercent();
+    }
 }

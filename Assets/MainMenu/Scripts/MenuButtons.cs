@@ -28,7 +28,7 @@ public class MenuButtons : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 	public void OnPointerClick(PointerEventData eventData) {
 		_audio.Play();
 
-		if (Info.isPanelOpen) return;
+		if (Info.isPanelOpen || !panel) return;
 		
 		switch (_text.text) {
 			case "Exit":

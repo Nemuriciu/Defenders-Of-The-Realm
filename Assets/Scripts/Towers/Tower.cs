@@ -27,8 +27,6 @@ public class Tower : MonoBehaviour {
 		
 		_audioSource = GetComponent<AudioSource>();
 		_parent = GameObject.Find("Bullets").transform;
-
-		//attackSpeed -= Random.Range(0, attackSpeed * 0.1f);
 	}
 
 	private void Update () {
@@ -50,6 +48,7 @@ public class Tower : MonoBehaviour {
 			
 			bt.SetTarget(target);
 			bt.twr = this;
+			
 			_audioSource.Play();
 			yield return new WaitForSeconds(attackSpeed);
 		}

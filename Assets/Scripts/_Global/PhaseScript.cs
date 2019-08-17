@@ -23,6 +23,7 @@ public class PhaseScript : MonoBehaviour {
     private AudioSource _audio;
     private WaveSpawn _waveSpawn;
     private ProgressBar _buildBar;
+    private ProgressBar _towerLimit;
 
     private void Start() {
         _boxTransform = phaseBox.rectTransform;
@@ -30,6 +31,7 @@ public class PhaseScript : MonoBehaviour {
         _audio = GameObject.Find("Canvas").GetComponent<AudioSource>();
         _waveSpawn = GetComponent<WaveSpawn>();
         _buildBar = GameObject.Find("BuildBar").GetComponentInChildren<ProgressBar>();
+        _towerLimit = GameObject.Find("TowerLimit").GetComponentInChildren<ProgressBar>();
 
         if (IntroMusic.Instance) 
             Destroy(IntroMusic.Instance.gameObject);
@@ -58,6 +60,7 @@ public class PhaseScript : MonoBehaviour {
                     }
                     
                     _buildBar.ChangeValue(Stats.PlayerGold);
+                    _towerLimit.SetMaxValue(Stats.maxTowers);
 
                     StartCoroutine(ShowEvent(Phase.Build,
                         "Build defenses and press [B] when ready"));

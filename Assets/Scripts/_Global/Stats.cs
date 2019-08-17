@@ -5,6 +5,8 @@ public static class Stats {
     public const int MaxGold = 5000;
     public const int MaxEnergy = 750;
     public const int MaxArtefact = 2000;
+    public static int maxTowers;
+    public static int activeTowers;
 
     /* Game Stats Logs */
     public static int monstersKilled;
@@ -13,22 +15,21 @@ public static class Stats {
     public static int goldReceived;
     
     /* Player Values */
-    public static int playerMinDamage = 20;
-    public static int playerMaxDamage = 40;
-    //public static int speed;
+    public const int PlayerMinDamage = 30;
+    public const int PlayerMaxDamage = 50;
     
     private static int _playerGold;
     public static int PlayerGold {
         get => _playerGold;
         set => _playerGold = value > MaxGold ? MaxGold : value;
     }
-
+    
     private static int _playerEnergy = MaxEnergy;
     public static int PlayerEnergy {
         //get => _playerEnergy;
         set => _playerEnergy = value > MaxEnergy ? MaxEnergy : value;
     }
-    
+
     private static int _artefactHealth;
     public static int ArtefactHealth {
         get => _artefactHealth;

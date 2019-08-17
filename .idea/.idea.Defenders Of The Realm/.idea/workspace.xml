@@ -2,41 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e87b2577-677b-4b9e-b08c-a3d7de1a6e8d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Audio/Intro_Scene.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Audio/Intro_Scene.mp4.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/Scripts/MenuButtons.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/Scripts/MenuButtons.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Artefact/ArtefactScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Artefact/ArtefactScript.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GameMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/GameMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/ProgressBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/ProgressBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/BuildingScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/BuildingScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerProjectile.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTwrInteract.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTwrInteract.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Towers/BuildAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Towers/BuildAnimation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Towers/HourglassTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Towers/HourglassTrigger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Towers/Tower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Towers/Tower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game/Outline.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game/Outline/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game/Outline/Resources/Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game/Outline/Resources/Materials/OutlineFill.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game/Outline/Resources/Materials/OutlineFill.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game/Outline/Resources/Materials/OutlineMask.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game/Outline/Resources/Materials/OutlineMask.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game/Outline/Resources/Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game/Outline/Resources/Shaders/OutlineFill.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game/Outline/Resources/Shaders/OutlineFill.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game/Outline/Resources/Shaders/OutlineMask.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/Game/Outline/Resources/Shaders/OutlineMask.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/StartMenu.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/StartMenu/VideoTexture.renderTexture" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/GUI/StartMenu/VideoTexture.renderTexture.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_1/Hourglass_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_1/Hourglass_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_1/Hourglass_1_slow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_1/Hourglass_1_slow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_2/Hourglass_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_2/Hourglass_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_2/Hourglass_2_slow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_2/Hourglass_2_slow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_3/Hourglass_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_3/Hourglass_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_3/Hourglass_3_slow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Hourglass/Hourglass_3/Hourglass_3_slow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Towers/TowerTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Towers/TowerTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Global/PhaseScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Global/PhaseScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/_Global/WaveSpawn.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/_Global/WaveSpawn.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Artefact.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Artefact.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/bronze_coin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/bronze_coin.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Player/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/MagicHit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/MagicHit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/MagicProjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/MagicProjectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_1/Crossbow_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_1/Crossbow_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_2/Crossbow_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_2/Crossbow_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_3/Crossbow_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crossbow/Crossbow_3/Crossbow_3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crystal/Crystal_1/Crystal_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crystal/Crystal_1/Crystal_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crystal/Crystal_2/Crystal_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crystal/Crystal_2/Crystal_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crystal/Crystal_3/Crystal_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Prefabs/Towers/Crystal/Crystal_3/Crystal_3.prefab" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,13 +117,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/GUI/FloatingText/FloatingText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game/Creatures/Healthbar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/FloatingText/FloatingText.cs" />
-        <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/MenuButtons.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/ExitToMainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GameMenuButtons.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/CloseMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/DifficultySelection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GameMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/TowerTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towerssss/BuildAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towerssss/Tower.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/CrystalBullet.cs" />
@@ -139,31 +130,34 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Animator/PlayerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/StartButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/WaveCount.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Artefact/ArtefactScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Dropables/SoulScript.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/IntroMusic.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ErrorMessage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/_Global/AudioScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/BuildingScript.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/SimpleRotate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/_Global/DefeatScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/StatsMenu.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/WaveSpawn.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/LoadingScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerProjectile.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ContinueButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ProgressBar.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/PhaseScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/_Global/PlatformSpawn.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/SceneVideo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/Tower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/HourglassTrigger.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTwrInteract.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Towers/BuildAnimation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Creatures/Damager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/Stats.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/Tower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Towers/TowerTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTwrInteract.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/BuildingScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/PhaseScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ProgressBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/_Global/WaveSpawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Artefact/ArtefactScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GameMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/MainMenu/Scripts/MenuButtons.cs" />
       </list>
     </option>
   </component>
@@ -257,6 +251,7 @@
       <workItem from="1565736532275" duration="2385000" />
       <workItem from="1565742628991" duration="10916000" />
       <workItem from="1565815613777" duration="8711000" />
+      <workItem from="1565976857227" duration="10765000" />
     </task>
     <servers />
   </component>

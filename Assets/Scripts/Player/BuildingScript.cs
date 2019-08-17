@@ -24,16 +24,33 @@ public class BuildingScript : MonoBehaviour {
     private TowerBuild _towerBuild;
     private PhaseScript _phaseScript;
     private ErrorMessage _err;
-    private ProgressBar _slider;
+    private ProgressBar _buildBar;
+    private ProgressBar _twrLimit;
     private AudioSource _audio;
     public bool IsBuilding { get; private set; }
     
     private void Start() {
         _twrGroup = GameObject.Find("Towers").transform;
         _err = GameObject.Find("ErrorBox").GetComponent<ErrorMessage>();
-        _slider = GameObject.Find("BuildBar").GetComponentInChildren<ProgressBar>();
+        _buildBar = GameObject.Find("BuildBar").GetComponentInChildren<ProgressBar>();
+        _twrLimit = GameObject.Find("TowerLimit").GetComponentInChildren<ProgressBar>();
         _phaseScript = GameObject.Find("EventSystem").GetComponent<PhaseScript>();
         _audio = GetComponent<AudioSource>();
+
+        switch (Info.selectedDifficulty) {
+            case "Easy":
+                Stats.maxTowers = 12;
+                break;
+            case "Normal":
+                Stats.maxTowers = 25;
+                break;
+            case "Hard":
+                Stats.maxTowers = 36;
+                break;
+            case "Very Hard":
+                Stats.maxTowers = 48;
+                break;
+        }
     }
 
     private void Update() {
@@ -71,12 +88,18 @@ public class BuildingScript : MonoBehaviour {
                         switch (_selection) {
                             case 1:
                                 Instantiate(crossbowPrefab, _instancePos, Quaternion.identity, _twrGroup);
+                                Stats.activeTowers++;
+                                _twrLimit.ChangeValue(1);
                                 break;
                             case 2:
                                 Instantiate(crystalPrefab, _instancePos, Quaternion.identity, _twrGroup);
+                                Stats.activeTowers += 2;
+                                _twrLimit.ChangeValue(2);
                                 break;
                             case 3:
                                 Instantiate(hourglassPrefab, _instancePos, Quaternion.identity, _twrGroup);
+                                Stats.activeTowers += 2;
+                                _twrLimit.ChangeValue(2);
                                 break;
                         }
 
@@ -97,6 +120,9 @@ public class BuildingScript : MonoBehaviour {
                                 
                                 tb.enabled = false;
                                 bAnim.isActive = true;
+                                
+                                Stats.activeTowers++;
+                                _twrLimit.ChangeValue(1);
                                 break;
                             case 2:
                                 instance = Instantiate(crystalBuild, _instancePos, 
@@ -106,6 +132,9 @@ public class BuildingScript : MonoBehaviour {
                                 
                                 tb.enabled = false;
                                 bAnim.isActive = true;
+                                
+                                Stats.activeTowers += 2;
+                                _twrLimit.ChangeValue(2);
                                 break;
                             case 3:
                                 instance = Instantiate(hourglassBuild, _instancePos, 
@@ -115,6 +144,9 @@ public class BuildingScript : MonoBehaviour {
                                 
                                 tb.enabled = false;
                                 bAnim.isActive = true;
+                                
+                                Stats.activeTowers += 2;
+                                _twrLimit.ChangeValue(2);
                                 break;
                         }
                         
@@ -124,7 +156,7 @@ public class BuildingScript : MonoBehaviour {
                     
                     int cost = costs[_selection - 1];
                     Stats.PlayerGold -= cost;
-                    _slider.ChangeValue(-cost);
+                    _buildBar.ChangeValue(-cost);
                     
                     Destroy(_instance);
                     IsBuilding = false;
@@ -137,6 +169,11 @@ public class BuildingScript : MonoBehaviour {
                 if (_instance) Destroy(_instance);
                 if (costs[0] > Stats.PlayerGold) {
                     _err.Show("Insufficient Gold.");
+                    return;
+                }
+                
+                if (Stats.activeTowers + 1 > Stats.maxTowers) {
+                    _err.Show("Tower Limit Reached.");
                     return;
                 }
             
@@ -155,6 +192,11 @@ public class BuildingScript : MonoBehaviour {
                     _err.Show("Insufficient Gold.");
                     return;
                 }
+                
+                if (Stats.activeTowers + 2 > Stats.maxTowers) {
+                    _err.Show("Tower Limit Reached.");
+                    return;
+                }
             
                 IsBuilding = true;
                 _selection = 2;
@@ -169,6 +211,11 @@ public class BuildingScript : MonoBehaviour {
                 if (_instance) Destroy(_instance);
                 if (costs[2] > Stats.PlayerGold) {
                     _err.Show("Insufficient Gold.");
+                    return;
+                }
+                
+                if (Stats.activeTowers + 2 > Stats.maxTowers) {
+                    _err.Show("Tower Limit Reached.");
                     return;
                 }
             

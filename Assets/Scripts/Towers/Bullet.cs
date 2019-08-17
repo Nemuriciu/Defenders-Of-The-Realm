@@ -38,6 +38,8 @@ public class Bullet : MonoBehaviour {
     }
     
     private void OnTriggerEnter (Collider other) {
+        if (!other.CompareTag("Enemy")) return;
+        
         if (other.gameObject == _target) {
             if (_target) 
                 if (!_damager.isDead && twr) {
