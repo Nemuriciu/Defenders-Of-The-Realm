@@ -40,15 +40,15 @@ public class PlayerProjectile : MonoBehaviour {
 		
 		Instantiate (hitPrefab, transform.position, Quaternion.identity, _parent);
 
-		if (other.CompareTag("Enemy")) {
-			Damager damager = other.GetComponent<Damager>();
-
-			if (!damager.isDead) {
-				int damage = Random.Range(Stats.PlayerMinDamage, Stats.PlayerMaxDamage);
-				damager.Hit(damage);
-				Stats.playerDamage += damage;
-			}
-		}
+		// if (other.CompareTag("Enemy")) {
+		// 	Damager damager = other.GetComponent<Damager>();
+		//
+		// 	if (!damager.isDead) {
+		// 		int damage = Random.Range(Stats.PlayerMinDamage, Stats.PlayerMaxDamage);
+		// 		damager.Hit(damage);
+		// 		Stats.playerDamage += damage;
+		// 	}
+		// }
 		
 		Destroy(gameObject);
 	}

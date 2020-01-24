@@ -13,6 +13,7 @@ public class MenuButtons : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 		_text = GetComponent<TextMeshProUGUI>();
 		_rect = GetComponent<RectTransform>();
 		_audio = GetComponent<AudioSource>();
+		Info.isPanelOpen = false;
 	}
 
 	public void OnPointerEnter(PointerEventData eventData) {

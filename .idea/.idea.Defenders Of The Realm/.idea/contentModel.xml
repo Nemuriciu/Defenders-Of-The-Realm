@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Vlad\.Rider2019.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Vlad\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Defenders Of The Realm.-1480814426.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Vlad\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Vlad\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Defenders Of The Realm.-1480814426.00" t="ExcludeRecursive" />
     <e p="C:\Users\Vlad\Desktop\Defenders Of The Realm" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="_Prefabs" t="Include">
           <e p="Artefact" t="Include">
             <e p="Explosion" t="Include">
+              <e p="Editor" t="Include">
+                <e p="PackageManagerAssembly" t="Include">
+                  <e p="PackageImportList.txt" t="Include" />
+                </e>
+              </e>
               <e p="Shared" t="Include">
                 <e p="Shaders" t="Include">
                   <e p="SurfaceShader_VC.shader" t="Include" />
@@ -16,29 +22,88 @@
               </e>
             </e>
           </e>
-          <e p="GUI" t="Include">
-            <e p="Outline" t="Include">
-              <e p="Resources" t="Include">
-                <e p="Shaders" t="Include">
-                  <e p="OutlineFill.shader" t="Include" />
-                  <e p="OutlineMask.shader" t="Include" />
-                </e>
-              </e>
-            </e>
-          </e>
-          <e p="Player" t="Include">
-            <e p="Shader" t="Include">
-              <e p="PolyArtMaskTint.shader" t="Include" />
-            </e>
-          </e>
           <e p="Projectile" t="Include">
             <e p="Shader" t="Include">
               <e p="Fresnel.shader" t="Include" />
             </e>
           </e>
-          <e p="Trail" t="Include">
-            <e p="Shaders" t="Include">
-              <e p="ParticlesAdditiveIntensify.shader" t="Include" />
+        </e>
+        <e p="Creatures" t="Include">
+          <e p="_Scripts" t="Include">
+            <e p="CreatureInfo.cs" t="Include" />
+            <e p="FloatingText.cs" t="Include" />
+            <e p="FloatingTextComponent.cs" t="Include" />
+            <e p="HealthBar.cs" t="Include" />
+            <e p="HealthbarRoot.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Environment" t="Include">
+          <e p="Crystal" t="Include">
+            <e p="_Scripts" t="Include">
+              <e p="CrystalInteract.cs" t="Include" />
+            </e>
+            <e p="DefenseFX" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="Shield.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="FantasyCreatures" t="Include">
+          <e p="Goblins_pack" t="Include">
+            <e p="readme.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="goblin_ctrl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Golems" t="Include">
+            <e p="readme.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="Golem_ctrl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="iguana" t="Include">
+            <e p="readme.txt" t="Include" />
+            <e p="script" t="Include">
+              <e p="iguana_ctrl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Monster-Rabbit" t="Include">
+            <e p="readme.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="MR_ctrl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Ogre_asset" t="Include">
+            <e p="readme.txt" t="Include" />
+            <e p="script" t="Include">
+              <e p="Ogre_control.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Succubus" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="suc_ctrl.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="GUI" t="Include">
+          <e p="_Scripts" t="Include">
+            <e p="ErrorMessage.cs" t="Include" />
+            <e p="EventMessage.cs" t="Include" />
+            <e p="ProgressBar.cs" t="Include" />
+          </e>
+          <e p="Minimap" t="Include">
+            <e p="_Scripts" t="Include">
+              <e p="Minimap.cs" t="Include" />
+              <e p="NoRotation.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Outline" t="Include">
+            <e p="Resources" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="OutlineFill.shader" t="Include" />
+                <e p="OutlineMask.shader" t="Include" />
+              </e>
             </e>
           </e>
         </e>
@@ -54,11 +119,24 @@
             <e p="StartButton.cs" t="Include" />
           </e>
         </e>
+        <e p="Player" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Building.cs" t="Include" />
+            <e p="FirstPersonAIO.cs" t="Include" />
+            <e p="PlayerInfo.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Portal" t="Include">
+          <e p="_Scripts" t="Include">
+            <e p="PortalTooltip.cs" t="Include" />
+            <e p="PortalTooltipCanvasGroup.cs" t="Include" />
+            <e p="Spawn.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="_Global" t="Include">
             <e p="AudioScript.cs" t="Include" />
             <e p="DefeatScript.cs" t="Include" />
-            <e p="PhaseScript.cs" t="Include" />
             <e p="PlatformSpawn.cs" t="Include" />
             <e p="Stats.cs" t="Include" />
             <e p="WaveSpawn.cs" t="Include" />
@@ -73,25 +151,11 @@
             <e p="CameraController.cs" t="Include" />
             <e p="CameraScript.cs" t="Include" />
           </e>
-          <e p="Creatures" t="Include">
-            <e p="Damager.cs" t="Include" />
-            <e p="HealthBar.cs" t="Include" />
-            <e p="HealthbarRoot.cs" t="Include" />
-            <e p="Navigation.cs" t="Include" />
-          </e>
-          <e p="Dropables" t="Include">
-            <e p="SoulScript.cs" t="Include" />
-          </e>
           <e p="GUI" t="Include">
             <e p="CloseMenu.cs" t="Include" />
             <e p="ContinueButton.cs" t="Include" />
-            <e p="ErrorMessage.cs" t="Include" />
-            <e p="EventMessage.cs" t="Include" />
-            <e p="FloatingText.cs" t="Include" />
-            <e p="FloatingTextComponent.cs" t="Include" />
             <e p="GameMenu.cs" t="Include" />
             <e p="GameMenuButtons.cs" t="Include" />
-            <e p="ProgressBar.cs" t="Include" />
             <e p="StatsMenu.cs" t="Include" />
             <e p="TextTypeList.cs" t="Include" />
             <e p="WaveCount.cs" t="Include" />
@@ -100,7 +164,6 @@
             <e p="BuildingScript.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="PlayerProjectile.cs" t="Include" />
-            <e p="PlayerTwrInteract.cs" t="Include" />
           </e>
           <e p="Portal" t="Include">
             <e p="TrailNavigation.cs" t="Include" />
@@ -108,13 +171,9 @@
           </e>
           <e p="Towers" t="Include">
             <e p="BuildAnimation.cs" t="Include" />
-            <e p="Bullet.cs" t="Include" />
-            <e p="Highlight.cs" t="Include" />
             <e p="HourglassTrigger.cs" t="Include" />
             <e p="ImpactScript.cs" t="Include" />
-            <e p="Tower.cs" t="Include" />
             <e p="TowerBuild.cs" t="Include" />
-            <e p="TowerTrigger.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">
@@ -143,6 +202,39 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="TowerDefence_Vsquad" t="Include">
+          <e p="Materials" t="Include">
+            <e p="Scene" t="Include">
+              <e p="sky.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Towers" t="Include">
+          <e p="_Scripts" t="Include">
+            <e p="Bullet.cs" t="Include" />
+            <e p="Highlight.cs" t="Include" />
+            <e p="HitEffect.cs" t="Include" />
+            <e p="Spot.cs" t="Include" />
+            <e p="Tower.cs" t="Include" />
+          </e>
+        </e>
+        <e p="VR Hands" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="HandAnimatorManager.cs" t="Include" />
+            <e p="HandAnimatorManagerVR.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Skin Shader Dynamic.shader" t="Include" />
+            <e p="Skin Shader.shader" t="Include" />
+          </e>
+        </e>
+        <e p="X-BARS" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="HealthBarCreator.cs" t="Include" />
+            </e>
           </e>
         </e>
       </e>

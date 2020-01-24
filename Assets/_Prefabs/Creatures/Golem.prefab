@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2191511235390511806}
   - component: {fileID: 2191511235381063642}
   - component: {fileID: 2191511235381063641}
+  - component: {fileID: -6163579526740419519}
+  - component: {fileID: 1600135094537512099}
   m_Layer: 0
   m_Name: Golem
   m_TagString: Enemy
@@ -88,6 +90,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181dd898ebe72ad4590cec51ee0291e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6163579526740419519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2191511235381160210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e84f3b77e816c7145b48979a66b9b6d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1500
+  maxHealth: 1500
+  speed: 2
+  isDead: 0
+--- !u!114 &1600135094537512099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2191511235381160210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b67d8750d564547b048e7c973b12c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthLink: {fileID: -6163579526740419519}
+  HealthbarPrefab: {fileID: 8439676233498560799, guid: 7235cb1771705a84ab77a2aae27ba5ef,
+    type: 3}
+  yOffset: 0
+  keepSize: 1
+  scale: 1
+  sizeOffsets: {x: 0, y: 0}
+  DrawOFFDistance: 0
+  drawDistance: 10
+  showHealthInfo: 0
+  healthInfoAlignment: 1
+  healthInfoSize: 10
+  alphaSettings:
+    defaultAlpha: 0.7
+    defaultFadeSpeed: 0.1
+    fullAlpha: 1
+    fullFadeSpeed: 0.1
+    nullAlpha: 0
+    nullFadeSpeed: 0.1
+    onHit:
+      fadeSpeed: 0.1
+      onHitAlpha: 1
+      duration: 1
+  canvas: {fileID: 0}
 --- !u!1 &2191511235381160212
 GameObject:
   m_ObjectHideFlags: 0

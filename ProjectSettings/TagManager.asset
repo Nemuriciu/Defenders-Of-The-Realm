@@ -6,11 +6,10 @@ TagManager:
   tags:
   - effect
   - Enemy
-  - IgnoreCol
-  - PlayerInteract
   - Tower
   - Portal
-  - PathCollision
+  - TowerSpot
+  - Crystal
   layers:
   - Default
   - TransparentFX
@@ -20,11 +19,11 @@ TagManager:
   - UI
   - 
   - 
-  - Raycast
-  - 
-  - 
-  - 
-  - 
+  - Enemy
+  - Tower
+  - Bullet
+  - Spot
+  - Player
   - 
   - 
   - 

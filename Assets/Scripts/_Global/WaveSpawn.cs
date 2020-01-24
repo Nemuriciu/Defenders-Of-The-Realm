@@ -22,7 +22,7 @@ public class WaveSpawn : MonoBehaviour {
     private int _footmanHealth = 250;
     private int _lichHealth = 800;
     private int _gruntHealth = 1750;
-    private float _monsterSpeed = 3.0f;
+    //private float _monsterSpeed = 3.0f;
     
     private void Start() {
         _parent = GameObject.Find("Creatures").transform;
@@ -76,8 +76,8 @@ public class WaveSpawn : MonoBehaviour {
             waveScript.enemyCount = _mobCount * _spawnPoints.Count;
             waveScript.Display();
 
-            foreach (Transform spawnPoint in _spawnPoints)
-                StartCoroutine(Spawn(spawnPoint));
+            // foreach (Transform spawnPoint in _spawnPoints)
+            //     StartCoroutine(Spawn(spawnPoint));
         }
     }
 
@@ -99,49 +99,49 @@ public class WaveSpawn : MonoBehaviour {
         _newWave = true;
     }
     
-    private IEnumerator Spawn(Transform spawnPoint) {
-        ArrayList mobPool = _mobPool;
-        
-        for (int i = 0; i < _mobCount; i++) {
-            int ix = Random.Range(0, mobPool.Count);
-            string enemyType = mobPool[ix] as string;
-            mobPool.Remove(ix);
-
-            GameObject instance;
-            Damager damager;
-
-            switch (enemyType) {
-                case "Footman":
-                    instance = Instantiate(footmanPrefab, 
-                        spawnPoint.position + new Vector3(0, 1, 0),
-                        spawnPoint.rotation, _parent);
-                    damager = instance.GetComponent<Damager>();
-                    damager.health = damager.maxHealth = _footmanHealth;
-                    damager.speed = _monsterSpeed;
-                    break;
-                
-                case "Lich":
-                    instance = Instantiate(lichPrefab,
-                        spawnPoint.position + new Vector3(0, 1, 0),
-                        spawnPoint.rotation, _parent);
-                    damager = instance.GetComponent<Damager>();
-                    damager.health = damager.maxHealth = _lichHealth;
-                    damager.speed = _monsterSpeed;
-                    break;
-                
-                case "Grunt":
-                    instance = Instantiate(gruntPrefab,
-                        spawnPoint.position + new Vector3(0, 1, 0),
-                        spawnPoint.rotation, _parent);
-                    damager = instance.GetComponent<Damager>();
-                    damager.health = damager.maxHealth = _gruntHealth;
-                    damager.speed = _monsterSpeed;
-                    break;
-            }
-            
-            yield return new WaitForSeconds(Random.Range(1.0f, 2.5f));
-        }
-    }
+    // private IEnumerator Spawn(Transform spawnPoint) {
+    //     ArrayList mobPool = _mobPool;
+    //     
+    //     for (int i = 0; i < _mobCount; i++) {
+    //         int ix = Random.Range(0, mobPool.Count);
+    //         string enemyType = mobPool[ix] as string;
+    //         mobPool.Remove(ix);
+    //
+    //         GameObject instance;
+    //         CreatureInfo damager;
+    //
+    //         switch (enemyType) {
+    //             case "Footman":
+    //                 instance = Instantiate(footmanPrefab, 
+    //                     spawnPoint.position + new Vector3(0, 1, 0),
+    //                     spawnPoint.rotation, _parent);
+    //                 damager = instance.GetComponent<CreatureInfo>();
+    //                 damager.health = damager.maxHealth = _footmanHealth;
+    //                 damager.speed = _monsterSpeed;
+    //                 break;
+    //             
+    //             case "Lich":
+    //                 instance = Instantiate(lichPrefab,
+    //                     spawnPoint.position + new Vector3(0, 1, 0),
+    //                     spawnPoint.rotation, _parent);
+    //                 damager = instance.GetComponent<CreatureInfo>();
+    //                 damager.health = damager.maxHealth = _lichHealth;
+    //                 damager.speed = _monsterSpeed;
+    //                 break;
+    //             
+    //             case "Grunt":
+    //                 instance = Instantiate(gruntPrefab,
+    //                     spawnPoint.position + new Vector3(0, 1, 0),
+    //                     spawnPoint.rotation, _parent);
+    //                 damager = instance.GetComponent<CreatureInfo>();
+    //                 damager.health = damager.maxHealth = _gruntHealth;
+    //                 damager.speed = _monsterSpeed;
+    //                 break;
+    //         }
+    //         
+    //         yield return new WaitForSeconds(Random.Range(1.0f, 2.5f));
+    //     }
+    // }
 
     private IEnumerator Victory() {
         yield return new WaitForSeconds(5);
