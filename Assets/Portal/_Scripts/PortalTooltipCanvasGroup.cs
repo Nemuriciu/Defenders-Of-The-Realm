@@ -6,7 +6,7 @@ public class PortalTooltipCanvasGroup : MonoBehaviour {
 
     private void Start() {
         _canvasGroup = GetComponent<CanvasGroup>();
-        _active = false;
+        _active = true;
     }
 
     private void Update() {

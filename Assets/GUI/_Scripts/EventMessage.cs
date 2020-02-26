@@ -5,7 +5,7 @@ public class EventMessage : MonoBehaviour {
     [HideInInspector] public bool isActive;
     
     private TextMeshProUGUI _text;
-    private float _timer = 3.5f;
+    private float _timer = 3.0f;
 
     private void Start() {
         _text = GetComponent<TextMeshProUGUI>();
@@ -26,6 +26,6 @@ public class EventMessage : MonoBehaviour {
     public void Show(string msg) {
         isActive = true;
         _text.text = msg;
-        _timer = 3.5f;
+        _timer = 3.0f;
     }
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
 public class PortalTooltip : MonoBehaviour {
     public GameObject portal;
@@ -6,12 +7,12 @@ public class PortalTooltip : MonoBehaviour {
     private CanvasGroup _canvasGroup;
     private Vector3 _offsetY;
     private bool _active;
-    
-    
+    private TextMeshProUGUI _tooltip;
 
     private void Start() {
         _cam = Camera.main;
         _canvasGroup = GetComponent<CanvasGroup>();
+        _tooltip = GetComponentInChildren<TextMeshProUGUI>();
         _offsetY = new Vector3(0, 6.5f, 0);
 
         _active = true;
@@ -35,5 +36,9 @@ public class PortalTooltip : MonoBehaviour {
 
             transform.position = _cam.WorldToScreenPoint(portal.transform.position + _offsetY);
         }
+    }
+
+    public void SetText(string text) {
+        _tooltip.text = text;
     }
 }

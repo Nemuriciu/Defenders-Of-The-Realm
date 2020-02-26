@@ -4,12 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - effect
   - Enemy
   - Tower
   - Portal
   - TowerSpot
   - Crystal
+  - Blueprint_1
+  - Blueprint_2
+  - Blueprint_3
+  - Blueprint_4
+  - Blueprint_5
+  - Dead
   layers:
   - Default
   - TransparentFX

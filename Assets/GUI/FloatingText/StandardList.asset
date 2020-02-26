@@ -73,7 +73,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
-    font: {fileID: 12800000, guid: 4578e17bd7f96064c8d8bcae92cf8842, type: 3}
+    font: {fileID: 12800000, guid: 5dfaa289dfb87964cb9c412a4f8a29a9, type: 3}
     fontSize: 18
     increaseAmount: 0
     fontSizeAnimation:
@@ -93,8 +93,8 @@ MonoBehaviour:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.78431374, b: 0, a: 1}
-      key1: {r: 1, g: 0.78431374, b: 0, a: 1}
+      key0: {r: 0.88235295, g: 0.49019608, b: 0, a: 1}
+      key1: {r: 0.88235295, g: 0.49019608, b: 0, a: 1}
       key2: {r: 1, g: 0.92941177, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -183,7 +183,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 0
-    font: {fileID: 12800000, guid: 4578e17bd7f96064c8d8bcae92cf8842, type: 3}
+    font: {fileID: 12800000, guid: 5dfaa289dfb87964cb9c412a4f8a29a9, type: 3}
     fontSize: 18
     increaseAmount: 0
     fontSizeAnimation:
