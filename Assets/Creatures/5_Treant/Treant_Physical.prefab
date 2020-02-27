@@ -282,7 +282,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 0.5
+  m_Speed: 0.7
   m_Acceleration: 15
   avoidancePriority: 50
   m_AngularSpeed: 720
@@ -308,8 +308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cName: Treant
   affinity: Physical
-  baseHealth: 6500
-  goldRation: 0.005
+  baseHealth: 5500
+  goldRation: 0.01
   meshes:
   - {fileID: 5789082097361277822}
   - {fileID: 5789082097361272768}
@@ -341,7 +341,7 @@ MonoBehaviour:
   showHealthInfo: 0
   isHit: 0
   healthInfoAlignment: 1
-  healthInfoSize: 10
+  healthInfoSize: 6
   alphaSettings:
     defaultAlpha: 0.7
     defaultFadeSpeed: 0.1

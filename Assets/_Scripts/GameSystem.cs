@@ -68,6 +68,8 @@ public class GameSystem : MonoBehaviour {
                         }
                         else {
                             /* TODO: Victory */
+                            creatureNr = -2;
+                            Debug.Log("Victory");
                         }
 
                         break;

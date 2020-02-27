@@ -1808,8 +1808,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cName: Rabbid
   affinity: None
-  baseHealth: 350
-  goldRation: 0.02
+  baseHealth: 325
+  goldRation: 0.03
   meshes:
   - {fileID: 3461042569411451344}
   replace:
@@ -1839,7 +1839,7 @@ MonoBehaviour:
   showHealthInfo: 0
   isHit: 0
   healthInfoAlignment: 1
-  healthInfoSize: 10
+  healthInfoSize: 6
   alphaSettings:
     defaultAlpha: 0.7
     defaultFadeSpeed: 0.1

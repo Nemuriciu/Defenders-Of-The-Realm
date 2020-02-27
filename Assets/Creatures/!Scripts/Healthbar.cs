@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Healthbar : MonoBehaviour {
@@ -17,7 +18,7 @@ public class Healthbar : MonoBehaviour {
 	public float healthInfoSize = 10;
     public AlphaSettings alphaSettings;
 	private Image _healthVolume, _backGround;			//Health bar images, should be named as "Health" and "Background";
-	private Text _healthInfo;
+	private TextMeshProUGUI _healthInfo;
 	private CanvasGroup _canvasGroup;
 	private Vector2 _healthbarPosition, _healthbarSize, _healthInfoPosition;
 	private Transform _thisT;
@@ -59,12 +60,12 @@ public class Healthbar : MonoBehaviour {
 		
 		_healthVolume = healthbarPrefab.transform.Find ("Health").GetComponent<Image>();
 		_backGround = healthbarPrefab.transform.Find ("Background").GetComponent<Image>();
-		_healthInfo = healthbarPrefab.transform.Find ("HealthInfo").GetComponent<Text> ();
-		_healthInfo.resizeTextForBestFit = true;
+		_healthInfo = healthbarPrefab.transform.Find ("HealthInfo").GetComponent<TextMeshProUGUI> ();
+		_healthInfo.enableAutoSizing = true;
 		_healthInfo.rectTransform.anchoredPosition = Vector2.zero;
 		_healthInfoPosition = _healthInfo.rectTransform.anchoredPosition;
-		_healthInfo.resizeTextMinSize = 1;
-		_healthInfo.resizeTextMaxSize = 500;
+		_healthInfo.fontSizeMin = 1;
+		_healthInfo.fontSizeMax = 64;
 		
 		_healthbarSize = healthbarPrefab.sizeDelta;
         _canvasGroup.alpha = alphaSettings.nullAlpha;

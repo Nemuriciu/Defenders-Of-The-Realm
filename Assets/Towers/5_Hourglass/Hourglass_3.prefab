@@ -71,8 +71,8 @@ MonoBehaviour:
   atkSpeedModif: 1
   damageMin: 0
   damageMax: 0
-  buildVal: 750
-  sellVal: 1600
+  buildVal: 450
+  sellVal: 1000
   info: Slows enemies in range by 30%. Does not stack with other Hourglass towers.
 --- !u!114 &4238109071016330647
 MonoBehaviour:

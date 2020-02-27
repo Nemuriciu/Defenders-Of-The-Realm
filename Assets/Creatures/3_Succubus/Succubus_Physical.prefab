@@ -2621,7 +2621,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 0.9
+  m_Speed: 1
   m_Acceleration: 15
   avoidancePriority: 50
   m_AngularSpeed: 720
@@ -2647,8 +2647,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cName: Succubus
   affinity: Physical
-  baseHealth: 1250
-  goldRation: 0.01
+  baseHealth: 1200
+  goldRation: 0.02
   meshes:
   - {fileID: 5655667701096861791}
   - {fileID: 4748059398324914170}
@@ -2682,7 +2682,7 @@ MonoBehaviour:
   showHealthInfo: 0
   isHit: 0
   healthInfoAlignment: 1
-  healthInfoSize: 10
+  healthInfoSize: 6
   alphaSettings:
     defaultAlpha: 0.7
     defaultFadeSpeed: 0.1

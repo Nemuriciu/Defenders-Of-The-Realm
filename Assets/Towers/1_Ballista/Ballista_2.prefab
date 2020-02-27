@@ -351,8 +351,8 @@ MonoBehaviour:
   atkSpeedModif: 1
   damageMin: 310
   damageMax: 340
-  buildVal: 500
-  sellVal: 650
+  buildVal: 300
+  sellVal: 400
   info: A single-target tower that deals physical damage.
 --- !u!114 &913780736433462621
 MonoBehaviour:

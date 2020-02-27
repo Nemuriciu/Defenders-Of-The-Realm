@@ -70,10 +70,10 @@ MonoBehaviour:
   type: Physical
   atkSpeed: 1
   atkSpeedModif: 1
-  damageMin: 170
-  damageMax: 200
-  buildVal: 1400
-  sellVal: 2175
+  damageMin: 180
+  damageMax: 210
+  buildVal: 600
+  sellVal: 1125
   info: A multi-target (AoE) tower that deals physical damage.
 --- !u!114 &5354837999010277506
 MonoBehaviour:

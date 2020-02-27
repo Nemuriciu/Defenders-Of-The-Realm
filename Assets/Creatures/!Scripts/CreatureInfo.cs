@@ -7,7 +7,6 @@ public class CreatureInfo : MonoBehaviour {
     public string cName;
     public string affinity;
     public int baseHealth;
-    public float goldRation;
     [Space(10)]
 
     public SkinnedMeshRenderer[] meshes;
@@ -19,6 +18,7 @@ public class CreatureInfo : MonoBehaviour {
     private int _slowCounter;
     private float _baseSpeed;
     private float _baseSpeedModif = 1.0f, _speedModifier = 1.0f;
+    private float _goldRatio;
     
     private Vector3[] _wp;
     private int _index;
@@ -41,13 +41,16 @@ public class CreatureInfo : MonoBehaviour {
         
         /* Set speed */
         _baseSpeed = _navAgent.speed;
-        //_speedModifier += Random.Range(-0.025f, 0.025f);
-        _speedModifier = RNG.GetSpeedModifier(cName);
+        _speedModifier += Random.Range(-0.05f, 0.05f);
         _baseSpeedModif = _speedModifier;
         _anim.SetFloat("Speed", _speedModifier);
         
         /* Set health */
-        _health = Mathf.RoundToInt(baseHealth * RNG.GetHealthModifier(cName));
+        baseHealth = Mathf.RoundToInt(baseHealth * RNG.GetHealthModifier(cName));
+        _health = baseHealth;
+        
+        /* Set gold ratio */
+        _goldRatio = RNG.GetGoldRatio(cName);
         
         /* Randomize waypoints */
         for (int i = 0; i < _wp.Length; i++) {
@@ -162,9 +165,8 @@ public class CreatureInfo : MonoBehaviour {
 
         /* Kill creature if health reaches zero */
         if (_health <= 0) {
-            int value = Mathf.RoundToInt(baseHealth * goldRation);
-            // Debug.Log("Gold: " + value);
-            _goldInfo.ChangeValue(value);
+            int value = Mathf.RoundToInt(baseHealth * _goldRatio);
+            _goldInfo.MobChangeValue(value);
             Kill();
         }
     }
@@ -184,8 +186,8 @@ public class CreatureInfo : MonoBehaviour {
         _slowCounter++;
 
         if (_slowCounter == 1) {
-            /* Slow creature by 30% */
-            _speedModifier *= 0.7f;
+            /* Slow creature by 20% */
+            _speedModifier *= 0.8f;
             _navAgent.speed = _baseSpeed * _speedModifier;
             _anim.SetFloat("Speed", _speedModifier);
             slowFx.SetActive(true);

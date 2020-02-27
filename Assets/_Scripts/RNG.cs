@@ -4,83 +4,110 @@
 public static class RNG {
     public static int waveNr = 0;
     
-    private static readonly int[] WaveCreatureNr = {100, 120, 0, 0, 0};
+    private static readonly int[] WaveCreatureNr = {80, 100, 110, 120, 140};
 
     /* Player Damage */
-    private static readonly int[] PlayerDmgMin = {35, 75, 0, 0, 0};
-    private static readonly int[] PlayerDmgMax = {40, 90, 0, 0, 0};
+    private static readonly int[] PlayerDmgMin = {30, 50, 75, 120, 175};
+    private static readonly int[] PlayerDmgMax = {35, 60, 80, 135, 200};
 
     /* Spawn Rate */
-    private static readonly double[] FrogmanSpawnRate = {0.28, 0.24};
-    private static readonly double[] RabbidSpawnRate = {0.26, 0.24};
-    private static readonly double[] SuccubusSpawnRate = {0.24, 0.25};
-    private static readonly double[] OgreSpawnRate = {0.18, 0.20,};
-    private static readonly double[] TreantSpawnRate = {0.03, 0.045};
-    private static readonly double[] GolemSpawnRate = {0.01, 0.025};
+    private static readonly double[] FrogmanSpawnRate = {.28, .25, .23, .2, .2};
+    private static readonly double[] RabbidSpawnRate = {.28, .25, .23, .2, .2};
+    private static readonly double[] SuccubusSpawnRate = {.24, .245, .22, .225, .2};
+    private static readonly double[] OgreSpawnRate = {.175, .19, .22, .225, .2};
+    private static readonly double[] TreantSpawnRate = {.02, .04, .06, .075, .1};
+    private static readonly double[] GolemSpawnRate = {.005, .025, .04, .075, .1};
 
     /* CD Timer */
-    private static readonly double[] FrogmanTimer = {5, 4.5};
-    private static readonly double[] RabbidTimer = {5, 4.5};
-    private static readonly double[] SuccubusTimer = {6.5, 6};
-    private static readonly double[] OgreTimer = {7.5, 6.5};
-    private static readonly double[] TreantTimer = {8, 7};
-    private static readonly double[] GolemTimer = {8, 7};
+    private static readonly double[] FrogmanTimer = {6, 6, 5, 5, 4.5};
+    private static readonly double[] RabbidTimer = {6, 6, 5, 5, 4.5};
+    private static readonly double[] SuccubusTimer = {7, 7, 6, 6, 5};
+    private static readonly double[] OgreTimer = {7, 7, 6, 6, 5};
+    private static readonly double[] TreantTimer = {8, 7, 6.5, 6, 5};
+    private static readonly double[] GolemTimer = {8, 7, 6.5, 6, 5};
 
     /* Health Modifier */
-    private static readonly double[] FrogmanHealthModifier = {1, 1.5, 0, 0, 0};
-    private static readonly double[] RabbidHealthModifier = {1, 1.5, 0, 0, 0};
-    private static readonly double[] SuccubusHealthModifier = {1, 1.5, 0, 0, 0};
-    private static readonly double[] OgreHealthModifier = {1, 1.5, 0, 0, 0};
-    private static readonly double[] TreantHealthModifier = {1, 1.25, 0, 0, 0};
-    private static readonly double[] GolemHealthModifier = {1, 1.25, 0, 0, 0};
+    private static readonly double[] FrogmanHealthModifier = {1, 1.5, 2.5, 3.75, 5};
+    private static readonly double[] RabbidHealthModifier = {1, 1.5, 2.5, 3.75, 5};
+    private static readonly double[] SuccubusHealthModifier = {1, 1.5, 2.5, 3.25, 4};
+    private static readonly double[] OgreHealthModifier = {1, 1.5, 2.5, 3.25, 4};
+    private static readonly double[] TreantHealthModifier = {1, 1.25, 1.75, 2.5, 3.5};
+    private static readonly double[] GolemHealthModifier = {1, 1.25, 1.75, 2.5, 3.5};
     
-    /* Speed Modifier */
-    private static readonly double[] FrogmanSpeedModifier = {1, 1.1, 0, 0, 0};
-    private static readonly double[] RabbidSpeedModifier = {1, 1.1, 0, 0, 0};
-    private static readonly double[] SuccubusSpeedModifier = {1, 1.15, 0, 0, 0};
-    private static readonly double[] OgreSpeedModifier = {1, 1.15, 0, 0, 0};
-    private static readonly double[] TreantSpeedModifier = {1, 1.2, 0, 0, 0};
-    private static readonly double[] GolemSpeedModifier = {1, 1.2, 0, 0, 0};
-
+    /* Gold Ration */
+    private static readonly double[] FrogmanGoldRatio = {.025, .025, .02, .015, .007};
+    private static readonly double[] RabbidGoldRatio = {.025, .025, .02, .015, .007};
+    private static readonly double[] SuccubusGoldRatio = {.015, .015, .01, .0075, .004};
+    private static readonly double[] OgreGoldRatio = {.0125, .0125, .0085, .007, .004};
+    private static readonly double[] TreantGoldRatio = {.0075, .0075, .007, .005, .002};
+    private static readonly double[] GolemGoldRatio = {.01, .01, .0075, .007, .004};
+    
     /* Resist Rate */
     private static readonly double[][] FrogmanResist = {
-        new[] {0.95, 0.025, 0.025},
-        new[] {0.85, 0.075, 0.075}
+        new[] {.95, .025, .025},
+        new[] {.85, .075, .075},
+        new []{.8, .1, .1},
+        new []{.7, .15, .15},
+        new []{.5, .25, .25}
     };
     private static readonly double[][] RabbidResist = {
         new[] {0.95, 0.025, 0.025},
-        new[] {0.85, 0.075, 0.075}
+        new[] {0.85, 0.075, 0.075},
+        new []{.8, .1, .1},
+        new []{.7, .15, .15},
+        new []{.5, .25, .25}
     };
     private static readonly double[][] SuccubusResist = {
         new[] {1.0, 0.0, 0.0},
-        new[] {0.9, 0.05, 0.05}
+        new[] {0.9, 0.05, 0.05},
+        new []{.85, .075, .075},
+        new []{.8, .1, .1},
+        new []{.6, .2, .2}
     };
     private static readonly double[][] OgreResist = {
         new[] {1.0, 0.0, 0.0},
-        new[] {0.9, 0.05, 0.05}
+        new[] {0.9, 0.05, 0.05},
+        new []{.85, .075, .075},
+        new []{.8, .1, .1},
+        new []{.6, .2, .2}
     };
     private static readonly double[][] TreantResist = {
         new[] {1.0, 0.0, 0.0},
-        new[] {0.93, 0.035, 0.035}
+        new[] {0.93, 0.035, 0.035},
+        new []{.9, .05, .05},
+        new []{.85, .075, .075},
+        new []{.7, .15, .15}
     };
     private static readonly double[] GolemResist = {0.5, 0.25, 0.25}; 
     
     /* Spawn Number Rate */
     private static readonly double[][] FrogmanNr = {
-        new[] {0.925, 0.05, 0.025},
-        new[] {0.865, 0.085, 0.05}
+        new[] {.925, .05, .025},
+        new[] {.865, .085, .05},
+        new []{.83, .1, .07},
+        new []{.75, .15, .1},
+        new []{.4, .35, .25}
     };
     private static readonly double[][] RabbidNr = {
-        new[] {0.925, 0.05, 0.025},
-        new[] {0.865, 0.085, 0.05}
+        new[] {.925, .05, .025},
+        new[] {.865, .085, .05},
+        new []{.83, .1, .07},
+        new []{.75, .15, .1},
+        new []{.4, .35, .25}
     };
     private static readonly double[][] SuccubusNr = {
-        new[] {0.97, 0.03},
-        new[] {0.925, 0.075}
+        new[] {.97, .03},
+        new[] {.925, .075},
+        new []{.9, .1},
+        new []{.85, .15},
+        new []{.7, .3}
     };
     private static readonly double[][] OgreNr = {
-        new[] {0.97, 0.03},
-        new[] {0.925, 0.075}
+        new[] {.97, .03},
+        new[] {.925, .075},
+        new []{.9, .1},
+        new []{.85, .15},
+        new []{.7, .3}
     };
 
     public static int GetPlayerDamage() {
@@ -106,25 +133,25 @@ public static class RNG {
         return 1;
     }
     
-    public static float GetSpeedModifier(string mob) {
+    public static float GetGoldRatio(string mob) {
         switch (mob) {
             case "Frogman":
-                return (float)FrogmanSpeedModifier[waveNr];
+                return (float)FrogmanGoldRatio[waveNr];
             case "Rabbid":
-                return (float)RabbidSpeedModifier[waveNr];
+                return (float)RabbidGoldRatio[waveNr];
             case "Succubus":
-                return (float)SuccubusSpeedModifier[waveNr];
+                return (float)SuccubusGoldRatio[waveNr];
             case "Ogre":
-                return (float)OgreSpeedModifier[waveNr];
+                return (float)OgreGoldRatio[waveNr];
             case "Treant":
-                return (float)TreantSpeedModifier[waveNr];
+                return (float)TreantGoldRatio[waveNr];
             case "Golem":
-                return (float)GolemSpeedModifier[waveNr];
+                return (float)GolemGoldRatio[waveNr];
         }
 
         return 1;
     }
-    
+
     public static string GenerateMob() {
         double r = Random.Range(0.0f, 1.0f);
         double t = GolemSpawnRate[waveNr];
@@ -317,9 +344,9 @@ public static class RNG {
         int amount = Mathf.RoundToInt(waveCreatureNr[0] * factor);
         waveCreatureNr[1] = amount;
         
-        /* Split the rest evenly (40%-60%) between portal_1 and portal_2 */
-        factor = Random.Range(0.4f, 0.6f);
-        amount = Mathf.RoundToInt((WaveCreatureNr[0] - waveCreatureNr[1]) * factor);
+        /* Split the rest evenly (45%-55%) between portal_1 and portal_2 */
+        factor = Random.Range(0.45f, 0.55f);
+        amount = Mathf.RoundToInt((waveCreatureNr[0] - waveCreatureNr[1]) * factor);
         waveCreatureNr[2] = amount;
         waveCreatureNr[3] = waveCreatureNr[0] - (waveCreatureNr[1] + waveCreatureNr[2]);
 

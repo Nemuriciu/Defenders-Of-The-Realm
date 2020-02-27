@@ -4914,10 +4914,10 @@ MonoBehaviour:
   type: Magical
   atkSpeed: 1
   atkSpeedModif: 1
-  damageMin: 170
-  damageMax: 200
-  buildVal: 1400
-  sellVal: 2175
+  damageMin: 180
+  damageMax: 210
+  buildVal: 600
+  sellVal: 1125
   info: A multi-target (AoE) tower that deals magical damage.
 --- !u!114 &4049986920568976540
 MonoBehaviour:
