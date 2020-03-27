@@ -2,50 +2,628 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e87b2577-677b-4b9e-b08c-a3d7de1a6e8d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Defenders Of The Realm/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/!HealthBar/HealthBar.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/!HealthBar/HealthBar.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Creatures/!Scripts/CreatureInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/!Scripts/CreatureInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/!Scripts/Healthbar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/!Scripts/Healthbar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/1_Frogman/Frogman.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/1_Frogman/Frogman.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/1_Frogman/Frogman_Magical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/1_Frogman/Frogman_Magical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/1_Frogman/Frogman_Physical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/1_Frogman/Frogman_Physical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/2_Rabbid/Rabbid.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/2_Rabbid/Rabbid.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/2_Rabbid/Rabbid_Magical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/2_Rabbid/Rabbid_Magical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/2_Rabbid/Rabbid_Physical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/2_Rabbid/Rabbid_Physical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/3_Succubus/Succubus.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/3_Succubus/Succubus.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/3_Succubus/Succubus_Magical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/3_Succubus/Succubus_Magical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/3_Succubus/Succubus_Physical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/3_Succubus/Succubus_Physical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/4_Ogre/Animator/Ogre_Anim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/4_Ogre/Animator/Ogre_Anim.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/4_Ogre/Ogre.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/4_Ogre/Ogre.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/4_Ogre/Ogre_Magical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/4_Ogre/Ogre_Magical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/4_Ogre/Ogre_Physical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/4_Ogre/Ogre_Physical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/5_Treant/Animator/Treant_Animator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/5_Treant/Animator/Treant_Animator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/5_Treant/Treant.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/5_Treant/Treant.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/5_Treant/Treant_Magical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/5_Treant/Treant_Magical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/5_Treant/Treant_Physical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/5_Treant/Treant_Physical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/6_Golem/Animator/Golem_Animator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/6_Golem/Animator/Golem_Animator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/6_Golem/Golem_Magical1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/6_Golem/Golem_Magical1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Creatures/6_Golem/Golem_Magical2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/6_Golem/Golem_Magical2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Creatures/6_Golem/Golem_Physical.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Creatures/6_Golem/Golem_Physical.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI/_Scripts/GoldInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI/_Scripts/GoldInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene_new.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene_new.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/Close Button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/Close Button.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/IRONY TITLE  empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/IRONY TITLE  empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Large Set.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Large Set.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Large stone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Large stone.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium  parchment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium  parchment.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium Set.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium Set.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium stone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Medium stone.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small  parchment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small  parchment.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small  stone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small  stone.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small Set.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Small Set.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Frame_big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Frame_big.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Frame_mid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Frame_mid.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Frame_mid_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Frame_mid_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Hp_frame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Hp_frame.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Hp_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Hp_line.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Mini_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Mini_background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Mini_frame0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Mini_frame0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Mini_frame1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Mini_frame1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Mini_frame2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/Mini_frame2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/bar_ready.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/bar_ready.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/barmid_ready.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/barmid_ready.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/big_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/big_background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/big_roundframe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/big_roundframe.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button2_ready_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button2_ready_off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button2_ready_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button2_ready_on.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button3_ready.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button3_ready.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button_agree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button_agree.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button_cancel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button_cancel.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button_frame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button_frame.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button_ready_off.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button_ready_off.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button_ready_on.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/button_ready_on.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/lil_roundbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/lil_roundbackground.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/lil_roundframe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/lil_roundframe.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/lil_roundframe_ready.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/lil_roundframe_ready.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/lil_roundframe_ready2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/lil_roundframe_ready2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/mid_background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/mid_background.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/name_bar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/name_bar.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/name_bar2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/name_bar2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/name_bar3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/name_bar3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/warrior_silhouette_man.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/warrior_silhouette_man.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/warrior_silhouette_woman.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Gui_parts/warrior_silhouette_woman.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/armor_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/armor_icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_01.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_01_nobg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_01_nobg.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_02.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_02.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_02_nobg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_02_nobg.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_03.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_03.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_03_nobg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_03_nobg.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_04.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_04.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_04_nobg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/skill_icon_04_nobg.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/stoune_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/stoune_icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/weapon_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI_Parts/Icons/weapon_icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Projectile/_Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Projectile/_Scripts/Projectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/VR_Hands/Controllers/Hands_Anim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/VR_Hands/Controllers/Hands_Anim.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/_Scripts/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/_Scripts/Building.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/_Scripts/FirstPersonAIO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/_Scripts/FirstPersonAIO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/_Scripts/FirstPersonAIO.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/_Scripts/FirstPersonAIO.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/_Scripts/PlayerInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/_Scripts/PlayerInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DefeatScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/DefeatScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene/NavMesh.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene/NavMesh.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene_new.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene_new.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene_new.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene_new/NavMesh.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene_new/NavMesh.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Towers/!Scripts/Tower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/!Scripts/Tower.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Towers/1_Ballista/Ballista_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/1_Ballista/Ballista_1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Towers/1_Ballista/Ballista_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/1_Ballista/Ballista_2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Towers/1_Ballista/Ballista_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/1_Ballista/Ballista_3.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Towers/2_Crystal/Crystal_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/2_Crystal/Crystal_1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Towers/2_Crystal/Crystal_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/2_Crystal/Crystal_2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Towers/2_Crystal/Crystal_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/2_Crystal/Crystal_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Towers/3_Pyro/Pyro_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/3_Pyro/Pyro_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Towers/3_Pyro/Pyro_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/3_Pyro/Pyro_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Towers/3_Pyro/Pyro_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/3_Pyro/Pyro_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Towers/4_Dark/Dark_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/4_Dark/Dark_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Towers/4_Dark/Dark_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/4_Dark/Dark_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Towers/4_Dark/Dark_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/4_Dark/Dark_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Towers/5_Hourglass/Hourglass_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/5_Hourglass/Hourglass_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Towers/5_Hourglass/Hourglass_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/5_Hourglass/Hourglass_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Towers/5_Hourglass/Hourglass_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Towers/5_Hourglass/Hourglass_3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/ArtefactHit.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/ArtefactHit.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Background_Defeat.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Background_Defeat.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Burning.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Burning.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Combat_1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Combat_1.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Combat_2.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Combat_2.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Combat_3.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Combat_3.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Combat_4.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Combat_4.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Explosion.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Explosion.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Tower_Build.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Tower_Build.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Victory (The Messenger).mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Audio/Victory (The Messenger).mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Artefact.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Artefact.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/BigExplosionEffect.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/BigExplosionEffect.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Editor/PackageManagerAssembly.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Editor/PackageManagerAssembly/PackageImportList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Editor/PackageManagerAssembly/PackageImportList.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Editor/PackageManagerAssembly/PackageManagerAssembly.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Editor/PackageManagerAssembly/PackageManagerAssembly.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Materials/EmbersParticle_.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Materials/EmbersParticle_.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Materials/FlameParticle_.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Materials/FlameParticle_.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Materials/FlameRoundYellowParticle_.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Materials/FlameRoundYellowParticle_.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Materials/ShockWaveParticle_.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Materials/ShockWaveParticle_.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Materials/SmokeDarkParticle_.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Materials/SmokeDarkParticle_.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Textures/DebrisParticleSheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Textures/DebrisParticleSheet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Textures/FlameParticleSheet_.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Textures/FlameParticleSheet_.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Textures/FlameRoundParticleSheet_.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Textures/FlameRoundParticleSheet_.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Textures/SmokePuff02ParticleSheet_.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/FireExplosionEffects/Textures/SmokePuff02ParticleSheet_.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Profiles.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Profiles/EffectsProfile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Profiles/EffectsProfile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/Background.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/Background.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/DarkDefault.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/DarkDefault.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/FleshSurface.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/FleshSurface.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/MetalSurface.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/MetalSurface.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/SandSurface.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/SandSurface.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/Skybox.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/Skybox.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/StoneSurface_.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/StoneSurface_.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/WoodSurface.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Materials/WoodSurface.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Shaders/SurfaceShader_VC.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Shaders/SurfaceShader_VC.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/BackgroundAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/BackgroundAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/CloudsAlpha.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/CloudsAlpha.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/CloudsNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/CloudsNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/CloudsOcclusion.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/CloudsOcclusion.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/DustPuffSmallParticleSheet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/DustPuffSmallParticleSheet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/StoneAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/StoneAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/StoneNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/StoneNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/WoodAlbedo.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/WoodAlbedo.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/WoodNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/WoodNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/fleshNormals.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/fleshNormals.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/wood_tiled_02_a.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/wood_tiled_02_a.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/wood_tiled_02_n.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/wood_tiled_02_n.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/wood_tiled_02_o.tif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/Shared/Textures/wood_tiled_02_o.tif.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/WallFlames.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Explosion/WallFlames.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Materials/ArtefactMat.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Materials/ArtefactMat.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Models/Artefact.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Models/Artefact.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Models/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Models/Materials/Artefact.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Models/Materials/Artefact.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Models/Materials/angelStatue.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Models/Materials/angelStatue.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Textures/Artefact.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Artefact/Textures/Artefact.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Creatures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Footman.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Footman.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Golem.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Golem.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Grunt.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Grunt.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Lich.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Creatures/Lich.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/FBX/Birch_tree1.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/FBX/Birch_tree1.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Materials/Birch_bark.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Materials/Birch_bark.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Materials/Birch_leaves 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Materials/Birch_leaves 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Materials/Birch_leaves.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Materials/Birch_leaves.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Prefabs/Birch_tree1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Prefabs/Birch_tree1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Prefabs/Birch_tree2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Prefabs/Birch_tree2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Textures/Birch_bark.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Textures/Birch_bark.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Textures/Birch_leaves.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Ambient-Occlusion-Trees/Textures/Birch_leaves.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/EnvPrefab.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/EnvPrefab.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Environment.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Environment/Plant.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Environment/Plant.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Environment/ground_grass.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Environment/ground_grass.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Environment/ground_road.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Environment/ground_road.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/FBX/Flower1.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/FBX/Flower1.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/FBX/Flower2.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/FBX/Flower2.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/FBX/Grass1.FBX" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/FBX/Grass1.FBX.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Materials/Plant.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Materials/Plant.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Prefabs/Flower1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Prefabs/Flower1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Prefabs/Flower2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Prefabs/Flower2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Prefabs/Grass1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Prefabs/Grass1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Terrain.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Environment/Terrain.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ArtefactBar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ArtefactBar/ArtefactIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ArtefactBar/ArtefactIcon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders/Border-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders/Border-1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders/Border-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders/Border-2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders/Border-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders/Border-3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders/Border-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders/Border-4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders/Border-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders/Border-5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders/GreenHex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Borders/GreenHex.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/BuildButton.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/BuildButton.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/CrossbowIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/CrossbowIcon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/CrystalIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/CrystalIcon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/HourglassIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/HourglassIcon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/Materials/CrossbowIcon 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/Materials/CrossbowIcon 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/Materials/CrossbowIcon.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/BuildButton/Icons/Materials/CrossbowIcon.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/DefeatScene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/DefeatScene/GameOver.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/DefeatScene/GameOver.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/FadeInAnimation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/FadeInAnimation/FadeIn.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/FadeInAnimation/FadeIn.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/FadeInAnimation/FadeIn.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/FadeInAnimation/FadeIn.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-BSE_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-BSE_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-BSE_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-BSE_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-BSK_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-BSK_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-BSK_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-BSK_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-E_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-E_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-E_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-E_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-GL_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-GL_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-GL_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-GL_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-GR_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-GR_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-GR_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-GR_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-G_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-G_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-G_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-G_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-O_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-O_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-O_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-O_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-P_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-P_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-P_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-P_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-R_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-R_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-R_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-R_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-Y_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-Y_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-Y_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/1-Y_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-B_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-B_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-B_mpty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-B_mpty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-E_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-E_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-E_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-E_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-GL_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-GL_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-GL_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-GL_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-GR_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-GR_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-GR_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-GR_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-G_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-G_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-G_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-G_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-O_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-O_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-O_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-O_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-PR_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-PR_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-PR_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-PR_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-P_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-P_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-P_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-P_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-R_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-R_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-R_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-R_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-Y_empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-Y_empty.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-Y_filled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/ProgressBar/Textures/4-Y_filled.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/SkillButton.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/SkillButton/SkillButton.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/SkillButton/SkillButton.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/WaveCount.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/WaveCount/Icons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/WaveCount/Icons/ParchmentFrame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/WaveCount/Icons/ParchmentFrame.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/WaveCount/Icons/Skull.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/WaveCount/Icons/Skull.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/WaveCount/Icons/TrapezoidFrame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/WaveCount/Icons/TrapezoidFrame.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/WaveCount/WaveCount.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/GUI/WaveCount/WaveCount.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/MagicHit.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/MagicHit.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/MagicProjectile.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/MagicProjectile.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Arrow_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Arrow_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/BG.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/BG.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Bullet.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Bullet.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Capier_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Capier_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_9.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_9.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_Main.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_Main.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_Main_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_Main_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_Particle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Glow_Particle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Hit_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Hit_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Hit_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Hit_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Hit_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Hit_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Light.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Light.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Line_1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Line_1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_10.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_10.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_12.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_12.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_13.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_13.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_14.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_14.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_7.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_7.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_8.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_8.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_9.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Magic_9.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Particle.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Particle.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Smoke.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Smoke.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Trail.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Trail.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Trail_2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Materials/Trail_2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Shader/Fresnel.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Shader/Fresnel.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Sound.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Sound/Fire.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Sound/Fire.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Sound/Fire_Hit.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Sound/Fire_Hit.mp3.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Arrow_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Arrow_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/BG.tga" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/BG.tga.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Bullet.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Capier_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Capier_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_Main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_Main.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_Main_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_Main_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_Particle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Glow_Particle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Hit_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Hit_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Hit_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Hit_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Hit_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Hit_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Light.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Line_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Line_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Line_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Line_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_10.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_12.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_13.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_14.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_8.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Magic_9.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Particle_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Particle_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Smoke.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Smoke.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Trail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Trail.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Trail_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Prefabs/Projectile/Texture/Trail_2.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scripts/GameSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/GameSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/RNG.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/RNG.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,14 +651,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/GameScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/SimpleRotate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/StartMenu.unity" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/DefeatScene.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/ExitToMainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.textmeshpro@2.0.1/Scripts/Runtime/TMP_Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/LoadingScene.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/X-BARS/Scripts/Editor/HealthBarCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Towers/!Scripts/RotatePivot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MainMenu/Scripts/StartButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scenes/GameScene_new.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Towers/!Scripts/Highlight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GUI/_Scripts/ZoomEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Environment/Crystal/_Scripts/CrystalInteract.cs" root0="FORCE_HIGHLIGHTING" />
@@ -92,6 +668,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Player/_Scripts/PlayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GUI/Minimap/_Scripts/NoRotation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Portal/_Scripts/PortalTooltip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Player/_Scripts/FirstPersonAIO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Creatures/!Scripts/Healthbar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Player/Projectile/_Scripts/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GUI/_Scripts/EventMessage.cs" root0="FORCE_HIGHLIGHTING" />
@@ -100,7 +677,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Towers/_Scripts/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Creatures/_Scripts/Damager.cs" />
         <option value="$PROJECT_DIR$/Assets/X-BARS/Scripts/Editor/HealthBarInspector.cs" />
         <option value="$PROJECT_DIR$/Assets/X-BARS/Scripts/Editor/HealthBarCreator.cs" />
@@ -132,25 +708,26 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Animator/PlayerAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Player/Scripts/ProjectileLaunch.cs" />
         <option value="$PROJECT_DIR$/Assets/Projectile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Player/_Scripts/PlayerInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Creatures/_Scripts/Healthbar.cs" />
         <option value="$PROJECT_DIR$/Assets/GUI/_Scripts/GameSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/SpawnRate.cs" />
         <option value="$PROJECT_DIR$/Assets/Player/_Scripts/ProjectileLaunch.cs" />
         <option value="$PROJECT_DIR$/Assets/GUI/TowerTooltip/_Scripts/UpgradeTooltip.cs" />
         <option value="$PROJECT_DIR$/Assets/GUI/TowerTooltip/_Scripts/BuildTooltip.cs" />
-        <option value="$PROJECT_DIR$/Assets/Player/_Scripts/Building.cs" />
-        <option value="$PROJECT_DIR$/Assets/Towers/!Scripts/Tower.cs" />
         <option value="$PROJECT_DIR$/Assets/Creatures/_Scripts/CreatureInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/_Scripts/PortalTooltipCanvasGroup.cs" />
         <option value="$PROJECT_DIR$/Assets/Portal/_Scripts/Spawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Creatures/!Scripts/Healthbar.cs" />
         <option value="$PROJECT_DIR$/Assets/Towers/!Scripts/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Player/Projectile/_Scripts/Projectile.cs" />
-        <option value="$PROJECT_DIR$/Assets/Creatures/!Scripts/CreatureInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/_Scripts/GameSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/GUI/_Scripts/GoldInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/_Scripts/RNG.cs" />
+        <option value="$PROJECT_DIR$/Assets/Creatures/!Scripts/CreatureInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Player/_Scripts/Building.cs" />
+        <option value="$PROJECT_DIR$/Assets/Towers/!Scripts/Tower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Player/_Scripts/PlayerInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Player/Projectile/_Scripts/Projectile.cs" />
+        <option value="$PROJECT_DIR$/Assets/Player/_Scripts/FirstPersonAIO.cs" />
+        <option value="$PROJECT_DIR$/Assets/_Scripts/GameSystem.cs" />
       </list>
     </option>
   </component>
@@ -303,6 +880,9 @@
       <workItem from="1582668974293" duration="12349000" />
       <workItem from="1582753156089" duration="15243000" />
       <workItem from="1582834284735" duration="598000" />
+      <workItem from="1582847046643" duration="1991000" />
+      <workItem from="1584953738502" duration="2280000" />
+      <workItem from="1585166119227" duration="5328000" />
     </task>
     <servers />
   </component>

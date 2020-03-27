@@ -7,27 +7,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="_Prefabs" t="Include">
-          <e p="Artefact" t="Include">
-            <e p="Explosion" t="Include">
-              <e p="Editor" t="Include">
-                <e p="PackageManagerAssembly" t="Include">
-                  <e p="PackageImportList.txt" t="Include" />
-                </e>
-              </e>
-              <e p="Shared" t="Include">
-                <e p="Shaders" t="Include">
-                  <e p="SurfaceShader_VC.shader" t="Include" />
-                </e>
-              </e>
-            </e>
-          </e>
-          <e p="Projectile" t="Include">
-            <e p="Shader" t="Include">
-              <e p="Fresnel.shader" t="Include" />
-            </e>
-          </e>
-        </e>
         <e p="_Scripts" t="Include">
           <e p="GameSystem.cs" t="Include" />
           <e p="RNG.cs" t="Include" />

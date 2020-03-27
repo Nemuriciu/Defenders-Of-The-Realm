@@ -12,8 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b302ca5577f001b42bc0d3980e8c3187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 653554355559035918, guid: 7fabad3c4081732488681e3b298be802,
-    type: 3}
 --- !u!1102 &-2635122911160181389
 AnimatorState:
   serializedVersion: 5
@@ -22,7 +20,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Cast
-  m_Speed: 1.5
+  m_Speed: 1.25
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 4502162903231660879}

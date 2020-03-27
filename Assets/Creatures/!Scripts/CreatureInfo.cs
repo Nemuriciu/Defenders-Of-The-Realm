@@ -95,6 +95,8 @@ public class CreatureInfo : MonoBehaviour {
         if (other.CompareTag("Crystal")) {
             CrystalInteract script = other.gameObject.GetComponent<CrystalInteract>();
             script.Hit(Random.Range(15, 25));
+            
+            /* TODO: Crystal Damage based on mob type / wave nr / mob hp */
             Kill();
         }
     }

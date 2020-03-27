@@ -5,8 +5,12 @@ public class Projectile : MonoBehaviour {
     private Vector3 _forward;
     private const float Speed = 35;
     private float _dist;
+    private AudioSource _audio;
 
     private void Start() {
+        _audio = GameObject.Find("Player Camera").GetComponent<AudioSource>();
+        _audio.Play();
+        
         Camera c = Camera.main;
 
         if (c != null)

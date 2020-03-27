@@ -8,7 +8,6 @@ public class Building : MonoBehaviour {
     public GameObject pyroTower;
     public GameObject darkTower;
     public GameObject hourglassTower;
-    // TODO: Add all towers
     
     public CanvasGroup interactCanvas;
     public CanvasGroup buildCanvas;
@@ -92,9 +91,7 @@ public class Building : MonoBehaviour {
                         _tower.SetOutline(true);
                     }
                     
-                    // TODO: Turn Interact Tooltip On
                     TurnOn("interact");
-                    
                     break;
                 }
             }

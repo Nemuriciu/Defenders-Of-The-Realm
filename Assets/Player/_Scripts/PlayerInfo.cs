@@ -9,6 +9,7 @@ public class PlayerInfo : MonoBehaviour {
     private Animator _leftAnim, _rightAnim;
     private Building _buildScript;
 
+
     private GameObject _physicalLeft, _physicalRight;
     private GameObject _magicalLeft, _magicalRight;
     private string _spellType;

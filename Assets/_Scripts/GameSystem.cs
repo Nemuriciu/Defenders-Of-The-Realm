@@ -10,27 +10,33 @@ public enum Phase {
 
 public class GameSystem : MonoBehaviour {
     public Spawn[] portals;
+    public AudioClip[] clips;
     
     [HideInInspector] 
     public Phase phase;
     public int waveNr = 1;
     public int creatureNr = -1;
     
-    private ErrorMessage _error;
+    //private ErrorMessage _error;
     private EventMessage _event;
+    private AudioSource _audio;
     private TextMeshProUGUI _phaseText;
     private TextMeshProUGUI _waveText;
     private GoldInfo _goldInfo;
     private int[] _waveCreatureNr;
     
     private void Start() {
-        _error = GameObject.Find("ErrorBox").GetComponent<ErrorMessage>();
+        //_error = GameObject.Find("ErrorBox").GetComponent<ErrorMessage>();
+        _audio = GetComponent<AudioSource>();
         _event = GameObject.Find("EventBox").GetComponent<EventMessage>();
         _phaseText = GameObject.Find("PhaseBox").GetComponent<TextMeshProUGUI>();
         _waveText = GameObject.Find("WaveInfo").GetComponentInChildren<TextMeshProUGUI>();
         _goldInfo = GameObject.Find("GoldInfo").GetComponent<GoldInfo>();
         
         phase = Phase.Start;
+        _audio.clip = clips[0];
+        _audio.loop = true;
+        _audio.Play();
     }
 
     private void Update() {

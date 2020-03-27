@@ -27,11 +27,13 @@ public class Tower : MonoBehaviour {
     private CreatureInfo _targetInfo;
 
     private Highlight _outline;
+    private AudioSource _audio;
 
     private void Start() {
         _enemies = new List<GameObject>();
         _bulletParent = GameObject.Find("Bullets").transform;
         _outline = GetComponent<Highlight>();
+        _audio = GetComponent<AudioSource>();
         _hitTimer = 1.0f / (atkSpeed * atkSpeedModif);
     }
 
@@ -46,11 +48,13 @@ public class Tower : MonoBehaviour {
                     if (pivot)
                         pivot.LookAt(_target.transform);
 
+                    /* Shoot bullet */
                     if (_hitTimer >= 1.0f / (atkSpeed * atkSpeedModif)) {
                         GameObject bullet = Instantiate(bulletPrefab, bulletT.position,
                             Quaternion.identity, _bulletParent);
                         Bullet b = bullet.GetComponent<Bullet>();
                         b.SetTarget(_target, this);
+                        _audio.Play();
 
                         _hitTimer = 0;
                     }
