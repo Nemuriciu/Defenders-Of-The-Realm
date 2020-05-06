@@ -12,7 +12,7 @@ public class Healthbar : MonoBehaviour {
 	public Vector2 sizeOffsets;						
 	public bool drawOffDistance;					//Disable health bar if it out of drawDistance;
 	public float drawDistance = 10;
-	public bool showHealthInfo, isHit;						//Show the health info on top of the health bar or not;
+	public bool showHealthInfo, isHit = true;						//Show the health info on top of the health bar or not;
 	public enum HealthInfoAlignment {Top, Center, Bottom};
 	public HealthInfoAlignment healthInfoAlignment = HealthInfoAlignment.Center;
 	public float healthInfoSize = 10;
@@ -67,17 +67,27 @@ public class Healthbar : MonoBehaviour {
 		_healthInfo.fontSizeMin = 1;
 		_healthInfo.fontSizeMax = 64;
 		
+		
 		_healthbarSize = healthbarPrefab.sizeDelta;
-        _canvasGroup.alpha = alphaSettings.nullAlpha;
+		healthbarPrefab.sizeDelta = new Vector2 (_healthbarSize.x * scale, _healthbarSize.y * scale);
+        //_canvasGroup.alpha = alphaSettings.nullAlpha;
 		_canvasGroup.interactable = false;
-		_canvasGroup.blocksRaycasts = false;
+		_canvasGroup.blocksRaycasts = true;
 		_cam = Camera.main;
 		
 		healthLink.SetHealthbar(this);
 	}
 	
 	// Update is called once per frame
-	private void LateUpdate () {
+	// private void Update() {
+	// 	if(!healthbarPrefab)
+	// 		return;
+	// 	
+	// 	
+	// }
+	
+	
+	private void Update() {
 		if(!healthbarPrefab)
 			return;
 		
@@ -89,16 +99,10 @@ public class Healthbar : MonoBehaviour {
 
 		if(_backGround.fillAmount > _healthVolume.fillAmount + maxDifference)
 			_backGround.fillAmount = _healthVolume.fillAmount + maxDifference;
-        if (_backGround.fillAmount > _healthVolume.fillAmount)
-            _backGround.fillAmount -= (1 / ((float)_defaultHealth / 100)) * Time.deltaTime;
-        else
-            _backGround.fillAmount = _healthVolume.fillAmount;
-	}
-	
-	
-	private void Update() {
-		if(!healthbarPrefab)
-			return;
+		if (_backGround.fillAmount > _healthVolume.fillAmount)
+			_backGround.fillAmount -= (1 / ((float)_defaultHealth / 100)) * Time.deltaTime;
+		else
+			_backGround.fillAmount = _healthVolume.fillAmount;
 		
 		_camDistance = Vector3.Dot(_thisT.position - _cam.transform.position, _cam.transform.forward);
 		
@@ -145,7 +149,7 @@ public class Healthbar : MonoBehaviour {
 
         _dist = keepSize ? _camDistance / scale :  scale;
 
-		healthbarPrefab.sizeDelta = new Vector2 (_healthbarSize.x/(_dist-sizeOffsets.x/100), _healthbarSize.y/(_dist-sizeOffsets.y/100));
+		//healthbarPrefab.sizeDelta = new Vector2 (_healthbarSize.x/(_dist-sizeOffsets.x/100), _healthbarSize.y/(_dist-sizeOffsets.y/100));
 		
 		_healthInfo.rectTransform.sizeDelta = new Vector2 (healthbarPrefab.sizeDelta.x * healthInfoSize/10, 
 		                                                  healthbarPrefab.sizeDelta.y * healthInfoSize/10);
@@ -180,18 +184,18 @@ public class Healthbar : MonoBehaviour {
 [System.Serializable]
 public class AlphaSettings {
     
-    public float defaultAlpha = 0.7F;           //Default healthbar alpha (health is bigger then zero and not full);
-    public float defaultFadeSpeed = 0.1F;
+    public float defaultAlpha = 1.0F;           //Default healthbar alpha (health is bigger then zero and not full);
+    public float defaultFadeSpeed = 0.0F;
     public float fullAlpha = 1.0F;             //Healthbar alpha when health is full;
-    public float fullFadeSpeed = 0.1F;
+    public float fullFadeSpeed = 0.0F;
     public float nullAlpha;              //Healthbar alpha when health is zero or less;
-    public float nullFadeSpeed = 0.1F;
+    public float nullFadeSpeed = 0.0F;
     public OnHit onHit;                         //On hit settings
 }
 
 [System.Serializable]
 public class OnHit {
-    public float fadeSpeed = 0.1F;              //Alpha state fade speed;
+    public float fadeSpeed = 0.0F;              //Alpha state fade speed;
     public float onHitAlpha = 1.0F;             //On hit alpha;
     public float duration = 1.0F;               //Duration of alpha state;
 }

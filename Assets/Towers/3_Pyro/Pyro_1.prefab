@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7512554782309563266}
   - component: {fileID: 7705415747146748576}
   - component: {fileID: 7679808540646282720}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: sparks_additive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4763,7 +4763,7 @@ GameObject:
   - component: {fileID: 7512494618976508336}
   - component: {fileID: 7679212308995471896}
   - component: {fileID: 7679629164070606558}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9513,7 +9513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7520969061512403404}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Sparks_grp1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9544,10 +9544,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7512433472110989506}
-  - component: {fileID: 7518043254559649657}
+  - component: {fileID: 998037246064067685}
   - component: {fileID: 7518043254559649656}
-  - component: {fileID: 7518043254559649639}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Pyro_1
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -9563,15 +9562,15 @@ Transform:
   m_GameObject: {fileID: 7518043254559649638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
+  m_LocalScale: {x: 0.55, y: 0.6, z: 0.55}
   m_Children:
   - {fileID: 7520985219336660992}
   - {fileID: 7520470335062523070}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &7518043254559649657
-SphereCollider:
+--- !u!65 &998037246064067685
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9581,8 +9580,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 8.5
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 10, y: 3, z: 10}
+  m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!114 &7518043254559649656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9604,29 +9603,13 @@ MonoBehaviour:
     type: 3}
   tName: '[T1] Pyro Tower'
   type: Physical
-  atkSpeed: 0.6
+  atkSpeed: 1.25
   atkSpeedModif: 1
-  damageMin: 50
-  damageMax: 65
+  damageMin: 30
+  damageMax: 35
   buildVal: 125
   sellVal: 125
   info: A multi-target (AoE) tower that deals physical damage.
---- !u!114 &7518043254559649639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7518043254559649638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 0, g: 0.6862745, b: 0, a: 1}
-  outlineWidth: 8
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &7518062701833278584
 GameObject:
   m_ObjectHideFlags: 0
@@ -9638,7 +9621,7 @@ GameObject:
   - component: {fileID: 7520470335062523070}
   - component: {fileID: 7504858760413098056}
   - component: {fileID: 7495385501795427100}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Pyro_Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9716,7 +9699,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7512492476688346196}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Scaled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9748,7 +9731,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7512088754675311126}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: shootElement1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9781,7 +9764,8 @@ GameObject:
   - component: {fileID: 7505169544529122262}
   - component: {fileID: 7495185549582944834}
   - component: {fileID: 7518303174065649939}
-  m_Layer: 9
+  - component: {fileID: 9130256749512988236}
+  m_Layer: 2
   m_Name: Pyro_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9861,6 +9845,102 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: e57a37a63866e2045b95e26390f1a3d5, type: 3}
+--- !u!82 &9130256749512988236
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7518303174065649938}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 827dc20730e447348a56b29cb1ff048b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7518344859460035264
 GameObject:
   m_ObjectHideFlags: 0
@@ -9872,7 +9952,7 @@ GameObject:
   - component: {fileID: 7512075291401435554}
   - component: {fileID: 7504975797917343432}
   - component: {fileID: 7495148022716664450}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: GB_Pyro_bullet_main_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

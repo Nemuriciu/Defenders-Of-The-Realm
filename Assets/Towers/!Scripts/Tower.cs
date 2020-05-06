@@ -26,17 +26,17 @@ public class Tower : MonoBehaviour {
     private float _hitTimer;
     private CreatureInfo _targetInfo;
 
-    private Highlight _outline;
     private AudioSource _audio;
 
     private void Start() {
         _enemies = new List<GameObject>();
         _bulletParent = GameObject.Find("Bullets").transform;
-        _outline = GetComponent<Highlight>();
         _audio = GetComponent<AudioSource>();
+        
+        /* Random AtkSpeedModif */
+        atkSpeedModif += Random.Range(-0.1f, 0.1f);
         _hitTimer = 1.0f / (atkSpeed * atkSpeedModif);
     }
-
 
     private void Update() {
         if (!slowTower) {
@@ -54,7 +54,7 @@ public class Tower : MonoBehaviour {
                             Quaternion.identity, _bulletParent);
                         Bullet b = bullet.GetComponent<Bullet>();
                         b.SetTarget(_target, this);
-                        _audio.Play();
+                        //_audio.Play();
 
                         _hitTimer = 0;
                     }
@@ -126,11 +126,7 @@ public class Tower : MonoBehaviour {
             c.DisableSlow();
         }
     }
-    
-    public void SetOutline(bool b) {
-        _outline.enabled = b;
-    }
-    
+
     public int GetDamage() {
         return Random.Range(damageMin, damageMax);
     }

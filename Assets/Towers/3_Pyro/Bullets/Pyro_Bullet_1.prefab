@@ -284,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5036,7 +5036,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -9565,7 +9565,7 @@ Transform:
   m_GameObject: {fileID: 2064243462158568762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_Children:
   - {fileID: 2069216571766108088}
   m_Father: {fileID: 0}
@@ -9644,6 +9644,7 @@ MonoBehaviour:
   hitEffect: {fileID: 8185827229455506673, guid: 15374fe8e76ad104fba75ed0bb3b9f34,
     type: 3}
   isAoe: 1
+  speed: 15
 --- !u!1 &2064307877501408980
 GameObject:
   m_ObjectHideFlags: 0

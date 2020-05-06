@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2817609481637643254}
   - component: {fileID: 7955808356830967702}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: shootElement3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,14 +136,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2811412645945116350}
-  - component: {fileID: 2814259135217364672}
+  - component: {fileID: 996098709164635092}
   - component: {fileID: 2845677256999456752}
   - component: {fileID: 2836871532701077980}
   - component: {fileID: 2814259135217364673}
   - component: {fileID: 3848903840134115845}
   - component: {fileID: 2814259135217364674}
-  - component: {fileID: 2814259135217364675}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Crystal_3
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -159,14 +158,14 @@ Transform:
   m_GameObject: {fileID: 2814259135217364670}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_Children:
   - {fileID: 2817609481637643254}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &2814259135217364672
-SphereCollider:
+--- !u!65 &996098709164635092
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -176,8 +175,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 8.5
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 10, y: 3.5, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &2845677256999456752
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -373,33 +372,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slowTower: 0
-  bulletPrefab: {fileID: 3961854283022699281, guid: 71e5bc43fd63da84fb2904e9b92b9d2e,
+  bulletPrefab: {fileID: 7764759877315290895, guid: 21bb25ef58f02f34e9983177c9f21846,
     type: 3}
   bulletT: {fileID: 2817609481637643254}
   pivot: {fileID: 0}
   upgradePrefab: {fileID: 0}
   tName: '[T3] Crystal Tower'
   type: Magical
-  atkSpeed: 1.2
+  atkSpeed: 1.5
   atkSpeedModif: 1
-  damageMin: 640
-  damageMax: 680
+  damageMin: 50
+  damageMax: 50
   buildVal: 500
   sellVal: 900
   info: A single-target tower that deals magical damage.
---- !u!114 &2814259135217364675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2814259135217364670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 0, g: 0.6862745, b: 0, a: 1}
-  outlineWidth: 8
-  bakeKeys: []
-  bakeValues: []

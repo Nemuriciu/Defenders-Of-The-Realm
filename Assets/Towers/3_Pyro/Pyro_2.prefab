@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 501329351209292990}
   - component: {fileID: 304857002593044918}
   - component: {fileID: 305332193571612884}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: sparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4764,7 +4764,8 @@ GameObject:
   - component: {fileID: 471986028780164888}
   - component: {fileID: 479914775484689302}
   - component: {fileID: 502508196335883949}
-  m_Layer: 9
+  - component: {fileID: 4004555402187280050}
+  m_Layer: 2
   m_Name: Pyro_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4844,6 +4845,102 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 009511045b28459418b1b3bf82094a18, type: 3}
+--- !u!82 &4004555402187280050
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 502508196335883950}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 827dc20730e447348a56b29cb1ff048b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &502508784768337862
 GameObject:
   m_ObjectHideFlags: 0
@@ -4853,7 +4950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 501058790562433512}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Scaled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4887,7 +4984,7 @@ GameObject:
   - component: {fileID: 498483073544084166}
   - component: {fileID: 472217769482727860}
   - component: {fileID: 480589669164341852}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: GB_Pyro_bullet_main_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4962,7 +5059,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 498308931321197936}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Sparks_grp2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4993,7 +5090,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 501417802875093014}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: shootElement2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5023,10 +5120,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 501320072785723524}
-  - component: {fileID: 504030556212085200}
+  - component: {fileID: 3168615311419003342}
   - component: {fileID: 504030556212085201}
-  - component: {fileID: 504030556212085215}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Pyro_2
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -5042,15 +5138,15 @@ Transform:
   m_GameObject: {fileID: 504030556212085202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.6, z: 0.5}
   m_Children:
   - {fileID: 498297589999857130}
   - {fileID: 498751964758571594}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &504030556212085200
-SphereCollider:
+--- !u!65 &3168615311419003342
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5060,8 +5156,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 8.5
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 11, y: 3, z: 11}
+  m_Center: {x: 0, y: 0.4, z: 0}
 --- !u!114 &504030556212085201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5083,29 +5179,13 @@ MonoBehaviour:
     type: 3}
   tName: '[T2] Pyro Tower'
   type: Physical
-  atkSpeed: 0.8
+  atkSpeed: 1.25
   atkSpeedModif: 1
-  damageMin: 90
-  damageMax: 100
+  damageMin: 30
+  damageMax: 35
   buildVal: 400
   sellVal: 525
   info: A multi-target (AoE) tower that deals physical damage.
---- !u!114 &504030556212085215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 504030556212085202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 0, g: 0.6862745, b: 0, a: 1}
-  outlineWidth: 8
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &504189054055351574
 GameObject:
   m_ObjectHideFlags: 0
@@ -5117,7 +5197,7 @@ GameObject:
   - component: {fileID: 498751964758571594}
   - component: {fileID: 472090535070083804}
   - component: {fileID: 480043028350203368}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Pyro_Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5197,7 +5277,7 @@ GameObject:
   - component: {fileID: 498275927375293486}
   - component: {fileID: 304049205445265004}
   - component: {fileID: 305334893288859914}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: sparks_additive
   m_TagString: Untagged
   m_Icon: {fileID: 0}

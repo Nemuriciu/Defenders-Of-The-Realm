@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Vlad\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Vlad\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Defenders Of The Realm.-1480814426.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Vlad\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Vlad\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_Defenders Of The Realm.-1480814426.00" t="ExcludeRecursive" />
     <e p="C:\Users\Vlad\Desktop\Defenders Of The Realm" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -18,6 +18,11 @@
             <e p="FloatingTextComponent.cs" t="Include" />
             <e p="HealthBar.cs" t="Include" />
             <e p="HealthbarRoot.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Creatures_new" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="PBRMaskTint.shader" t="Include" />
           </e>
         </e>
         <e p="Environment" t="Include">
@@ -40,6 +45,12 @@
             <e p="ProgressBar.cs" t="Include" />
             <e p="ZoomEffect.cs" t="Include" />
           </e>
+          <e p="Build" t="Include">
+            <e p="_Scripts" t="Include">
+              <e p="Building.cs" t="Include" />
+              <e p="Upgrade.cs" t="Include" />
+            </e>
+          </e>
           <e p="FloatingText" t="Include">
             <e p="_Scripts" t="Include">
               <e p="TextTypeList.cs" t="Include" />
@@ -59,12 +70,6 @@
               </e>
             </e>
           </e>
-          <e p="TowerTooltip" t="Include">
-            <e p="_Scripts" t="Include">
-              <e p="BuildTooltip.cs" t="Include" />
-              <e p="UpgradeTooltip.cs" t="Include" />
-            </e>
-          </e>
         </e>
         <e p="MainMenu" t="Include">
           <e p="Scripts" t="Include">
@@ -80,15 +85,8 @@
         </e>
         <e p="Player" t="Include">
           <e p="_Scripts" t="Include">
-            <e p="Building.cs" t="Include" />
             <e p="FirstPersonAIO.cs" t="Include" />
-            <e p="PlayerInfo.cs" t="Include" />
-            <e p="ProjectileLaunch.cs" t="Include" />
-          </e>
-          <e p="Projectile" t="Include">
-            <e p="_Scripts" t="Include">
-              <e p="Projectile.cs" t="Include" />
-            </e>
+            <e p="RTS_Camera.cs" t="Include" />
           </e>
           <e p="VR_Hands" t="Include">
             <e p="Shaders" t="Include">

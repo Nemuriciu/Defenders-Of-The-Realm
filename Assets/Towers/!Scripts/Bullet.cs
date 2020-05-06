@@ -3,21 +3,20 @@
 public class Bullet : MonoBehaviour {
     public GameObject hitEffect;
     public bool isAoe;
+    public float speed = 15f;
     
     private GameObject _target;
     private Vector3 _targetPos;
     private Tower _tower;
     private bool Go {  get; set;  }
 
-    private const float Speed = 25f;
-    
     private void Update() {
         if (Go) {
             if (_target) {
                 _targetPos = _target.transform.position;
 
                 transform.position = Vector3.MoveTowards(transform.position,
-                    _targetPos, Time.deltaTime * Speed);
+                    _targetPos, Time.deltaTime * speed);
                 transform.LookAt(_target.transform);
                 
                 return;
@@ -40,7 +39,7 @@ public class Bullet : MonoBehaviour {
             /* Hit all enemies in a radius near the target */
             if (isAoe) {
                 var hitColliders = Physics.OverlapSphere(
-                    transform.position, 3.0f, LayerMask.GetMask("Enemy"));
+                    transform.position, 1.5f, LayerMask.GetMask("Enemy"));
 
                 foreach (var hitCollider in hitColliders) {
                     GameObject enemy = hitCollider.gameObject;

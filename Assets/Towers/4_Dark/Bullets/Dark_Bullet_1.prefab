@@ -284,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3
+      scalar: 1.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5036,7 +5036,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 4
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -9516,7 +9516,7 @@ GameObject:
   - component: {fileID: 1183161636206202934}
   - component: {fileID: 1191734604631914351}
   m_Layer: 10
-  m_Name: Dragon_Bullet_1
+  m_Name: Dark_Bullet_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9531,7 +9531,7 @@ Transform:
   m_GameObject: {fileID: 1191734604631914348}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 1190024441302713610}
   m_Father: {fileID: 0}
@@ -9565,6 +9565,7 @@ MonoBehaviour:
   hitEffect: {fileID: 8107288792744766587, guid: bf565a51f1f3fc54da0d9491809ad863,
     type: 3}
   isAoe: 1
+  speed: 15
 --- !u!1 &1191796353177447134
 GameObject:
   m_ObjectHideFlags: 0
@@ -14605,7 +14606,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -19357,7 +19358,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 2.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2

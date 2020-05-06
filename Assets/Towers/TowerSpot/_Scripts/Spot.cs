@@ -1,40 +1,92 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Spot : MonoBehaviour {
-    private Camera _cam;
-    private GameObject _tower;
-    private const float OffsetY = 0.507f;
+    public Vector3 SpawnPos { get; private set; }
+    
+    private GameObject _towerObj;
+    private Tower _twr;
+    private Building _build;
+    private Upgrade _upgrade;
+    private GameObject _upgradeTooltip;
+
+    private void Awake() {
+        _build = GameObject.Find("System").GetComponent<Building>();
+        _upgradeTooltip = GameObject.Find("UpgradeGroup");
+        _upgrade = _upgradeTooltip.GetComponent<Upgrade>();
+
+        SpawnPos = new Vector3(
+            transform.position.x + 0.912f,
+            transform.position.y + 1.824f,
+            transform.position.z - 0.912f);
+    }
 
     private void Start() {
-        _cam = Camera.main;
-    }
-
-    public GameObject AddBlueprint(GameObject blueprint) {
-        return Instantiate(blueprint, 
-            new Vector3(transform.position.x, OffsetY, transform.position.z), 
-            Quaternion.LookRotation(_cam.transform.right) * Quaternion.Euler(0,40,0),
-            transform);
+        _upgradeTooltip.SetActive(false);
     }
     
-    public void AddTower(GameObject tower) {
-        if (_tower) 
-            RemoveTower();
+    private void OnMouseDown() {
+        if (EventSystem.current.IsPointerOverGameObject()) return;
+
+        /* Upgrade tower */
+        if (HasTower()) {
+            _upgrade.SpotInstance = this;
+            _upgradeTooltip.SetActive(true);
+            return;
+        }
         
-        _tower = Instantiate(tower, 
-            new Vector3(transform.position.x, OffsetY, transform.position.z), 
-            Quaternion.LookRotation(_cam.transform.right) * Quaternion.Euler(0,40,0),
-            transform);
+        /* Build new tower */
+        if (_build.IsBuilding) {
+            _build.ResetBlueprints();
+            AddTower(_build.prefabs[_build.TowerId]);
+            _build.Reset();
+        }
     }
 
+    private void OnMouseEnter() {
+        _build.SpotInstance = this;
+
+        if (HasTower()) return;
+        
+        if (_build.IsBuilding)
+            _build.SetBlueprint(_build.TowerId, SpawnPos);
+    }
+
+    private void OnMouseExit() {
+        _build.SpotInstance = null;
+        
+        if (HasTower()) return;
+        
+        if (_build.IsBuilding)
+            _build.ResetBlueprints();
+    }
+
+    private void AddTower(GameObject tower) {
+        if (_towerObj != null) 
+            RemoveTower();
+        
+        _towerObj = Instantiate(tower, SpawnPos, Quaternion.identity, transform);
+        _twr = _towerObj.GetComponent<Tower>();
+    }
+    
     public void RemoveTower() {
-        Destroy(_tower);
+        if (_twr && _twr.slowTower)
+            _twr.RemoveSlows();
+        
+        Destroy(_towerObj);
+    }
+    
+    public void UpgradeTower() {
+        if (_towerObj && _twr.upgradePrefab) {
+            GameObject tower = _twr.upgradePrefab;
+            
+            RemoveTower();
+            _towerObj = Instantiate(tower, SpawnPos, Quaternion.identity, transform);
+            _twr = _towerObj.GetComponent<Tower>();
+        }
     }
 
     public bool HasTower() {
-        return _tower;
-    }
-
-    public Tower GetTower() {
-        return HasTower() ? _tower.GetComponent<Tower>() : null;
+        return _twr != null;
     }
 }

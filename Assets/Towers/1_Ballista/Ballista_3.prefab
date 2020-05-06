@@ -9,11 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2779455843387063680}
-  - component: {fileID: 2774526634766857885}
+  - component: {fileID: 4286512854258499618}
   - component: {fileID: 5581024401572778771}
   - component: {fileID: 2774526634766857883}
-  - component: {fileID: 2774526634766857882}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Ballista_3
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -29,15 +28,15 @@ Transform:
   m_GameObject: {fileID: 2774526634766857884}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 2779331712245732160}
   - {fileID: 2779796456147040526}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!135 &2774526634766857885
-SphereCollider:
+--- !u!65 &4286512854258499618
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -47,8 +46,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 8.5
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 11, y: 3.5, z: 11}
+  m_Center: {x: 0, y: 0.7, z: 0}
 --- !u!82 &5581024401572778771
 AudioSource:
   m_ObjectHideFlags: 0
@@ -56,7 +55,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2774526634766857884}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f034d7aabe987bc4888ecf9f98c7cf17, type: 3}
@@ -192,29 +191,13 @@ MonoBehaviour:
   upgradePrefab: {fileID: 0}
   tName: '[T3] Ballista Tower'
   type: Physical
-  atkSpeed: 1.2
+  atkSpeed: 1.5
   atkSpeedModif: 1
-  damageMin: 640
-  damageMax: 680
+  damageMin: 50
+  damageMax: 50
   buildVal: 500
   sellVal: 900
   info: A single-target tower that deals physical damage.
---- !u!114 &2774526634766857882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2774526634766857884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 0, g: 0.6862745, b: 0, a: 1}
-  outlineWidth: 8
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &2774541836492343936
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,7 +211,7 @@ GameObject:
   - component: {fileID: 2807988934210595614}
   - component: {fileID: 2797599588535828974}
   - component: {fileID: 2774541836492343937}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Ballista_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +396,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2777925470866532384}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: shootElement3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -445,7 +428,7 @@ GameObject:
   - component: {fileID: 2779796456147040526}
   - component: {fileID: 2807117396716261422}
   - component: {fileID: 2798683103934895340}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Ballista_Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5632575006837989938}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 5636564527118278968}
   m_Father: {fileID: 0}
@@ -108,6 +108,7 @@ MonoBehaviour:
   hitEffect: {fileID: 2523749855558829737, guid: 1c4795c21aa925f4fa5f01eeacd7546a,
     type: 3}
   isAoe: 1
+  speed: 15
 --- !u!1 &5633321898704748356
 GameObject:
   m_ObjectHideFlags: 0

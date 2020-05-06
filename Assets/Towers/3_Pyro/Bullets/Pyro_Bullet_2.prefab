@@ -4875,7 +4875,7 @@ Transform:
   m_GameObject: {fileID: 7321248093204810278}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_Children:
   - {fileID: 7318300165207988004}
   m_Father: {fileID: 0}
@@ -4937,7 +4937,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.5, y: 0.5, z: 0.58}
+  m_Size: {x: 0.4, y: 0.4, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7321248093204810277
 MonoBehaviour:
@@ -4954,6 +4954,7 @@ MonoBehaviour:
   hitEffect: {fileID: 1739132663199871057, guid: b62e7831988c5984f98d3a487529b9c9,
     type: 3}
   isAoe: 1
+  speed: 15
 --- !u!1 &7321684119563791968
 GameObject:
   m_ObjectHideFlags: 0

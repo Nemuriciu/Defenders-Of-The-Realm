@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7946243888423780097}
   - component: {fileID: 2357903921689920027}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: shootElement1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,14 +136,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7951545595601834753}
-  - component: {fileID: 7948745145705647093}
+  - component: {fileID: 1007255926823063873}
   - component: {fileID: 7944322293199268527}
   - component: {fileID: 7933104200285568737}
   - component: {fileID: 7948745145705647092}
-  - component: {fileID: 4035030183368033348}
+  - component: {fileID: 1320032366686392876}
   - component: {fileID: 7948745145705647091}
-  - component: {fileID: 7948745145705647090}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Crystal_1
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -159,14 +158,14 @@ Transform:
   m_GameObject: {fileID: 7948745145705647095}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 7946243888423780097}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &7948745145705647093
-SphereCollider:
+--- !u!65 &1007255926823063873
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -176,8 +175,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 8.5
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 9, y: 3.5, z: 9}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &7944322293199268527
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -237,14 +236,14 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 62af3f614c6278f47bff6c44e188df7a, type: 3}
---- !u!82 &4035030183368033348
+--- !u!82 &1320032366686392876
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7948745145705647095}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4401a029a5310f24a94bfd0f5a795d46, type: 3}
@@ -381,26 +380,10 @@ MonoBehaviour:
     type: 3}
   tName: '[T1] Crystal Tower'
   type: Magical
-  atkSpeed: 0.75
+  atkSpeed: 1.5
   atkSpeedModif: 1
-  damageMin: 150
-  damageMax: 175
+  damageMin: 50
+  damageMax: 50
   buildVal: 100
   sellVal: 100
   info: A single-target tower that deals magical damage.
---- !u!114 &7948745145705647090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7948745145705647095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 0, g: 0.6862745, b: 0, a: 1}
-  outlineWidth: 8
-  bakeKeys: []
-  bakeValues: []

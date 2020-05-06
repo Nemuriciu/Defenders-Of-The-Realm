@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8924090220459788953}
   - component: {fileID: 8931767875981668097}
   - component: {fileID: 2724347196822662606}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Hourglass_Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,8 @@ GameObject:
   - component: {fileID: 8923947418299671843}
   - component: {fileID: 8931270777951714163}
   - component: {fileID: 8909854484752548812}
-  m_Layer: 9
+  - component: {fileID: 6079832809958631612}
+  m_Layer: 2
   m_Name: Hourglass_Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,6 +185,102 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 482ebb8fdc15e7749bb9fed28bb8cb25, type: 3}
+--- !u!82 &6079832809958631612
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8909854484752548813}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 827dc20730e447348a56b29cb1ff048b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8909973275859207281
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,10 +290,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8912137180961335087}
-  - component: {fileID: 8909973275859207279}
+  - component: {fileID: 60555545556638161}
   - component: {fileID: 8909973275859207280}
-  - component: {fileID: 8909973275859207278}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: Hourglass_1
   m_TagString: Tower
   m_Icon: {fileID: 0}
@@ -212,15 +308,15 @@ Transform:
   m_GameObject: {fileID: 8909973275859207281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 8912844986865120557}
   - {fileID: 8912451858594740549}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &8909973275859207279
-SphereCollider:
+--- !u!65 &60555545556638161
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -230,8 +326,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 8
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 9.25, y: 3, z: 9.25}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8909973275859207280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,8 +344,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 0}
   bulletT: {fileID: 0}
   pivot: {fileID: 0}
-  upgradePrefab: {fileID: 3551020714450616661, guid: 624f599b9d145f94d89981110a9c5ace,
-    type: 3}
+  upgradePrefab: {fileID: 0}
   tName: '[T1] Hourglass'
   type: 
   atkSpeed: 0
@@ -259,22 +354,6 @@ MonoBehaviour:
   buildVal: 200
   sellVal: 200
   info: Slows enemies in range by 30%. Does not stack with other Hourglass towers.
---- !u!114 &8909973275859207278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8909973275859207281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 0, g: 0.6862745, b: 0, a: 1}
-  outlineWidth: 8
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &8910084699630184187
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +365,7 @@ GameObject:
   - component: {fileID: 8912455299697899521}
   - component: {fileID: 8923883933291479649}
   - component: {fileID: 8931267357755585487}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: GB_sandglass_sand1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -363,7 +442,7 @@ GameObject:
   - component: {fileID: 8913133432220745187}
   - component: {fileID: 8923348396728112609}
   - component: {fileID: 8930930402521969085}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: GB_sandglass_glass1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
