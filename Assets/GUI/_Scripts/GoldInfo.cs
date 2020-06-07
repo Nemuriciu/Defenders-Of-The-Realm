@@ -6,13 +6,11 @@ public class GoldInfo : MonoBehaviour {
     public int gold;
 
     private TextMeshProUGUI _goldText;
-    private CanvasGroup _canvasGroup;
     private const int InitGold = 850;
     private int _acc;
 
     private void Start() {
         _goldText = transform.GetChild(0).GetComponentInChildren<TextMeshProUGUI>();
-        _canvasGroup = GetComponent<CanvasGroup>();
         
         ChangeValue(InitGold);
     }
@@ -34,10 +32,5 @@ public class GoldInfo : MonoBehaviour {
         gold += value;
         _acc += value;
         _goldText.text = gold.ToString();
-    }
-
-    public void SetVisible() {
-        _canvasGroup.alpha = 1;
-        _canvasGroup.interactable = true;
     }
 }

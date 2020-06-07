@@ -57,7 +57,8 @@ AudioSource:
   m_GameObject: {fileID: 2774526634766857884}
   m_Enabled: 0
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -341322287406483470, guid: 4cc81d4088fde7a40a90ea9a4f781a14,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: f034d7aabe987bc4888ecf9f98c7cf17, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.5
@@ -191,12 +192,12 @@ MonoBehaviour:
   upgradePrefab: {fileID: 0}
   tName: '[T3] Ballista Tower'
   type: Physical
-  atkSpeed: 1.5
+  atkSpeed: 0.7
   atkSpeedModif: 1
-  damageMin: 50
-  damageMax: 50
-  buildVal: 500
-  sellVal: 900
+  damageMin: 275
+  damageMax: 300
+  buildVal: 350
+  sellVal: 625
   info: A single-target tower that deals physical damage.
 --- !u!1 &2774541836492343936
 GameObject:
@@ -241,7 +242,8 @@ AudioSource:
   m_GameObject: {fileID: 2774541836492343936}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -341322287406483470, guid: 4cc81d4088fde7a40a90ea9a4f781a14,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 827dc20730e447348a56b29cb1ff048b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -350,6 +352,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -361,6 +364,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -383,9 +387,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 621f2c23043f5a3409b5d99990c63e63, type: 3}
 --- !u!1 &2775389581383069612
 GameObject:
@@ -472,6 +476,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -483,6 +488,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0

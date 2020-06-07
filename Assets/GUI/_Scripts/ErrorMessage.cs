@@ -24,7 +24,7 @@ public class ErrorMessage : MonoBehaviour {
         }
     }
 
-    public void Show(string msg) {
+    public void SetMessage(string msg) {
         _text.text = msg;
         _timer = 2.5f;
         _isActive = true;

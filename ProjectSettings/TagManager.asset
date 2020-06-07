@@ -15,6 +15,7 @@ TagManager:
   - Blueprint_4
   - Blueprint_5
   - Dead
+  - DoNotClose
   layers:
   - Default
   - TransparentFX

@@ -2117,7 +2117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cName: Mage
   affinity: None
-  baseHealth: 500
+  baseHealth: 350
   slowFx: {fileID: 7316370265342858529}
 --- !u!114 &785220046798561720
 MonoBehaviour:

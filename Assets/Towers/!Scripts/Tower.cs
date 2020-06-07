@@ -34,8 +34,8 @@ public class Tower : MonoBehaviour {
         _audio = GetComponent<AudioSource>();
         
         /* Random AtkSpeedModif */
-        atkSpeedModif += Random.Range(-0.1f, 0.1f);
-        _hitTimer = 1.0f / (atkSpeed * atkSpeedModif);
+        atkSpeedModif += Random.Range(-0.05f, 0.05f);
+        _hitTimer = atkSpeed * atkSpeedModif;
     }
 
     private void Update() {
@@ -49,7 +49,7 @@ public class Tower : MonoBehaviour {
                         pivot.LookAt(_target.transform);
 
                     /* Shoot bullet */
-                    if (_hitTimer >= 1.0f / (atkSpeed * atkSpeedModif)) {
+                    if (_hitTimer >= atkSpeed * atkSpeedModif) {
                         GameObject bullet = Instantiate(bulletPrefab, bulletT.position,
                             Quaternion.identity, _bulletParent);
                         Bullet b = bullet.GetComponent<Bullet>();

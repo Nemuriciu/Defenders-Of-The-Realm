@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class Upgrade : MonoBehaviour, IPointerClickHandler {
+    public TextMeshProUGUI upgradeText;
+    public TextMeshProUGUI sellText;
     public Spot SpotInstance { private get; set; }
     
     private Camera _cam;
@@ -26,7 +29,7 @@ public class Upgrade : MonoBehaviour, IPointerClickHandler {
                 }
                 /* Sell tower */
                 else if (_enabled && Input.GetKeyDown(KeyCode.Q)) {
-                    SpotInstance.RemoveTower();
+                    SpotInstance.SellTower();
 
                     SpotInstance = null;
                     _enabled = false;
@@ -45,5 +48,10 @@ public class Upgrade : MonoBehaviour, IPointerClickHandler {
         SpotInstance = null;
         _enabled = false;
         gameObject.SetActive(false);
+    }
+
+    public void SetValues(int upgrade, int sell) {
+        upgradeText.text = upgrade == 0 ? "MAX" : upgrade.ToString();
+        sellText.text = sell.ToString();
     }
 }

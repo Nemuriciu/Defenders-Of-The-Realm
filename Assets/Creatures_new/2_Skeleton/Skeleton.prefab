@@ -1441,7 +1441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cName: Skeleton
   affinity: None
-  baseHealth: 325
+  baseHealth: 150
   slowFx: {fileID: 5350798110780146674}
 --- !u!114 &5772129589222755234
 MonoBehaviour:

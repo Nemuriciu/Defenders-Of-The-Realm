@@ -10,10 +10,15 @@ public class Spot : MonoBehaviour {
     private Upgrade _upgrade;
     private GameObject _upgradeTooltip;
 
+    private GoldInfo _goldInfo;
+    private ErrorMessage _error;
+
     private void Awake() {
         _build = GameObject.Find("System").GetComponent<Building>();
         _upgradeTooltip = GameObject.Find("UpgradeGroup");
         _upgrade = _upgradeTooltip.GetComponent<Upgrade>();
+        _goldInfo = GameObject.Find("GoldGroup").GetComponent<GoldInfo>();
+        _error = GameObject.Find("ErrorBox").GetComponent<ErrorMessage>();
 
         SpawnPos = new Vector3(
             transform.position.x + 0.912f,
@@ -30,6 +35,11 @@ public class Spot : MonoBehaviour {
 
         /* Upgrade tower */
         if (HasTower()) {
+            /* Set upgrade/sell values */
+            _upgrade.SetValues(_twr.upgradePrefab ? 
+                    _twr.upgradePrefab.GetComponent<Tower>().buildVal : 0,
+                    _twr.sellVal);
+
             _upgrade.SpotInstance = this;
             _upgradeTooltip.SetActive(true);
             return;
@@ -37,6 +47,15 @@ public class Spot : MonoBehaviour {
         
         /* Build new tower */
         if (_build.IsBuilding) {
+            GameObject tower = _build.prefabs[_build.TowerId];
+            Tower twr = tower.GetComponent<Tower>();
+            
+            /* Verify enough gold to build */
+            if (_goldInfo.gold < twr.buildVal) {
+                _error.SetMessage("Not enough gold to build.");
+                return;
+            }
+            
             _build.ResetBlueprints();
             AddTower(_build.prefabs[_build.TowerId]);
             _build.Reset();
@@ -67,25 +86,43 @@ public class Spot : MonoBehaviour {
         
         _towerObj = Instantiate(tower, SpawnPos, Quaternion.identity, transform);
         _twr = _towerObj.GetComponent<Tower>();
+        _goldInfo.ChangeValue(-_twr.buildVal);
     }
     
-    public void RemoveTower() {
+    private void RemoveTower() {
         if (_twr && _twr.slowTower)
             _twr.RemoveSlows();
         
         Destroy(_towerObj);
     }
-    
+
     public void UpgradeTower() {
         if (_towerObj && _twr.upgradePrefab) {
             GameObject tower = _twr.upgradePrefab;
+            Tower twr = tower.GetComponent<Tower>();
+            
+            /* Verify enough gold to build */
+            if (_goldInfo.gold < twr.buildVal) {
+                _error.SetMessage("Not enough gold to upgrade.");
+                return;
+            }
             
             RemoveTower();
             _towerObj = Instantiate(tower, SpawnPos, Quaternion.identity, transform);
             _twr = _towerObj.GetComponent<Tower>();
+            _goldInfo.ChangeValue(-_twr.buildVal);
         }
     }
 
+    public void SellTower() {
+        if (_twr && _twr.slowTower)
+            _twr.RemoveSlows();
+        
+        _goldInfo.ChangeValue(_twr.sellVal);
+        
+        Destroy(_towerObj);
+    }
+    
     public bool HasTower() {
         return _twr != null;
     }

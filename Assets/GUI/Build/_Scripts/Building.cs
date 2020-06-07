@@ -9,6 +9,12 @@ public class Building : MonoBehaviour {
     public int TowerId { get; private set; } = -1;
     public Spot SpotInstance { get; set; }
 
+    private GameSystem _gameSystem;
+
+    private void Start() {
+        _gameSystem = GameObject.Find("System").GetComponent<GameSystem>();
+    }
+
     private void Update() {
         /* Close building mode on RMB */
         if (IsBuilding && (Input.GetMouseButton(1) || 
@@ -18,90 +24,98 @@ public class Building : MonoBehaviour {
             
             TowerId = -1;
             IsBuilding = false;
+            _gameSystem.isBuilding = false;
             Cursor.SetCursor(cursor[0], Vector2.zero, CursorMode.Auto);
             return;
         }
-        
-        /* Ballista - 1 */
-        if (Input.GetKeyDown(KeyCode.Alpha1)) {
-            TowerId = 0;
-            
-            if (!IsBuilding) {
-                Cursor.SetCursor(cursor[1], Vector2.zero, CursorMode.Auto);
-                IsBuilding = true;
+
+        if (_gameSystem.phase != Phase.Start) {
+            /* Ballista - 1 */
+            if (Input.GetKeyDown(KeyCode.Alpha1)) {
+                TowerId = 0;
+
+                if (!IsBuilding) {
+                    Cursor.SetCursor(cursor[1], Vector2.zero, CursorMode.Auto);
+                    IsBuilding = true;
+                    _gameSystem.isBuilding = true;
+                }
+
+                if (SpotInstance && !SpotInstance.HasTower()) {
+                    ResetBlueprints();
+                    SetBlueprint(TowerId, SpotInstance.SpawnPos);
+                }
+
+                return;
             }
 
-            if (SpotInstance && !SpotInstance.HasTower()) {
-                ResetBlueprints();
-                SetBlueprint(TowerId, SpotInstance.SpawnPos);
-            }
-                
-            return;
-        }
-        
-        /* Crystal - 2 */
-        if (Input.GetKeyDown(KeyCode.Alpha2)) {
-            TowerId = 1;
-            
-            if (!IsBuilding) {
-                Cursor.SetCursor(cursor[1], Vector2.zero, CursorMode.Auto);
-                IsBuilding = true;
+            /* Crystal - 2 */
+            if (Input.GetKeyDown(KeyCode.Alpha2)) {
+                TowerId = 1;
+
+                if (!IsBuilding) {
+                    Cursor.SetCursor(cursor[1], Vector2.zero, CursorMode.Auto);
+                    IsBuilding = true;
+                    _gameSystem.isBuilding = true;
+                }
+
+                if (SpotInstance && !SpotInstance.HasTower()) {
+                    ResetBlueprints();
+                    SetBlueprint(TowerId, SpotInstance.SpawnPos);
+                }
+
+                return;
             }
 
-            if (SpotInstance && !SpotInstance.HasTower()) {
-                ResetBlueprints();
-                SetBlueprint(TowerId, SpotInstance.SpawnPos);
-            }
-                
-            return;
-        }
-        
-        /* Pyro - 3 */
-        if (Input.GetKeyDown(KeyCode.Alpha3)) {
-            TowerId = 2;
-            
-            if (!IsBuilding) {
-                Cursor.SetCursor(cursor[1], Vector2.zero, CursorMode.Auto);
-                IsBuilding = true;
+            /* Pyro - 3 */
+            if (Input.GetKeyDown(KeyCode.Alpha3)) {
+                TowerId = 2;
+
+                if (!IsBuilding) {
+                    Cursor.SetCursor(cursor[1], Vector2.zero, CursorMode.Auto);
+                    IsBuilding = true;
+                    _gameSystem.isBuilding = true;
+                }
+
+                if (SpotInstance && !SpotInstance.HasTower()) {
+                    ResetBlueprints();
+                    SetBlueprint(TowerId, SpotInstance.SpawnPos);
+                }
+
+                return;
             }
 
-            if (SpotInstance && !SpotInstance.HasTower()) {
-                ResetBlueprints();
-                SetBlueprint(TowerId, SpotInstance.SpawnPos);
-            }
-                
-            return;
-        }
-        
-        /* Dark - 4 */
-        if (Input.GetKeyDown(KeyCode.Alpha4)) {
-            TowerId = 3;
-            
-            if (!IsBuilding) {
-                Cursor.SetCursor(cursor[1], Vector2.zero, CursorMode.Auto);
-                IsBuilding = true;
+            /* Dark - 4 */
+            if (Input.GetKeyDown(KeyCode.Alpha4)) {
+                TowerId = 3;
+
+                if (!IsBuilding) {
+                    Cursor.SetCursor(cursor[1], Vector2.zero, CursorMode.Auto);
+                    IsBuilding = true;
+                    _gameSystem.isBuilding = true;
+                }
+
+                if (SpotInstance && !SpotInstance.HasTower()) {
+                    ResetBlueprints();
+                    SetBlueprint(TowerId, SpotInstance.SpawnPos);
+                }
+
+                return;
             }
 
-            if (SpotInstance && !SpotInstance.HasTower()) {
-                ResetBlueprints();
-                SetBlueprint(TowerId, SpotInstance.SpawnPos);
-            }
-                
-            return;
-        }
-        
-        /* Hourglass - 5 */
-        if (Input.GetKeyDown(KeyCode.Alpha5)) {
-            TowerId = 4;
-            
-            if (!IsBuilding) {
-                Cursor.SetCursor(cursor[1], Vector2.zero, CursorMode.Auto);
-                IsBuilding = true;
-            }
+            /* Hourglass - 5 */
+            if (Input.GetKeyDown(KeyCode.Alpha5)) {
+                TowerId = 4;
 
-            if (SpotInstance && !SpotInstance.HasTower()) {
-                ResetBlueprints();
-                SetBlueprint(TowerId, SpotInstance.SpawnPos);
+                if (!IsBuilding) {
+                    Cursor.SetCursor(cursor[1], Vector2.zero, CursorMode.Auto);
+                    IsBuilding = true;
+                    _gameSystem.isBuilding = true;
+                }
+
+                if (SpotInstance && !SpotInstance.HasTower()) {
+                    ResetBlueprints();
+                    SetBlueprint(TowerId, SpotInstance.SpawnPos);
+                }
             }
         }
     }
@@ -121,6 +135,7 @@ public class Building : MonoBehaviour {
     public void Reset() {
         TowerId = -1;
         IsBuilding = false;
+        _gameSystem.isBuilding = false;
         Cursor.SetCursor(cursor[0], Vector2.zero, CursorMode.Auto);
     }
 }

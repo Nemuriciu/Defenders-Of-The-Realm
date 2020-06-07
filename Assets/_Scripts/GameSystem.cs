@@ -18,80 +18,87 @@ public class GameSystem : MonoBehaviour {
     public int waveNr = 1;
     [HideInInspector] 
     public int creatureNr = -1;
+    [HideInInspector]
+    public bool isBuilding, isPaused;
     
-    //private ErrorMessage _error;
-    //private EventMessage _event;
+    private ErrorMessage _error;
+    private EventMessage _event;
     private AudioSource _audio;
-    //private TextMeshProUGUI _phaseText;
-    //private TextMeshProUGUI _waveText;
-    //private GoldInfo _goldInfo;
-    private int[] _waveCreatureNr;
+    private TextMeshProUGUI _phaseText;
+    private TextMeshProUGUI _waveText;
+    private TextMeshProUGUI _mobCountText;
+    private GoldInfo _goldInfo;
+    private int _waveCreatureNr;
     
     private void Start() {
-        //_error = GameObject.Find("ErrorBox").GetComponent<ErrorMessage>();
+        _error = GameObject.Find("ErrorBox").GetComponent<ErrorMessage>();
         //_audio = GetComponent<AudioSource>();
-        //_event = GameObject.Find("EventBox").GetComponent<EventMessage>();
-        //_phaseText = GameObject.Find("PhaseBox").GetComponent<TextMeshProUGUI>();
-        //_waveText = GameObject.Find("WaveInfo").GetComponentInChildren<TextMeshProUGUI>();
-        //_goldInfo = GameObject.Find("GoldInfo").GetComponent<GoldInfo>();
+        _event = GameObject.Find("EventBox").GetComponent<EventMessage>();
+        _phaseText = GameObject.Find("PhaseBox").GetComponent<TextMeshProUGUI>();
+        _waveText = GameObject.Find("WaveInfo").GetComponentInChildren<TextMeshProUGUI>();
+        _mobCountText = GameObject.Find("MobCount").GetComponentInChildren<TextMeshProUGUI>();
+        _goldInfo = GameObject.Find("GoldGroup").GetComponent<GoldInfo>();
 
-        // phase = Phase.Start;
+        phase = Phase.Start;
+
+        Destroy(GameObject.Find("IntroAudio"));
         // _audio.clip = clips[0];
         // _audio.loop = true;
         // _audio.Play();
     }
 
     private void Update() {
-        // switch (phase) {
-        //     case Phase.Start: {
-        //         /* Start Build Phase when pressing B key */
-        //         if (Input.GetKeyDown(KeyCode.B))
-        //             StartCoroutine(BuildPhaseEvent());
-        //         break;
-        //     }
-        //     case Phase.Build:
-        //         /* Start Combat Phase when pressing B key */
-        //         if (Input.GetKeyDown(KeyCode.B)) {
-        //             _phaseText.gameObject.SetActive(false);
-        //             StartCoroutine(NextWaveEvent("Wave  " + waveNr));
-        //         }
-        //
-        //         break;
-        //
-        //     case Phase.Combat:
-        //         switch (creatureNr) {
-        //             /* Spawn wave when creatureNr not init (-1) */
-        //             case -1: {
-        //                 creatureNr = _waveCreatureNr[0];
-        //                 StartCoroutine(portals[0].Wave(_waveCreatureNr[1]));
-        //                 StartCoroutine(portals[1].Wave(_waveCreatureNr[2]));
-        //                 StartCoroutine(portals[2].Wave(_waveCreatureNr[3]));
-        //                 break;
-        //             }
-        //             /* Wave Cleared when creatureNr reaches 0 */
-        //             case 0:
-        //                 if (waveNr < 5) {
-        //                     creatureNr = -2;
-        //                     StartCoroutine(BuildPhaseEvent());
-        //                 }
-        //                 else {
-        //                     /* TODO: Victory */
-        //                     creatureNr = -2;
-        //                     Debug.Log("Victory");
-        //                 }
-        //
-        //                 break;
-        //         }
-        //
-        //         break;
-        // }
+        if (GameTime.IsPaused)
+            return;
+        
+        switch (phase) {
+            case Phase.Start: {
+                /* Start Build Phase when pressing B key */
+                if (Input.GetKeyDown(KeyCode.B))
+                    StartCoroutine(BuildPhaseEvent());
+                break;
+            }
+            case Phase.Build:
+                /* Start Combat Phase when pressing B key */
+                if (Input.GetKeyDown(KeyCode.B)) {
+                    _phaseText.gameObject.SetActive(false);
+                    StartCoroutine(NextWaveEvent("Wave  " + waveNr));
+                }
+        
+                break;
+        
+            case Phase.Combat:
+                switch (creatureNr) {
+                    /* Spawn wave when creatureNr not init (-1) */
+                    case -1: {
+                        creatureNr = _waveCreatureNr;
+                        StartCoroutine(portals[0].Wave(creatureNr));
+                        //StartCoroutine(portals[1].Wave(creatureNr/2));
+                        break;
+                    }
+                    /* Wave Cleared when creatureNr reaches 0 */
+                    case 0:
+                        if (waveNr < 5) {
+                            creatureNr = -2;
+                            StartCoroutine(BuildPhaseEvent());
+                        }
+                        else {
+                            /* TODO: Victory */
+                            creatureNr = -2;
+                            Debug.Log("Victory");
+                        }
+        
+                        break;
+                }
+        
+                break;
+        }
     }
 
-    /*private IEnumerator BuildPhaseEvent() {
+    private IEnumerator BuildPhaseEvent() {
         switch (phase) {
             case Phase.Start:
                 _phaseText.gameObject.SetActive(false);
-                _goldInfo.SetVisible();
                 break;
             case Phase.Combat:
                 _event.Show("Wave Cleared");
@@ -113,24 +120,23 @@ public class GameSystem : MonoBehaviour {
                 break;
         }
         
-        /* Set creatureNr and portal tooltips #1#
-        _waveCreatureNr = RNG.GenerateWaveCreatureNr();
-        portals[0].portalTooltip.SetText("Creatures: " + _waveCreatureNr[1]);
-        portals[1].portalTooltip.SetText("Creatures: " + _waveCreatureNr[2]);
-        portals[2].portalTooltip.SetText("Creatures: " + _waveCreatureNr[3]);
+        //TODO:
+        _waveCreatureNr = RNG.WaveCreatureNr() / 2;
+        _mobCountText.text = _waveCreatureNr.ToString();
 
         _phaseText.gameObject.SetActive(true);
         phase = Phase.Build;
-    }*/
+    }
     
-    /*private IEnumerator NextWaveEvent(string text) {
+    private IEnumerator NextWaveEvent(string text) {
         if (waveNr == 1) {
             _event.Show("Combat Phase");
             yield return new WaitForSeconds(3.2f);
 
-            CanvasGroup cg = _waveText.gameObject.GetComponentInParent<CanvasGroup>();
-            cg.alpha = 1;
-            cg.interactable = true;
+            CanvasGroup waveCanvasGroup = _waveText.gameObject.GetComponentInParent<CanvasGroup>();
+            CanvasGroup mobCanvasGroup = _mobCountText.gameObject.GetComponentInParent<CanvasGroup>();
+            waveCanvasGroup.alpha = 1;
+            mobCanvasGroup.alpha = 1;
         }
         else creatureNr = -1;
 
@@ -138,5 +144,9 @@ public class GameSystem : MonoBehaviour {
         _event.Show(text);
         yield return new WaitForSeconds(3);
         phase = Phase.Combat;
-    }*/
+    }
+
+    public void UpdateMobCount() {
+        _mobCountText.text = creatureNr.ToString();
+    }
 }

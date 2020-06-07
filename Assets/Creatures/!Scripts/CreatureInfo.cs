@@ -32,8 +32,8 @@ public class CreatureInfo : MonoBehaviour {
 
     private void Start() {
         _anim = GetComponent<Animator>();
-        //_system = GameObject.Find("System").GetComponent<GameSystem>();
-        //_goldInfo = GameObject.Find("GoldInfo").GetComponent<GoldInfo>();
+        _system = GameObject.Find("System").GetComponent<GameSystem>();
+        _goldInfo = GameObject.Find("GoldGroup").GetComponent<GoldInfo>();
         _navAgent = GetComponent<NavMeshAgent>();
         
         /* Set speed */
@@ -43,11 +43,11 @@ public class CreatureInfo : MonoBehaviour {
         _anim.SetFloat("Speed", _speedModifier);
         
         /* Set health */
-        baseHealth = Mathf.RoundToInt(baseHealth * RNG.GetHealthModifier(cName));
+        //baseHealth = Mathf.RoundToInt(baseHealth * RNG.GetHealthModifier(cName));
         _health = baseHealth;
         
         /* Set gold ratio */
-        _goldRatio = RNG.GetGoldRatio(cName);
+        _goldRatio = RNG.GoldRatio(cName);
         
         /* Randomize waypoints */
         for (int i = 0; i < _wp.Length; i++) {
@@ -90,8 +90,8 @@ public class CreatureInfo : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Crystal")) {
-            //CrystalInteract script = other.gameObject.GetComponent<CrystalInteract>();
-            //script.Hit(Random.Range(15, 25));
+            CrystalInteract crystal = other.gameObject.GetComponent<CrystalInteract>();
+            crystal.Hit(Random.Range(15, 25));
             
             /* TODO: Crystal Damage based on mob type / wave nr / mob hp */
             Kill();
@@ -127,7 +127,8 @@ public class CreatureInfo : MonoBehaviour {
         if (slowFx.activeSelf)
             slowFx.SetActive(false);
 
-        //_system.creatureNr--;
+        _system.creatureNr--;
+        _system.UpdateMobCount();
     }
     
     public void Hit(int damage, string type) {
@@ -139,8 +140,10 @@ public class CreatureInfo : MonoBehaviour {
         
         /* Kill creature if health reaches zero */
         if (_health <= 0) {
-            //int value = Mathf.RoundToInt(baseHealth * _goldRatio);
-            //_goldInfo.MobChangeValue(value);
+            //TODO: Calculate new gold drop 
+            int value = Mathf.RoundToInt(baseHealth * _goldRatio);
+            _goldInfo.MobChangeValue(value);
+            Debug.Log(value);
             Kill();
         }
     }
