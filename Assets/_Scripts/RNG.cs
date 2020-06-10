@@ -4,7 +4,7 @@
 public static class RNG {
     public static int waveNr = 0;
     
-    private static readonly int[] CreatureNr = {200, 0, 0, 0, 0};
+    private static readonly int[] CreatureNr = {100, 0, 0, 0, 0};
 
     /* Health Modifier */
     /*
@@ -21,6 +21,9 @@ public static class RNG {
     private static readonly double[] SkeletonGold = {.03, .025, .02, .015, .007};
     private static readonly double[] MageGold = {.03, .015, .01, .0075, .004};
     private static readonly double[] OrcGold = {.03, .0125, .0085, .007, .004};
+    
+    private static readonly double[] TurtleGold = {.03, .025, .02, .015, .007};
+    private static readonly double[] BatGold = {.03, .025, .02, .015, .007};
     
     /* Resist Rate */
     /*
@@ -92,6 +95,10 @@ public static class RNG {
                 return (float)MageGold[waveNr];
             case "Orc":
                 return (float)OrcGold[waveNr];
+            case "Turtle":
+                return (float)TurtleGold[waveNr];
+            case "Bat":
+                return (float)BatGold[waveNr];
         }
 
         return 1;
@@ -99,16 +106,19 @@ public static class RNG {
 
     public static ArrayList WaveCreatureList() {
         ArrayList creatureList = new ArrayList();
-        int spiderlingNr = 0, skeletonNr = 0, 
-            mageNr = 0, orcNr = 0;
+        int spiderlingNr = 0, skeletonNr = 0, mageNr = 0,
+            orcNr = 0, turtleNr = 0, batNr = 0;
         
         /* Static creature number/type depending on wave */
         switch (waveNr) {
             case 0:
-                spiderlingNr = 50;
-                skeletonNr = 42;
+                /* 50 per Portal */
+                spiderlingNr = 13;
+                turtleNr = 10;
+                skeletonNr = 12;
+                batNr = 8;
                 mageNr = 5;
-                orcNr = 3;
+                orcNr = 2;
                 break;
             
             /*case 1:
@@ -121,8 +131,12 @@ public static class RNG {
         
         for (int i = 0; i < spiderlingNr; i++)
             creatureList.Add("Spiderling");
+        for (int i = 0; i < turtleNr; i++)
+            creatureList.Add("Turtle");
         for (int i = 0; i < skeletonNr; i++)
             creatureList.Add("Skeleton");
+        for (int i = 0; i < batNr; i++)
+            creatureList.Add("Bat");
         for (int i = 0; i < mageNr; i++)
             creatureList.Add("Mage");
         for (int i = 0; i < orcNr; i++)

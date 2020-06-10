@@ -9,11 +9,6 @@ TagManager:
   - Portal
   - TowerSpot
   - Crystal
-  - Blueprint_1
-  - Blueprint_2
-  - Blueprint_3
-  - Blueprint_4
-  - Blueprint_5
   - Dead
   - DoNotClose
   layers:
@@ -29,7 +24,7 @@ TagManager:
   - Tower
   - Bullet
   - Spot
-  - Player
+  - 
   - 
   - 
   - 

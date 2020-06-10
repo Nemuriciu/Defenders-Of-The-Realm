@@ -1,10 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Spawn : MonoBehaviour {
     [Header("Creatures")] 
     public GameObject[] spiderlings;
+    public GameObject[] turtles;
     public GameObject[] skeletons;
+    public GameObject[] bats;
     public GameObject[] mages;
     public GameObject[] orcs;
     [Space(15)]
@@ -20,7 +24,21 @@ public class Spawn : MonoBehaviour {
         _parent = GameObject.Find("Enemies").transform;
         _spawnPos = transform.position - new Vector3(0, offsetY, 0);
     }
-    
+
+    private void Update() {
+        if (Input.GetKeyDown(KeyCode.F1) && name.Equals("Portal_1")) {
+            SpawnMob(skeletons[Random.Range(0, 3)]);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.F2) && name.Equals("Portal_1")) {
+            SpawnMob(spiderlings[Random.Range(0, 3)]);
+        }
+        
+        if (Input.GetKeyDown(KeyCode.F3) && name.Equals("Portal_1")) {
+            SpawnMob(turtles[Random.Range(0, 3)]);
+        }
+    }
+
     public IEnumerator Wave(int cNumber) {
         ArrayList cList = RNG.WaveCreatureList();
         
@@ -35,8 +53,14 @@ public class Spawn : MonoBehaviour {
                 case "Spiderling":
                     SpawnMob(spiderlings[0]);
                     break;
+                case "Turtle":
+                    SpawnMob(turtles[0]);
+                    break;
                 case "Skeleton":
                     SpawnMob(skeletons[0]);
+                    break;
+                case "Bat":
+                    SpawnMob(bats[0]);
                     break;
                 case "Mage":
                     SpawnMob(mages[0]);

@@ -17,7 +17,7 @@ public class Healthbar : MonoBehaviour {
 	public HealthInfoAlignment healthInfoAlignment = HealthInfoAlignment.Center;
 	public float healthInfoSize = 10;
     public AlphaSettings alphaSettings;
-	private Image _healthVolume, _backGround;			//Health bar images, should be named as "Health" and "Background";
+    private Image _healthVolume, _backGround;			//Health bar images, should be named as "Health" and "Background";
 	private TextMeshProUGUI _healthInfo;
 	private CanvasGroup _canvasGroup;
 	private Vector2 _healthbarPosition, _healthbarSize, _healthInfoPosition;
@@ -27,6 +27,8 @@ public class Healthbar : MonoBehaviour {
 	private Camera _cam;
     private GameObject _healthbarRoot;
 	[HideInInspector]public Canvas canvas;
+
+	public CanvasGroup physicalIcon, magicalIcon;
 	
 	private void Awake() {
 		var canvases = (Canvas[])FindObjectsOfType(typeof(Canvas));
@@ -58,6 +60,20 @@ public class Healthbar : MonoBehaviour {
         healthbarPrefab.SetParent(_healthbarRoot.transform, false);
 		_canvasGroup = healthbarPrefab.GetComponent<CanvasGroup> ();
 		
+		/* Physical & Magical Icons */
+		physicalIcon = healthbarPrefab.GetChild(3).GetComponent<CanvasGroup>();
+		magicalIcon = healthbarPrefab.GetChild(4).GetComponent<CanvasGroup>();
+		
+		/* Set affinity icon */
+		switch (healthLink.affinity) {
+			case "Physical":
+				physicalIcon.alpha = 1;
+				break;
+			case "Magical":
+				magicalIcon.alpha = 1;
+				break;
+		}
+		
 		_healthVolume = healthbarPrefab.transform.Find ("Health").GetComponent<Image>();
 		_backGround = healthbarPrefab.transform.Find ("Background").GetComponent<Image>();
 		_healthInfo = healthbarPrefab.transform.Find ("HealthInfo").GetComponent<TextMeshProUGUI> ();
@@ -77,15 +93,6 @@ public class Healthbar : MonoBehaviour {
 		
 		healthLink.SetHealthbar(this);
 	}
-	
-	// Update is called once per frame
-	// private void Update() {
-	// 	if(!healthbarPrefab)
-	// 		return;
-	// 	
-	// 	
-	// }
-	
 	
 	private void Update() {
 		if(!healthbarPrefab)

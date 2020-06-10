@@ -20,11 +20,18 @@
             <e p="CreatureInfo.cs" t="Include" />
             <e p="FloatingText.cs" t="Include" />
             <e p="FloatingTextComponent.cs" t="Include" />
+            <e p="HealingAura.cs" t="Include" />
             <e p="HealthBar.cs" t="Include" />
             <e p="HealthbarRoot.cs" t="Include" />
+            <e p="PoisonNova.cs" t="Include" />
           </e>
-        </e>
-        <e p="Creatures_new" t="Include">
+          <e p="Particles" t="Include">
+            <e p="Shaders" t="Include">
+              <e p="Add_CenterGlow.shader" t="Include" />
+              <e p="Blend_CenterGlow.shader" t="Include" />
+              <e p="RimLight.shader" t="Include" />
+            </e>
+          </e>
           <e p="Shaders" t="Include">
             <e p="PBRMaskTint.shader" t="Include" />
           </e>
@@ -81,7 +88,14 @@
             </e>
           </e>
         </e>
-        <e p="MainMenu" t="Include">
+        <e p="Portal" t="Include">
+          <e p="_Scripts" t="Include">
+            <e p="PortalTooltip.cs" t="Include" />
+            <e p="PortalTooltipCanvasGroup.cs" t="Include" />
+            <e p="Spawn.cs" t="Include" />
+          </e>
+        </e>
+        <e p="StartMenu" t="Include">
           <e p="_Scripts" t="Include">
             <e p="AudioOptions.cs" t="Include" />
             <e p="GameTime.cs" t="Include" />
@@ -92,13 +106,6 @@
             <e p="SceneVideo.cs" t="Include" />
             <e p="simplerotate.cs" t="Include" />
             <e p="VideoOptions.cs" t="Include" />
-          </e>
-        </e>
-        <e p="Portal" t="Include">
-          <e p="_Scripts" t="Include">
-            <e p="PortalTooltip.cs" t="Include" />
-            <e p="PortalTooltipCanvasGroup.cs" t="Include" />
-            <e p="Spawn.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

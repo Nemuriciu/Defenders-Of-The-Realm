@@ -1,23 +1,26 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
 public class CreatureInfo : MonoBehaviour {
     [Header("Stats")] 
     public string cName;
     public string affinity;
     public int baseHealth;
-    [Space(10)]
-
+    [Space(10)] 
     public GameObject slowFx;
+    public GameObject healFx;
     public bool IsAlive { get; private set; } = true;
 
     private int _health;
-    private int _slowCounter;
+    private int _slowCounter, _healCounter;
     private float _baseSpeed;
     private float _baseSpeedModif = 1.0f, _speedModifier = 1.0f;
+    private float _healTimer;
     private float _goldRatio;
-    
+
     private Vector3[] _wp;
     private int _index;
     private float _dist;
@@ -45,7 +48,7 @@ public class CreatureInfo : MonoBehaviour {
         /* Set health */
         //baseHealth = Mathf.RoundToInt(baseHealth * RNG.GetHealthModifier(cName));
         _health = baseHealth;
-        
+
         /* Set gold ratio */
         _goldRatio = RNG.GoldRatio(cName);
         
@@ -130,7 +133,7 @@ public class CreatureInfo : MonoBehaviour {
         _system.creatureNr--;
         _system.UpdateMobCount();
     }
-    
+
     public void Hit(int damage, string type) {
         /* Reduce damage by 75% if resistant to that type */
         if (type.Equals(affinity))
@@ -143,7 +146,7 @@ public class CreatureInfo : MonoBehaviour {
             //TODO: Calculate new gold drop 
             int value = Mathf.RoundToInt(baseHealth * _goldRatio);
             _goldInfo.MobChangeValue(value);
-            Debug.Log(value);
+            //Debug.Log(value);
             Kill();
         }
     }
@@ -185,5 +188,9 @@ public class CreatureInfo : MonoBehaviour {
     
     public int GetHealth() {
         return _health;
+    }
+
+    public void SetHealth(int value) {
+        _health = value;
     }
 }

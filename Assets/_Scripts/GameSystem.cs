@@ -72,8 +72,8 @@ public class GameSystem : MonoBehaviour {
                     /* Spawn wave when creatureNr not init (-1) */
                     case -1: {
                         creatureNr = _waveCreatureNr;
-                        StartCoroutine(portals[0].Wave(creatureNr));
-                        //StartCoroutine(portals[1].Wave(creatureNr/2));
+                        StartCoroutine(portals[0].Wave(creatureNr/2));
+                        StartCoroutine(portals[1].Wave(creatureNr/2));
                         break;
                     }
                     /* Wave Cleared when creatureNr reaches 0 */
@@ -121,7 +121,7 @@ public class GameSystem : MonoBehaviour {
         }
         
         //TODO:
-        _waveCreatureNr = RNG.WaveCreatureNr() / 2;
+        _waveCreatureNr = RNG.WaveCreatureNr();
         _mobCountText.text = _waveCreatureNr.ToString();
 
         _phaseText.gameObject.SetActive(true);
