@@ -6,7 +6,7 @@ public class GoldInfo : MonoBehaviour {
     public int gold;
 
     private TextMeshProUGUI _goldText;
-    private const int InitGold = 850;
+    private const int InitGold = 650;
     private int _acc;
 
     private void Start() {
@@ -15,22 +15,8 @@ public class GoldInfo : MonoBehaviour {
         ChangeValue(InitGold);
     }
 
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.G)) {
-            Debug.Log("Gold:  " + _acc);
-            _acc = 0;
-        }
-    }
-
     public void ChangeValue(int value) {
         gold += value;
-        _goldText.text = gold.ToString();
-    }
-    
-    /* DEBUG */
-    public void MobChangeValue(int value) {
-        gold += value;
-        _acc += value;
         _goldText.text = gold.ToString();
     }
 }

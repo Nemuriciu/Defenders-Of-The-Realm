@@ -2,6 +2,7 @@
 
 public class PoisonNova : MonoBehaviour {
     public ParticleSystem poisonFx;
+    public float radius;
 
     private CreatureInfo _creatureInfo;
     private float _tick;
@@ -23,9 +24,19 @@ public class PoisonNova : MonoBehaviour {
         
         if (_distance >= _tick) {
             poisonFx.Play();
-            
-            //TODO: Deal damage to towers
+
+            HitTowers();
             _distance = 0;
+        }
+    }
+
+    private void HitTowers() {
+        foreach (Collider hit in Physics.OverlapSphere(transform.position, radius, 1 << 2)) {
+            if (!hit.isTrigger) continue;
+            
+            Tower twr = hit.transform.GetComponent<Tower>();
+            /* Hit for 2% of max hp */
+            twr.Hit(twr.baseHealth * 0.02f);
         }
     }
 }

@@ -48,12 +48,12 @@ public class ConfirmPanel : MonoBehaviour {
 
         switch (_type) {
             case "Exit":
-                Time.timeScale = GameTime.TimeScale;
+                Time.timeScale = GameTime.OriginalTimeScale;
                 GameTime.IsPaused = false;
                 Application.Quit();
                 break;
             case "MainMenu":
-                Time.timeScale = GameTime.TimeScale;
+                Time.timeScale = GameTime.OriginalTimeScale;
                 GameTime.IsPaused = false;
                 SceneManager.LoadScene("StartMenu");
                 break;

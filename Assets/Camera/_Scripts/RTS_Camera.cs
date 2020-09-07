@@ -4,8 +4,7 @@ namespace RTS_Cam
 {
     [RequireComponent(typeof(Camera))]
     [AddComponentMenu("RTS Camera")]
-    public class RTS_Camera : MonoBehaviour
-    {
+    public class RTS_Camera : MonoBehaviour {
 
         #region Foldouts
 

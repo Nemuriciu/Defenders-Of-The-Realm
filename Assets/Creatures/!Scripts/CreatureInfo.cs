@@ -1,8 +1,6 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
-using Random = UnityEngine.Random;
 
 public class CreatureInfo : MonoBehaviour {
     [Header("Stats")] 
@@ -11,7 +9,6 @@ public class CreatureInfo : MonoBehaviour {
     public int baseHealth;
     [Space(10)] 
     public GameObject slowFx;
-    public GameObject healFx;
     public bool IsAlive { get; private set; } = true;
 
     private int _health;
@@ -41,12 +38,11 @@ public class CreatureInfo : MonoBehaviour {
         
         /* Set speed */
         _baseSpeed = _navAgent.speed;
-        _speedModifier += Random.Range(-0.05f, 0.05f);
         _baseSpeedModif = _speedModifier;
         _anim.SetFloat("Speed", _speedModifier);
         
         /* Set health */
-        //baseHealth = Mathf.RoundToInt(baseHealth * RNG.GetHealthModifier(cName));
+        baseHealth = Mathf.RoundToInt(baseHealth * RNG.GetHealthModifier(cName));
         _health = baseHealth;
 
         /* Set gold ratio */
@@ -116,7 +112,7 @@ public class CreatureInfo : MonoBehaviour {
         Destroy(gameObject);
     }
     
-    private void Kill() {
+    public void Kill() {
         IsAlive = false;
 
         tag = "Dead";
@@ -143,10 +139,8 @@ public class CreatureInfo : MonoBehaviour {
         
         /* Kill creature if health reaches zero */
         if (_health <= 0) {
-            //TODO: Calculate new gold drop 
             int value = Mathf.RoundToInt(baseHealth * _goldRatio);
-            _goldInfo.MobChangeValue(value);
-            //Debug.Log(value);
+            _goldInfo.ChangeValue(value);
             Kill();
         }
     }
@@ -166,8 +160,8 @@ public class CreatureInfo : MonoBehaviour {
         _slowCounter++;
 
         if (_slowCounter == 1) {
-            /* Slow creature by 25% */
-            _speedModifier *= 0.75f;
+            /* Slow creature by 20% */
+            _speedModifier *= 0.8f;
             _navAgent.speed = _baseSpeed * _speedModifier;
             _anim.SetFloat("Speed", _speedModifier);
             slowFx.SetActive(true);

@@ -58,6 +58,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -82,6 +83,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &2724347196822662606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +153,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -175,6 +178,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &8909854484752548812
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -297,6 +301,7 @@ GameObject:
   - component: {fileID: 8912137180961335087}
   - component: {fileID: 60555545556638161}
   - component: {fileID: 8909973275859207280}
+  - component: {fileID: -7858388096382554567}
   m_Layer: 2
   m_Name: Hourglass_1
   m_TagString: Tower
@@ -350,15 +355,31 @@ MonoBehaviour:
   bulletT: {fileID: 0}
   pivot: {fileID: 0}
   upgradePrefab: {fileID: 0}
-  tName: '[T1] Hourglass'
+  tName: Hourglass Tower
   type: 
   atkSpeed: 0
   atkSpeedModif: 1
   damageMin: 0
   damageMax: 0
-  buildVal: 300
-  sellVal: 300
-  info: Slows enemies in range by 30%. Does not stack with other Hourglass towers.
+  buildVal: 250
+  sellVal: 190
+  repairVal: 100
+  baseHealth: 1500
+  health: 1500
+  info: Slow enemies by 20%. Does not stack with other Hourglass nearby.
+--- !u!114 &-7858388096382554567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8909973275859207281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f8b761185c70374eb084b68ee32e930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yOffset: 1.75
 --- !u!1 &8910084699630184187
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,6 +435,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -438,6 +460,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &8910286810311598233
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +516,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -517,3 +541,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

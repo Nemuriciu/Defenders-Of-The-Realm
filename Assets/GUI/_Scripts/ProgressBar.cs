@@ -10,6 +10,7 @@ public class ProgressBar : MonoBehaviour {
     private Image _slider;
     private TextMeshProUGUI _text;
     private EventMessage _eventMessage;
+    private GameSystem _system;
     private enum Color {
         Yellow,
         Orange,
@@ -19,6 +20,7 @@ public class ProgressBar : MonoBehaviour {
     private void Start () {
         _slider = GetComponent<Image>();
         _text = transform.parent.GetChild(1).GetComponent<TextMeshProUGUI>();
+        _system = GameObject.Find("System").GetComponent<GameSystem>();
         
         _maxVal = _currentVal = 250;
         _percent = 100;
@@ -49,7 +51,8 @@ public class ProgressBar : MonoBehaviour {
         _currentVal = (_currentVal - value <= 0) ? 0 : _currentVal - value;
         _percent = Mathf.RoundToInt(_currentVal / _maxVal * 100.0f);
         
-        if (_currentVal <= 0) Debug.Log("Defeat");
+        if (_currentVal <= 0) 
+            _system.Defeat();
         
         CheckColor();
         Display();

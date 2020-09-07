@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Vlad\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Vlad\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_Defenders Of The Realm.-1480814426.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Vlad\AppData\local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Vlad\AppData\local\JetBrains\Rider2020.2\resharper-host\local\Transient\Rider\v202\SolutionCaches\_Defenders Of The Realm.-1480814426.00" t="ExcludeRecursive" />
     <e p="C:\Users\Vlad\Desktop\Defenders Of The Realm" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -56,10 +56,13 @@
             <e p="ProgressBar.cs" t="Include" />
             <e p="ZoomEffect.cs" t="Include" />
           </e>
-          <e p="Build" t="Include">
+          <e p="BuildPanel" t="Include">
             <e p="_Scripts" t="Include">
-              <e p="Building.cs" t="Include" />
-              <e p="Upgrade.cs" t="Include" />
+              <e p="BuildButton.cs" t="Include" />
+              <e p="BuildPanel.cs" t="Include" />
+              <e p="BuildTooltip.cs" t="Include" />
+              <e p="UpgradeButton.cs" t="Include" />
+              <e p="UpgradePanel.cs" t="Include" />
             </e>
           </e>
           <e p="FloatingText" t="Include">
@@ -143,6 +146,8 @@
             <e p="HitEffect.cs" t="Include" />
             <e p="RotatePivot.cs" t="Include" />
             <e p="Tower.cs" t="Include" />
+            <e p="TowerHealth.cs" t="Include" />
+            <e p="TowerHealthRoot.cs" t="Include" />
           </e>
           <e p="TowerSpot" t="Include">
             <e p="_Scripts" t="Include">

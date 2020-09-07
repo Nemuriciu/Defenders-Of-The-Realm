@@ -5,12 +5,14 @@ using UnityEngine;
 public enum Phase {
     Start,
     Build,
-    Combat
+    Combat,
+    End
 };
 
 public class GameSystem : MonoBehaviour {
     public Spawn[] portals;
     public AudioClip[] clips;
+    public GameObject defeat, victory;
     
     [HideInInspector] 
     public Phase phase;
@@ -21,7 +23,6 @@ public class GameSystem : MonoBehaviour {
     [HideInInspector]
     public bool isBuilding, isPaused;
     
-    private ErrorMessage _error;
     private EventMessage _event;
     private AudioSource _audio;
     private TextMeshProUGUI _phaseText;
@@ -29,27 +30,41 @@ public class GameSystem : MonoBehaviour {
     private TextMeshProUGUI _mobCountText;
     private GoldInfo _goldInfo;
     private int _waveCreatureNr;
+    private Transform _enemiesT;
     
     private void Start() {
-        _error = GameObject.Find("ErrorBox").GetComponent<ErrorMessage>();
-        //_audio = GetComponent<AudioSource>();
+        _audio = GetComponent<AudioSource>();
         _event = GameObject.Find("EventBox").GetComponent<EventMessage>();
         _phaseText = GameObject.Find("PhaseBox").GetComponent<TextMeshProUGUI>();
         _waveText = GameObject.Find("WaveInfo").GetComponentInChildren<TextMeshProUGUI>();
         _mobCountText = GameObject.Find("MobCount").GetComponentInChildren<TextMeshProUGUI>();
         _goldInfo = GameObject.Find("GoldGroup").GetComponent<GoldInfo>();
+        _enemiesT = GameObject.Find("Enemies").transform;
 
         phase = Phase.Start;
 
         Destroy(GameObject.Find("IntroAudio"));
-        // _audio.clip = clips[0];
-        // _audio.loop = true;
-        // _audio.Play();
+        GameTime.OriginalTimeScale = Time.timeScale;
     }
 
     private void Update() {
         if (GameTime.IsPaused)
             return;
+
+        /* DEBUG */
+        if (phase != Phase.End) {
+            if (Input.GetKeyDown(KeyCode.F9)) {
+                phase = Phase.End;
+                KillAll();
+                Victory();
+            }
+
+            if (Input.GetKeyDown(KeyCode.F12)) {
+                phase = Phase.End;
+                KillAll();
+                Defeat();
+            }  
+        }
         
         switch (phase) {
             case Phase.Start: {
@@ -72,8 +87,8 @@ public class GameSystem : MonoBehaviour {
                     /* Spawn wave when creatureNr not init (-1) */
                     case -1: {
                         creatureNr = _waveCreatureNr;
-                        StartCoroutine(portals[0].Wave(creatureNr/2));
-                        StartCoroutine(portals[1].Wave(creatureNr/2));
+                        StartCoroutine(portals[0].Wave());
+                        StartCoroutine(portals[1].Wave());
                         break;
                     }
                     /* Wave Cleared when creatureNr reaches 0 */
@@ -85,12 +100,15 @@ public class GameSystem : MonoBehaviour {
                         else {
                             /* TODO: Victory */
                             creatureNr = -2;
-                            Debug.Log("Victory");
+                            Victory();
                         }
-        
+                        
                         break;
                 }
         
+                break;
+            
+            case Phase.End:
                 break;
         }
     }
@@ -102,11 +120,14 @@ public class GameSystem : MonoBehaviour {
                 break;
             case Phase.Combat:
                 _event.Show("Wave Cleared");
+                _audio.PlayOneShot(clips[1]);
+                _goldInfo.ChangeValue(RNG.GoldIncome[RNG.waveNr]);
                 yield return new WaitForSeconds(4.0f);
                 break;
         }
         
         _event.Show("Build Phase");
+        _audio.PlayOneShot(clips[0]);
         yield return new WaitForSeconds(3);
         
         switch (phase) {
@@ -120,7 +141,6 @@ public class GameSystem : MonoBehaviour {
                 break;
         }
         
-        //TODO:
         _waveCreatureNr = RNG.WaveCreatureNr();
         _mobCountText.text = _waveCreatureNr.ToString();
 
@@ -131,6 +151,7 @@ public class GameSystem : MonoBehaviour {
     private IEnumerator NextWaveEvent(string text) {
         if (waveNr == 1) {
             _event.Show("Combat Phase");
+            _audio.PlayOneShot(clips[0]);
             yield return new WaitForSeconds(3.2f);
 
             CanvasGroup waveCanvasGroup = _waveText.gameObject.GetComponentInParent<CanvasGroup>();
@@ -142,11 +163,36 @@ public class GameSystem : MonoBehaviour {
 
         _waveText.text = "Wave  " + waveNr + " / 5";
         _event.Show(text);
+        if (waveNr != 1) 
+            _audio.PlayOneShot(clips[0]);
         yield return new WaitForSeconds(3);
         phase = Phase.Combat;
     }
 
     public void UpdateMobCount() {
         _mobCountText.text = creatureNr.ToString();
+    }
+
+    private void KillAll() {
+        waveNr = 5;
+        //creatureNr = 0;
+        _event.Show("");
+        _waveText.text = "Wave 5 / 5";
+        _phaseText.text = "";
+
+        foreach (Transform enemy in _enemiesT) {
+            CreatureInfo c = enemy.GetComponent<CreatureInfo>();
+
+            if (c.IsAlive) 
+                c.Kill();
+        }
+    }
+
+    private void Victory() {
+        victory.gameObject.SetActive(true);
+    }
+
+    public void Defeat() {
+        defeat.gameObject.SetActive(true);
     }
 }

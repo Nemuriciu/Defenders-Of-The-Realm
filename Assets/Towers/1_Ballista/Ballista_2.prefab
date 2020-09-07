@@ -57,6 +57,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -81,6 +82,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &913140764592534862
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,6 +237,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -259,6 +262,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!64 &913140764592534863
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -328,6 +332,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -352,6 +357,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &913735812744842286
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,6 +400,7 @@ GameObject:
   - component: {fileID: 5634690036544150756}
   - component: {fileID: 9058585363149926185}
   - component: {fileID: 913780736433462619}
+  - component: {fileID: 2830665350255207978}
   m_Layer: 2
   m_Name: Ballista_2
   m_TagString: Tower
@@ -437,13 +444,13 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913780736433462618}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -341322287406483470, guid: 4cc81d4088fde7a40a90ea9a4f781a14,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: f034d7aabe987bc4888ecf9f98c7cf17, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3ee7a33425dc9634597e1734c73b1c35, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -452,9 +459,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 25
+  MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 1
+  rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -462,50 +469,23 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0.06666667
-      value: 0.5
-      inSlope: -7.5029984
-      outSlope: -7.5029984
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.13333334
-      value: 0.25
-      inSlope: -1.8757496
-      outSlope: -1.8757496
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.26666668
-      value: 0.125
-      inSlope: -0.4689374
-      outSlope: -0.4689374
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.53333336
-      value: 0.0625
-      inSlope: -0.11723435
-      outSlope: -0.11723435
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: -0.033346657
-      outSlope: -0.033346657
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
-      outWeight: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -514,7 +494,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -575,10 +555,26 @@ MonoBehaviour:
     type: 3}
   tName: '[T2] Ballista Tower'
   type: Physical
-  atkSpeed: 0.75
+  atkSpeed: 1.25
   atkSpeedModif: 1
   damageMin: 150
   damageMax: 175
-  buildVal: 200
-  sellVal: 275
+  buildVal: 250
+  sellVal: 244
+  repairVal: 100
+  baseHealth: 1250
+  health: 1250
   info: A single-target tower that deals physical damage.
+--- !u!114 &2830665350255207978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913780736433462618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f8b761185c70374eb084b68ee32e930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yOffset: 1.75

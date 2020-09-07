@@ -39,7 +39,7 @@ public class Bullet : MonoBehaviour {
             /* Hit all enemies in a radius near the target */
             if (isAoe) {
                 var hitColliders = Physics.OverlapSphere(
-                    transform.position, 1.5f, LayerMask.GetMask("Enemy"));
+                    transform.position, 2.25f, LayerMask.GetMask("Enemy"));
 
                 foreach (var hitCollider in hitColliders) {
                     GameObject enemy = hitCollider.gameObject;
@@ -60,6 +60,11 @@ public class Bullet : MonoBehaviour {
                 Instantiate(hitEffect, _target.transform.position, 
                     Quaternion.identity, _target.transform);
                 creature.Hit(_tower.GetDamage(), _tower.GetDmgType());
+                
+                /* Thorns damage if creature is Turtle */
+                if (creature.cName.Equals("Turtle")) {
+                    _tower.Hit(_tower.baseHealth * 0.0075f);
+                }
             }
 
             Destroy(gameObject);

@@ -86,9 +86,6 @@ public class Healthbar : MonoBehaviour {
 		
 		_healthbarSize = healthbarPrefab.sizeDelta;
 		healthbarPrefab.sizeDelta = new Vector2 (_healthbarSize.x * scale, _healthbarSize.y * scale);
-        //_canvasGroup.alpha = alphaSettings.nullAlpha;
-		_canvasGroup.interactable = false;
-		_canvasGroup.blocksRaycasts = true;
 		_cam = Camera.main;
 		
 		healthLink.SetHealthbar(this);

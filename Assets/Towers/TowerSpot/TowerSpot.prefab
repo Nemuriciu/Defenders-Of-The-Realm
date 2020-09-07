@@ -70,6 +70,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -81,6 +83,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -93,6 +96,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &-3225003572780506577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,12 +109,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fdd1fdac8e961649867997afcf42116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab:
+  highlight: {fileID: 5221263186744775390}
+  build: {fileID: 0}
+  upgrade: {fileID: 0}
+  prefabs:
   - {fileID: 3647320513214741003, guid: d4a735ed856a98542b4e32f44e22831f, type: 3}
   - {fileID: 7948745145705647095, guid: d971914be7a38ea47b4fb6f5f795e632, type: 3}
   - {fileID: 7518043254559649638, guid: a7da5285ca465e84d9bbe3bc89a6992d, type: 3}
   - {fileID: 7409717648110150708, guid: f13a1938ce3817f4f85721f98011def0, type: 3}
   - {fileID: 8909973275859207281, guid: 5e20969b1b430f841811f3a8e1d11747, type: 3}
+  clips:
+  - {fileID: 8300000, guid: 1c7b6ba2894e07d4f81335a433efb5b3, type: 3}
+  - {fileID: 8300000, guid: 3ad8a65d5bfa823479be23d09418d499, type: 3}
 --- !u!1 &5221263186744775390
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +133,7 @@ GameObject:
   - component: {fileID: 6199382083915047125}
   - component: {fileID: 739327873738627435}
   m_Layer: 11
-  m_Name: Select
+  m_Name: Highlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -165,6 +175,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -176,6 +188,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -188,3 +201,4 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

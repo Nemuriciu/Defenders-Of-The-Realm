@@ -14,9 +14,9 @@ public class Tower : MonoBehaviour {
     public float atkSpeed;
     public float atkSpeedModif;
     public int damageMin, damageMax;
-    public int buildVal, sellVal;
+    public int buildVal, sellVal, repairVal;
+    public float baseHealth, health;
     public string info;
-    // TODO: Range Stat
     [Space(10)]
 
     private List<GameObject> _enemies;
@@ -25,12 +25,15 @@ public class Tower : MonoBehaviour {
     private Transform _bulletParent;
     private float _hitTimer;
     private CreatureInfo _targetInfo;
-
+    private TowerHealth _towerHealthbar;
+    private bool _destroyed;
+    
     private AudioSource _audio;
 
     private void Start() {
         _enemies = new List<GameObject>();
         _bulletParent = GameObject.Find("Bullets").transform;
+        _towerHealthbar = GetComponent<TowerHealth>();
         _audio = GetComponent<AudioSource>();
         
         /* Random AtkSpeedModif */
@@ -54,7 +57,7 @@ public class Tower : MonoBehaviour {
                             Quaternion.identity, _bulletParent);
                         Bullet b = bullet.GetComponent<Bullet>();
                         b.SetTarget(_target, this);
-                        //_audio.Play();
+                        _audio.Play();
 
                         _hitTimer = 0;
                     }
@@ -120,6 +123,23 @@ public class Tower : MonoBehaviour {
         }
     }
     
+    private void DestroyTower() {
+        Spot spot = GetComponentInParent<Spot>();
+        spot.RemoveTower();
+    }
+    
+    public void Hit(float damage) {
+        if (_destroyed) return;
+        
+        if (health - damage <= 0) {
+            _destroyed = true;
+            DestroyTower();
+            return;
+        }
+
+        health -= damage;
+    }
+    
     public void RemoveSlows() {
         foreach (var enemy in _enemies) {
             CreatureInfo c = enemy.GetComponentInParent<CreatureInfo>();
@@ -127,8 +147,20 @@ public class Tower : MonoBehaviour {
         }
     }
 
+    public void Repair() {
+        health = baseHealth;
+    }
+
+    public void RemoveHealthbar() {
+        _towerHealthbar.FreeHealthbar();
+    }
+    
     public int GetDamage() {
         return Random.Range(damageMin, damageMax);
+    }
+
+    public float GetHealth() {
+        return health;
     }
 
     public string GetDmgType() {
